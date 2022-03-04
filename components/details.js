@@ -63,7 +63,7 @@ export function Details() {
           rel="noreferrer"
           target="_blank"
         >
-          <button className="m-auto mt-4 w-[100px] rounded-lg bg-[#F7C12F] p-2 text-center text-black">
+          <button className="m-auto mt-8 w-[100px] rounded-lg bg-[#F7C12F] p-2 text-center text-black">
             Go to maps
           </button>
         </Link>

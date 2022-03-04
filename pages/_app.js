@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps }) {
             <Image src={navbarlogo} placeholder="blur" width="90" height="30" />
           </a>
         </Link>
-        <div>
+        <div className="mt-1">
           <span className="font-bold text-white md:hidden">
             <Link href="./">
               <a onClick={closeMenu}>HOME</a>
@@ -111,7 +111,7 @@ function MyApp({ Component, pageProps }) {
               <FontAwesomeIcon icon={faInstagram} width="40px" />
             </a>
           </span>
-          <span className="md2:hidden mt-1 pl-4 pr-2">
+          <span className="md2:hidden pl-4 pr-2">
             <button onClick={handleOpen}>
               <FontAwesomeIcon
                 icon={open ? faXmark : faBars}
