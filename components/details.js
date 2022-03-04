@@ -1,0 +1,75 @@
+import Link from "next/link";
+import Image from "next/image";
+import location from "../public/location.jpg";
+
+export function Details() {
+  return (
+    <div className="flex flex-row flex-wrap justify-around bg-gray-700 py-8 text-gray-300 md:w-full">
+      <div className="lg2:mt-4 sm:px-6">
+        <b>Cô Tâm Vietnamese Restaurant</b>
+        <br />
+        Spaarne 104 <br />
+        2011 CM Haarlem <br />
+        <br />
+        <b>Directions to Cô Tâm Restaurant</b>
+        <br />
+        The nearest bus stop is
+        <Link href="https://www.google.com/maps/dir/verwulft+haarlem+bus/@52.3886846,4.6217076,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47c5ef6b265bb9f3:0xec91f5ae73f24209!2m2!1d4.632842!2d52.3801086!3e3">
+          <a className="text-yellow-500"> Centrum/Verwulft</a>
+        </Link>
+        <br />
+        The nearest parking garage is
+        <Link
+          href="https://www.google.com/maps/dir/Parkeergarage+de+Kamp,+De+Kamp,+De+Witstraat,+Haarlem/@52.3886846,4.6217076,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47c5ef6a0bd632a5:0xc5b40fd003a4c966!2m2!1d4.636914!2d52.3774229!3e3"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <a className="text-yellow-500"> De Kamp</a>
+        </Link>
+        <br />
+        <br />
+        <b>Phone number:</b> <br />
+        <Link href="tel:023-583-4384">
+          <a className="text-yellow-500">(023) 583 4384</a>
+        </Link>
+      </div>
+      <div className="my-4 flex flex-row px-6 sm:mt-8">
+        <ul className="mr-8 font-bold">
+          <li className="py-1">Mon</li>
+          <li className="py-1">Tue </li>
+          <li className="py-1">Wed</li>
+          <li className="py-1">Thu </li>
+          <li className="py-1">Fri</li>
+          <li className="py-1">Sat</li>
+          <li className="py-1">Sun</li>
+        </ul>
+        <ul>
+          <li className="py-1">Close</li>
+          <li className="py-1">16:00 - 21:30 </li>
+          <li className="py-1">16:00 - 21:30</li>
+          <li className="py-1">16:00 - 21:30</li>
+          <li className="py-1">16:00 - 21:30</li>
+          <li className="py-1">16:00 - 21:30</li>
+          <li className="py-1">16:00 - 21:30</li>
+        </ul>
+      </div>
+      <div className="mt-5 flex flex-col sm:mt-2 md:p-8">
+        <img
+          src="./location.jpg"
+          alt="cotam-location"
+          width="320"
+          height="230"
+        />
+        <Link
+          href="https://www.google.com/maps/place/C%C3%B4+T%C3%A2m+Restaurant/@52.3791754,4.6353804,16.33z/data=!4m12!1m6!3m5!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!2zQ8O0IFTDom0gUmVzdGF1cmFudA!8m2!3d52.3783644!4d4.6377021!3m4!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!8m2!3d52.3783644!4d4.6377021?authuser=1"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <button className="m-auto mt-4 w-[100px] rounded-lg bg-[#F7C12F] p-2 text-center text-black">
+            Go to maps
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
+}
