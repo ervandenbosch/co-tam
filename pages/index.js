@@ -1,0 +1,195 @@
+import Link from "next/link";
+import Head from "next/head";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+
+export default function Home() {
+  const url =
+    "https://cotam.us2.list-manage.com/subscribe/post?u=6d4a8b5dd3caa61e591833f74&amp;id=e1dad9f537";
+
+  // simplest form (only email)
+  const CustomForm = ({ status, message, onValidated }) => {
+    let email, name;
+    const submit = () =>
+      email &&
+      name &&
+      email.value.indexOf("@") > -1 &&
+      onValidated({
+        EMAIL: email.value,
+        NAME: name.value,
+      });
+
+    return (
+      <div
+        style={{
+          background: "#efefef",
+          borderRadius: 2,
+          padding: 10,
+          display: "block",
+          textAlign: "center",
+          margin: "auto",
+        }}
+      >
+        {status === "sending" && (
+          <div style={{ color: "blue" }}>sending...</div>
+        )}
+        {status === "error" && (
+          <div
+            style={{ color: "red" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+        {status === "success" && (
+          <div
+            style={{ color: "green" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+        <h2 className="py-4 text-xl font-bold">STAY UP TO DATE</h2>
+        <p className="px-24 pb-2 text-center">
+          Be among the first to receive our latest updates and special deals.
+        </p>
+        <div className="pt-3">
+          <input
+            style={{ fontSize: "1em", padding: 5 }}
+            ref={(node) => (name = node)}
+            type="text"
+            placeholder="Your name"
+          />
+        </div>
+        <br />
+        <div className="">
+          <input
+            style={{ fontSize: "1em", padding: 5 }}
+            ref={(node) => (email = node)}
+            type="email"
+            placeholder="Your email"
+          />
+        </div>
+        <br />
+        <button
+          style={{
+            fontSize: "1em",
+            padding: 5,
+            margin: 8,
+            backgroundColor: "#F7C12F",
+            borderRadius: "4px",
+          }}
+          onClick={submit}
+        >
+          Submit
+        </button>
+      </div>
+    );
+  };
+
+  return (
+    <div className="">
+      <Head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <main>
+        <div
+          className="bg local w-full bg-cover bg-no-repeat"
+          id="top"
+          style={{ backgroundImage: "url('./bg-orig2.jpg.webp')" }}
+        >
+          <div className="lg2:w-1/2 m-auto mb-2 w-2/3 pt-[72px]">
+            <img src="./cotamlogo.webp" />
+          </div>
+          <div className="m-auto px-32 text-center text-xl text-white sm:text-sm md:px-16 md:text-lg">
+            Welcome to the Authentic Vietnamese restaurant Cô Tâm in Haarlem. We
+            are open for takeaway and delivery. We are open for table
+            reservations. Call
+            <Link href="tel:023-583-4384">
+              <a className="text-yellow-500"> (023) 583 4384 </a>
+            </Link>
+            during opening hours to reserve a table.
+          </div>
+          <div className="py-8 text-center sm:px-16">
+            <Link href="./order">
+              <button className="sm2:mr-4 w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm:mb-4 sm:w-full">
+                Order
+              </button>
+            </Link>
+            <a
+              href="/menu.pdf"
+              alt="alt text"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="sm2:ml-4 mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm:w-full">
+                See menu
+              </button>
+            </a>
+          </div>
+        </div>
+        <div className="mt-6 flex flex-row bg-white py-4 md:flex-wrap">
+          <div className="flex w-1/2 flex-col px-8 md:w-full md:px-10">
+            <h2 className="m-auto max-w-[600px] text-center text-xl font-bold text-black">
+              With us you will experience a wide variety of authentic Vietnamese
+              dishes
+            </h2>
+            <p className="m-auto mb-4 max-w-[600px] p-4 text-justify text-black">
+              Vietnamese food is very fresh, light, and full of incredible
+              flavours. Greens and meat are at the heart of the Vietnamese
+              cuisine, but we also offer a great variety of meals that are
+              vegetarian- and vegan friendly. All our meals are prepared with
+              utmost care while avoiding artificial flavour enhancers as much as
+              possible, so you only eat healthy with us. We use high-quality
+              ingredients for our dishes in order to be able to offer our guests
+              the best version of the Vietnamese cuisine.
+            </p>
+          </div>
+          <div className="mx-auto mb-8 max-w-sm self-center sm:w-full">
+            <img src="./img-2.webp" className="rounded-2xl" />
+          </div>
+        </div>
+        <div className="flex flex-col border-t-2 border-black bg-white py-16 md:w-full">
+          <h2 className="px-8 text-center text-2xl font-bold text-black">
+            What our customers say about us
+          </h2>
+          <Link
+            href="https://www.google.com/maps/place/C%C3%B4+T%C3%A2m+Restaurant/@52.3783644,4.6355134,17z/data=!4m7!3m6!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!8m2!3d52.3783644!4d4.6377021!9m1!1b1"
+            target="_blank"
+          >
+            <button className="m-auto mt-10 w-[200px] rounded-lg border-2 bg-[#F7C12F] p-2 text-center text-gray-600">
+              Go to reviews
+            </button>
+          </Link>
+        </div>
+        <div className="m-auto pl-4 pr-8 md:mt-8">
+          <Carousel
+            autoPlay
+            centerMode
+            dynamicHeight
+            centerSlidePercentage={80}
+          >
+            <div className="max-h-[400px]">
+              <img src="/about-1.webp" height="100vh" width="auto" />
+            </div>
+            <div>
+              <img src="/carousel2.webp" height="100px" width="auto" />
+            </div>
+            <div>
+              <img src="/carousel4.webp" height="100%" width="auto" />
+            </div>
+          </Carousel>
+        </div>
+
+        <MailchimpSubscribe
+          url={url}
+          render={({ subscribe, status, message }) => (
+            <CustomForm
+              status={status}
+              message={message}
+              onValidated={(formData) => subscribe(formData)}
+            />
+          )}
+        />
+      </main>
+    </div>
+  );
+}
