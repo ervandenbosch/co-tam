@@ -48,7 +48,6 @@ function MyApp({ Component, pageProps }) {
     //When the component is mounted, subscribe to router changes
     //and log those page views
     router.events.on("routeChangeComplete", handleRouteChange);
-
     // If the component is unmounted, unsubscribe
     // from the event with the `off` method
     return () => {

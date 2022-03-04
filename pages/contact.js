@@ -1,22 +1,38 @@
 import { useState } from "react";
 import Head from "next/head";
+import Swal from "sweetalert2";
+import emailjs from "emailjs-com";
+import { Form, Input, TextArea, Button } from "semantic-ui-react";
 
-export default function Contact({ validateForm, getPayload }) {
-  const [submitting, setSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-
-  function submitForm(data) {
-    fetch("/api/contact", {
-      method: "post",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }).then((res) => {
-      res.status === 200 ? setSubmitted(true) : "";
-    });
-  }
+export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
+        e.target,
+        process.env.USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent Successfully",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          Swal.fire({
+            icon: "error",
+            title: "Ooops, something went wrong",
+            text: error.text,
+          });
+        }
+      );
+    e.target.reset();
+  };
 
   return (
     <>
@@ -32,62 +48,47 @@ export default function Contact({ validateForm, getPayload }) {
           free to let us know if you have any comment on your recent experience
           or any suggestion would be appreciated for our improvement.
         </p>
-        <form className="flex flex-col" onSubmit>
-          <div className="py-2">
-            <label htmlFor="first-name">First Name</label> <br />
-            <input
-              type="text"
-              name="first-name"
-              className="w-full rounded-md border-2"
-            />
-          </div>
-
-          <div className="py-2">
-            <label htmlFor="last-name">Last Name</label> <br />
-            <input
-              type="text"
-              name="last-name"
-              className="w-full rounded-md border-2"
-            />
-          </div>
-
-          <div className="py-2">
-            <label htmlFor="email">Email</label> <br />
-            <input
-              type="text"
-              name="email"
-              className="w-full rounded-md border-2"
-            />
-          </div>
-
-          <div className="py-2">
-            <label htmlFor="subject">Subject</label>
-            <br />
-            <input
-              type="text"
-              name="subject"
-              className="w-full rounded-md border-2"
-            />
-          </div>
-          <div className="py-2">
-            <label htmlFor="message">Message</label>
-            <textarea
-              rows="5"
-              type="text"
-              name="message"
-              className="w-full rounded-md border-2"
-            ></textarea>
-          </div>
-          <div className="py-2">
-            <button
-              type="submit"
-              value="Submit"
-              className="w=[100px] p rounded-lg bg-[#F7C12F] p-1 px-3"
-            >
-              Send
-            </button>
-          </div>
-        </form>
+        <Form onSubmit={handleSubmit}>
+          Email
+          <Form.Field
+            id="form-input-control-email"
+            control={Input}
+            name="user_email"
+            placeholder=" Email…"
+            required
+            icon="mail"
+            iconPosition="left"
+            className="my-2 rounded-md border-2"
+          />
+          Name
+          <Form.Field
+            id="form-input-control-last-name"
+            control={Input}
+            name="user_name"
+            placeholder=" Name…"
+            required
+            icon="user circle"
+            iconPosition="left"
+            className="my-2 rounded-md border-2"
+          />
+          Message
+          <Form.Field
+            id="form-textarea-control-opinion"
+            control={TextArea}
+            label=""
+            name="user_message"
+            placeholder=" Text here.."
+            required
+            className="my-2 rounded-md border-2"
+          />
+          <Button
+            type="submit"
+            color="green"
+            className="rounded-md border bg-yellow-400 py-2 px-4"
+          >
+            Submit
+          </Button>
+        </Form>
       </div>
     </>
   );

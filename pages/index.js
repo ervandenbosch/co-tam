@@ -48,7 +48,7 @@ export default function Home() {
           />
         )}
         <h2 className="py-4 text-xl font-bold">STAY UP TO DATE</h2>
-        <p className="px-24 pb-2 text-center">
+        <p className="px-24 pb-2 text-center sm:px-12">
           Be among the first to receive our latest updates and special deals.
         </p>
         <div className="pt-3">
@@ -72,11 +72,9 @@ export default function Home() {
         <button
           style={{
             fontSize: "1em",
-            padding: 5,
-            margin: 8,
             backgroundColor: "#F7C12F",
-            borderRadius: "4px",
           }}
+          className="rounded-lg px-4 py-2"
           onClick={submit}
         >
           Submit
@@ -95,6 +93,9 @@ export default function Home() {
           content="Welkom bij Cô Tâm Vietnamees restaurant. De authentieke Vietnamese keuken in het centrum van Haarlem. Geniet van heerlijk Vietnamees eten aan het Spaarne."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:locale" content="en_US"></meta>
+        <meta property="og:locale:alternate" content="nl_BE"></meta>
       </Head>
       <main>
         <div
