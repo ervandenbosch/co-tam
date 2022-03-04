@@ -99,7 +99,7 @@ export default function Home() {
           <div className="lg2:w-1/2 m-auto mb-2 w-2/3 pt-[72px]">
             <img src="./cotamlogo.webp" />
           </div>
-          <div className="m-auto px-32 text-center text-xl text-white sm:text-sm md:px-16 md:text-lg">
+          <div className="sm:text-md m-auto px-32 text-center text-xl text-white sm:px-8 md:px-16 md:text-lg">
             Welcome to the Authentic Vietnamese restaurant Cô Tâm in Haarlem. We
             are open for takeaway and delivery. We are open for table
             reservations. Call
@@ -143,7 +143,7 @@ export default function Home() {
               the best version of the Vietnamese cuisine.
             </p>
           </div>
-          <div className="mx-auto mb-8 max-w-sm self-center sm:w-full">
+          <div className="mx-auto mb-8 max-w-sm self-center sm:w-full sm:px-4">
             <img src="./img-2.webp" className="rounded-2xl" />
           </div>
         </div>
