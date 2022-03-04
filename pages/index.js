@@ -143,7 +143,7 @@ export default function Home() {
               the best version of the Vietnamese cuisine.
             </p>
           </div>
-          <div className="mx-auto mb-8 max-w-sm self-center sm:w-full sm:px-4">
+          <div className="mx-auto mb-8 max-w-sm self-center sm:w-full sm:px-8">
             <img src="./img-2.webp" className="rounded-2xl" />
           </div>
         </div>
