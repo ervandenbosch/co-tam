@@ -58,7 +58,7 @@ export default function About() {
           </Carousel>
         </div>
       </div>
-      <div className="m-auto my-12 flex w-2/3 flex-col rounded-lg border-2 bg-gray-800 text-center sm:w-3/4">
+      <div className="m-auto mt-8 mb-12 flex w-2/3 flex-col rounded-lg border-2 bg-gray-800 text-center sm:w-3/4">
         <p className="p-8 text-lg text-gray-100">
           We want to bring our customers the best of Vietnamese cuisine as food
           in our culture is what brings families and friends together. We hope

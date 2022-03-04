@@ -25,7 +25,8 @@ export default function Home() {
         style={{
           background: "#efefef",
           borderRadius: 2,
-          padding: 18,
+          padding: 12,
+          paddingBottom: 18,
           display: "block",
           textAlign: "center",
           margin: "auto",
