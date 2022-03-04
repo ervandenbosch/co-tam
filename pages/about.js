@@ -35,7 +35,7 @@ export default function About() {
             of a hard working couple.
           </p>
         </div>
-        <div className="m-auto w-1/2 pl-4 pr-8 md:mt-8">
+        <div className="m-auto w-1/2 pl-4 pr-8 sm:w-2/3 md:mt-12">
           <Carousel
             autoPlay
             swipeable
@@ -45,7 +45,6 @@ export default function About() {
             dynamicHeight
             centerSlidePercentage={80}
             stopOnHover
-            slideStyle={{ zIndex: 1, display: "block", position: "absolute" }}
           >
             <div>
               <img src="/about-1.webp" />
@@ -59,7 +58,7 @@ export default function About() {
           </Carousel>
         </div>
       </div>
-      <div className="m-auto my-12  flex w-2/3 flex-col rounded-lg border-2 bg-gray-800 text-center">
+      <div className="m-auto my-12 flex w-2/3 flex-col rounded-lg border-2 bg-gray-800 text-center sm:w-3/4">
         <p className="p-8 text-lg text-gray-100">
           We want to bring our customers the best of Vietnamese cuisine as food
           in our culture is what brings families and friends together. We hope

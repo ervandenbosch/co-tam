@@ -4,8 +4,8 @@ import location from "../public/location.jpg";
 
 export function Details() {
   return (
-    <div className="flex flex-row flex-wrap justify-around bg-gray-700 py-8 text-gray-300 md:w-full">
-      <div className="lg2:mt-4 sm:px-6">
+    <div className="flex flex-row flex-wrap justify-around bg-gray-700 py-8 text-gray-300">
+      <div className="mt-4 sm:px-6">
         <b>Cô Tâm Vietnamese Restaurant</b>
         <br />
         Spaarne 104 <br />
@@ -33,7 +33,7 @@ export function Details() {
           <a className="text-yellow-500">(023) 583 4384</a>
         </Link>
       </div>
-      <div className="my-4 flex flex-row px-6 sm:mt-8">
+      <div className="mb-4 mt-6 flex flex-row px-6 sm:mt-8">
         <ul className="mr-8 font-bold">
           <li className="py-1">Mon</li>
           <li className="py-1">Tue </li>
@@ -53,7 +53,7 @@ export function Details() {
           <li className="py-1">16:00 - 21:30</li>
         </ul>
       </div>
-      <div className="mt-5 flex flex-col sm:mt-2 md:p-8">
+      <div className="mt-4 flex flex-col sm:mt-2 md:mt-6 md:p-8">
         <img
           src="./location.jpg"
           alt="cotam-location"

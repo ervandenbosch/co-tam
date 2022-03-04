@@ -10,12 +10,17 @@ import { Footer } from "../components/footer";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { Details } from "../components/details";
 import CookieConsent from "react-cookie-consent";
+import { useRouter } from "next/router";
+
+import * as ga from "../lib/ga";
 
 function MyApp({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(!open);
   const closeMenu = () => setOpen(false);
+
+  const router = useRouter();
 
   function hideMenu() {
     var prevScrollpos = window.pageYOffset;
@@ -36,11 +41,26 @@ function MyApp({ Component, pageProps }) {
     hideMenu();
   }, []);
 
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+    //When the component is mounted, subscribe to router changes
+    //and log those page views
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <div className="min-h-screen" id="app">
       <nav
         className="
-        fixed top-0 flex h-[64px] w-full flex-row flex-nowrap justify-between bg-black p-4 opacity-90"
+        fixed top-0 flex h-[64px] w-full flex-row flex-nowrap justify-between bg-black p-4"
         id="navbar"
       >
         <Link href="./">
@@ -92,7 +112,7 @@ function MyApp({ Component, pageProps }) {
           </span>
         </span>
 
-        <span className="md2:hidden mt-1 pl-2 pr-4">
+        <span className="md2:hidden mt-1 pl-2 pr-2">
           <button onClick={handleOpen}>
             <FontAwesomeIcon
               icon={open ? faXmark : faBars}

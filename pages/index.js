@@ -25,7 +25,7 @@ export default function Home() {
         style={{
           background: "#efefef",
           borderRadius: 2,
-          padding: 10,
+          padding: 18,
           display: "block",
           textAlign: "center",
           margin: "auto",
@@ -96,10 +96,10 @@ export default function Home() {
           id="top"
           style={{ backgroundImage: "url('./bg-orig2.jpg.webp')" }}
         >
-          <div className="lg2:w-1/2 m-auto mb-2 w-2/3 pt-[72px]">
+          <div className="lg2:w-1/2 m-auto mb-2 w-2/3 pt-[72px] sm:w-3/4">
             <img src="./cotamlogo.webp" />
           </div>
-          <div className="sm:text-md m-auto px-32 text-center text-xl text-white sm:px-8 md:px-16 md:text-lg">
+          <div className="sm:text-md m-auto px-32 text-center text-xl text-white sm:px-10 md:px-16 md:text-lg">
             Welcome to the Authentic Vietnamese restaurant Cô Tâm in Haarlem. We
             are open for takeaway and delivery. We are open for table
             reservations. Call
@@ -108,7 +108,7 @@ export default function Home() {
             </Link>
             during opening hours to reserve a table.
           </div>
-          <div className="py-8 text-center sm:px-16">
+          <div className="py-8 text-center sm:px-14">
             <Link href="./order">
               <button className="sm2:mr-4 w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm:mb-4 sm:w-full">
                 Order
@@ -175,6 +175,9 @@ export default function Home() {
             </div>
             <div>
               <img src="/carousel4.webp" height="100%" width="auto" />
+            </div>
+            <div>
+              <img src="/carousel5.webp" height="100%" width="auto" />
             </div>
           </Carousel>
         </div>

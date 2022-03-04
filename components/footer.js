@@ -5,16 +5,16 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <div className="relative w-full border-t bg-white p-4 py-8 text-center text-sm font-bold text-gray-600">
+    <div className="relative w-full border-t bg-white py-8 text-center text-sm font-bold text-gray-600 sm:text-xs">
       <div className="flex justify-around">
-        <span>
+        <div>
           <FontAwesomeIcon
             icon={faCopyright}
             className="mx-2 inline-block"
             width="10px"
           />
-          2022 CÔ TÂM. ALL RIGHTS RESERVED.
-        </span>
+          2022 CÔ TÂM. All Rights Reserved.
+        </div>
         <span>
           Interact with us:
           <span>

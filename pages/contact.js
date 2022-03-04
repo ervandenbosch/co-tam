@@ -18,7 +18,7 @@ export default function Contact({ validateForm, getPayload }) {
   }
 
   return (
-    <div className="m-auto w-1/2 px-16 py-[64px] sm:w-full md:w-2/3">
+    <div className="m-auto w-1/2 px-16 py-[64px] sm:w-full sm:px-12 md:w-2/3">
       <h2 className="mt-12 text-center text-xl font-bold">Send us a message</h2>
       <p className="m-auto mt-6 py-4 text-justify">
         We love to hear your thoughts whether it is positive or negative. Feel
