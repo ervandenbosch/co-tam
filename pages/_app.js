@@ -63,37 +63,39 @@ function MyApp({ Component, pageProps }) {
         id="navbar"
       >
         <Link href="./">
-          <a className="lg2:ml-4 mr-1 " onClick={closeMenu}>
+          <a className="lg2:ml-4 mr-1 self-start" onClick={closeMenu}>
             <Image src={navbarlogo} placeholder="blur" width="90" height="30" />
           </a>
         </Link>
-        <span className="mr-4 font-bold text-white md:hidden">
-          <Link href="./">
-            <a onClick={closeMenu}>HOME</a>
-          </Link>
-          <span className="px-4">|</span>
-          <a
-            href="/menu.pdf"
-            alt="alt text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <a onClick={closeMenu}>MENU</a>
-          </a>
-          <span className="px-4">|</span>
-          <Link href="./order">
-            <a onClick={closeMenu}>ORDER</a>
-          </Link>
-          <span className="px-4">|</span>
-          <Link href="./about">
-            <a onClick={closeMenu}>ABOUT</a>
-          </Link>
-          <span className="px-4">|</span>
-          <Link href="./contact">
-            <a onClick={closeMenu}>CONTACT</a>
-          </Link>
-          <span className="px-4">|</span>
-          <span className="text-white md:block">
+        <div>
+          <span className="font-bold text-white md:hidden">
+            <Link href="./">
+              <a onClick={closeMenu}>HOME</a>
+            </Link>
+            <span className="px-4">|</span>
+            <a
+              href="/menu.pdf"
+              alt="alt text"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <a onClick={closeMenu}>MENU</a>
+            </a>
+            <span className="px-4">|</span>
+            <Link href="./order">
+              <a onClick={closeMenu}>ORDER</a>
+            </Link>
+            <span className="px-4">|</span>
+            <Link href="./about">
+              <a onClick={closeMenu}>ABOUT</a>
+            </Link>
+            <span className="px-4">|</span>
+            <Link href="./contact">
+              <a onClick={closeMenu}>CONTACT</a>
+            </Link>
+            <span className="px-4">|</span>
+          </span>
+          <span className="text-white">
             <a
               href="https://www.facebook.com/Cotamrestaurant/"
               target="_blank"
@@ -109,17 +111,16 @@ function MyApp({ Component, pageProps }) {
               <FontAwesomeIcon icon={faInstagram} width="40px" />
             </a>
           </span>
-        </span>
-
-        <span className="md2:hidden mt-1 pl-2 pr-2">
-          <button onClick={handleOpen}>
-            <FontAwesomeIcon
-              icon={open ? faXmark : faBars}
-              size="xl"
-              className="text-white"
-            />
-          </button>
-        </span>
+          <span className="md2:hidden mt-1 pl-4 pr-2">
+            <button onClick={handleOpen}>
+              <FontAwesomeIcon
+                icon={open ? faXmark : faBars}
+                size="xl"
+                className="text-white"
+              />
+            </button>
+          </span>
+        </div>
       </nav>
 
       <div id="Dropdown">

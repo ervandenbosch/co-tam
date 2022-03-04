@@ -7,7 +7,7 @@ export default function Order() {
         <title>Order at Cô Tâm</title>
       </Head>
       ;
-      <div className="flex flex-col justify-center bg-white pt-[76px]">
+      <div className="flex flex-col justify-center bg-white pt-[64px]">
         <div className="m-auto py-24">
           <a
             href="https://weborder-eu.spont.cash/widget/?key=fa9610655bd04ad896c4fcb6a5c49bc9&source=direct&autoopen=pickup"
