@@ -1,9 +1,13 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import Head from "next/head";
 
 export default function About() {
   return (
     <>
+      <Head>
+        <title>About Cô Tâm</title>
+      </Head>
       <h1 className="mt-[64px] pt-8 text-center text-3xl font-bold">
         Our story
       </h1>

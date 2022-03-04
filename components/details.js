@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import location from "../public/location.jpg";
 
 export function Details() {
   return (

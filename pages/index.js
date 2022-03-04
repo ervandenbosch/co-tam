@@ -25,7 +25,7 @@ export default function Home() {
         style={{
           background: "#efefef",
           borderRadius: 2,
-          padding: 12,
+          padding: 8,
           paddingBottom: 18,
           display: "block",
           textAlign: "center",
@@ -89,6 +89,11 @@ export default function Home() {
     <div className="">
       <Head>
         <meta charset="UTF-8" />
+        <title>Home of Cô Tâm Vietnamees Restaurant Haarlem</title>
+        <meta
+          name="description"
+          content="Welkom bij Cô Tâm Vietnamees restaurant. De authentieke Vietnamese keuken in het centrum van Haarlem. Geniet van heerlijk Vietnamees eten aan het Spaarne."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <main>
