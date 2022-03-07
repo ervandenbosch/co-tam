@@ -23,14 +23,15 @@ export default function Home() {
     return (
       <div
         style={{
-          background: "#efefef",
+          background: "url('./bg-dark.png.webp') no-repeat fixed",
+          backgroundSize: "cover",
           borderRadius: 2,
-          padding: 8,
-          paddingBottom: 32,
-          paddingTop: 20,
+          paddingBottom: 48,
+          paddingTop: 26,
           display: "block",
           textAlign: "center",
           margin: "auto",
+          color: "white",
         }}
       >
         {status === "sending" && (
@@ -49,12 +50,18 @@ export default function Home() {
           />
         )}
         <h2 className="py-4 text-xl font-bold">STAY UP TO DATE</h2>
-        <p className="px-24 pb-2 text-center sm:px-12">
+        <p className="m-auto w-[60vw] pb-4 text-center">
           Be among the first to receive our latest updates and special deals.
         </p>
         <div className="pt-3">
           <input
-            style={{ fontSize: "1em", padding: 5 }}
+            style={{
+              fontSize: "1em",
+              padding: 5,
+              background: "transparent",
+              border: "1px solid white",
+              borderRadius: "5px",
+            }}
             ref={(node) => (name = node)}
             type="text"
             placeholder="Your name"
@@ -63,7 +70,13 @@ export default function Home() {
         <br />
         <div className="">
           <input
-            style={{ fontSize: "1em", padding: 5 }}
+            style={{
+              fontSize: "1em",
+              padding: 5,
+              borderRadius: "5px",
+              background: "transparent",
+              border: "1px solid white",
+            }}
             ref={(node) => (email = node)}
             type="email"
             placeholder="Your email"
@@ -168,12 +181,13 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className="m-auto pl-4 pr-8 md:mt-8">
+        <div className="relative z-0 m-auto pl-4 pr-8 md:mt-8">
           <Carousel
             autoPlay
             centerMode
             dynamicHeight
             centerSlidePercentage={80}
+            swipeable
           >
             <div className="max-h-[400px]">
               <img src="/about-1.webp" height="100vh" width="auto" />

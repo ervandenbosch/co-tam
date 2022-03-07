@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import Swal from "sweetalert2";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 
 export default function Contact() {
@@ -49,34 +49,44 @@ export default function Contact() {
           or any suggestion would be appreciated for our improvement.
         </p>
         <Form onSubmit={handleSubmit}>
-          Email
+          Email*
           <Form.Field
             id="form-input-control-email"
             control={Input}
-            name="user_email"
+            name="email"
             placeholder=" Email…"
             required
             icon="mail"
             iconPosition="left"
             className="my-2 rounded-md border-2"
           />
-          Name
+          Name*
           <Form.Field
-            id="form-input-control-last-name"
+            id="form-input-control-name"
             control={Input}
-            name="user_name"
+            name="name"
             placeholder=" Name…"
             required
             icon="user circle"
             iconPosition="left"
             className="my-2 rounded-md border-2"
           />
-          Message
+          Phone number*
+          <Form.Field
+            id="form-input-control-phone"
+            control={Input}
+            name="phone"
+            placeholder=" Phone number…"
+            required
+            icon="user circle"
+            iconPosition="left"
+            className="my-2 rounded-md border-2"
+          />
+          Message*
           <Form.Field
             id="form-textarea-control-opinion"
             control={TextArea}
-            label=""
-            name="user_message"
+            name="message"
             placeholder=" Text here.."
             required
             className="my-2 rounded-md border-2"

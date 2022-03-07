@@ -14,6 +14,10 @@ import { useRouter } from "next/router";
 
 import * as ga from "../lib/ga";
 
+export function reportWebVitals(metric) {
+  console.log(metric);
+}
+
 function MyApp({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
 
