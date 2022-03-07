@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <div className="relative flex w-full flex-row justify-around border-t bg-white py-8 text-center text-sm font-bold text-gray-600 sm:px-8 sm:text-xs">
+    <div className="relative flex w-full flex-row justify-around border-t bg-white py-8 text-center text-sm font-bold text-gray-600 sm:text-xs">
       <div className="flex flex-row sm:flex-wrap">
         <div>
           <FontAwesomeIcon
