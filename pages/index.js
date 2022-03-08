@@ -23,7 +23,7 @@ export default function Home() {
     return (
       <div
         style={{
-          background: "url('./bg-dark.png.webp') no-repeat fixed",
+          background: "url('./bg-dark.png.webp') no-repeat center",
           backgroundSize: "cover",
           borderRadius: 2,
           paddingBottom: 48,
