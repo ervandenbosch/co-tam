@@ -1,19 +1,14 @@
-import { useState } from "react";
 import Head from "next/head";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
+import { config } from "/config";
 
 export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
-        e.target,
-        process.env.USER_ID
-      )
+      .sendForm(config.SERVICE_ID, config.TEMPLATE_ID, e.target, config.USER_ID)
       .then(
         (result) => {
           console.log(result.text);
