@@ -117,10 +117,10 @@ export default function Home() {
           id="top"
           style={{ backgroundImage: "url('./bg-orig2.jpg.webp')" }}
         >
-          <div className="lg2:w-1/2 m-auto mb-2 w-2/3 pt-[72px] sm:w-4/5">
+          <div className="m-auto mb-2 mt-[72px] w-2/3 lg2:w-1/2 sm:w-4/5">
             <img src="./cotamlogo.webp" />
           </div>
-          <div className="sm:text-md m-auto px-48 text-center text-xl text-white sm:px-10 md:px-16 md:text-lg">
+          <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welcome to the Authentic Vietnamese restaurant Cô Tâm in Haarlem. We
             are open for takeaway and delivery. We are open for table
             reservations. Call
@@ -131,7 +131,7 @@ export default function Home() {
           </div>
           <div className="py-10 text-center sm:px-14 sm:pb-12">
             <Link href="./order">
-              <button className="sm2:mr-4 w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm:mb-8 sm:w-full">
+              <button className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:mb-8 sm:w-full">
                 Order
               </button>
             </Link>
@@ -141,7 +141,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="sm2:ml-4 mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm:w-full">
+              <button className="mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:w-full">
                 See menu
               </button>
             </a>

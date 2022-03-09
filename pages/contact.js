@@ -2,11 +2,8 @@ import Head from "next/head";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
-import { useState } from "react";
 
 export default function Contact() {
-  const [previewText, setPreviewText] = useState(" ...");
-
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -53,21 +50,6 @@ export default function Contact() {
         <p className=" py-2 text-sm">Note: All input fields are required.</p>
         <div className="w-full pt-6">
           <Form onSubmit={handleSubmit}>
-            Email
-            <Form.Field
-              id="form-input-control-email"
-              control={Input}
-              name="email"
-              placeholder={previewText}
-              required
-              icon="mail"
-              iconPosition="left"
-              className="my-1 mb-4 rounded-md border-2 "
-              style={{
-                padding: 5,
-                paddingLeft: 3,
-              }}
-            />
             Name
             <Form.Field
               id="form-input-control-name"
@@ -83,6 +65,19 @@ export default function Contact() {
                 paddingLeft: 3,
               }}
             />
+            Email
+            <Form.Field
+              id="form-input-control-email"
+              control={Input}
+              name="email"
+              placeholder=" ..."
+              required
+              className="text-yellow my-1 mb-4 rounded-md border-2 focus:placeholder:text-transparent"
+              style={{
+                padding: 5,
+                paddingLeft: 3,
+              }}
+            />
             Phone number
             <Form.Field
               id="form-input-control-phone"
@@ -90,8 +85,6 @@ export default function Contact() {
               name="phone"
               placeholder=" ..."
               required
-              icon="user circle"
-              iconPosition="left"
               className="my-1 mb-4 rounded-md border-2"
               style={{
                 padding: 5,
