@@ -105,14 +105,14 @@ function MyApp({ Component, pageProps }) {
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faFacebook} width="40px" />
+              <FontAwesomeIcon icon={faFacebook} width="40px" size="lg" />
             </a>
             <a
               href="https://www.instagram.com/cotam.restaurant/?hl=en"
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faInstagram} width="40px" />
+              <FontAwesomeIcon icon={faInstagram} width="40px" size="lg" />
             </a>
           </span>
           <span className="md2:hidden pl-4 pr-2">
@@ -140,7 +140,7 @@ function MyApp({ Component, pageProps }) {
         style={{ textAlign: "center", fontSize: "14px" }}
         buttonStyle={{
           marginRight: "50px",
-          padding: "10px",
+          padding: 8,
           textAlign: "center",
         }}
         expires={150}

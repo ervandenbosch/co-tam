@@ -25,15 +25,16 @@ export default function Order() {
           </p>
         </div>
         <div className="bg-gray-600 py-12 text-center">
-          <h2 className="px-8 pb-4 text-2xl font-bold text-white">
-            Enjoyed our food at Cô Tâm? Let us know below!
+          <h2 className="px-8 pb-12 text-2xl font-bold text-white">
+            Enjoyed our food at Cô Tâm? Let us know below at your favorite
+            platform!
           </h2>
           <a
             href="https://www.facebook.com/Cotamrestaurant/reviews/"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="box-shadow m-2 w-[200px] rounded-lg bg-[#F7C12F] p-2 text-center">
+            <button className="m-2 w-[200px] rounded-lg bg-[#F7C12F] p-2 text-center">
               Facebook
             </button>
           </a>
@@ -42,7 +43,7 @@ export default function Order() {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="box-shadow m-2 w-[200px] rounded-lg bg-[#F7C12F] p-2 text-center">
+            <button className="m-2 w-[200px] rounded-lg bg-[#F7C12F] p-2 text-center">
               Google
             </button>
           </a>
@@ -51,7 +52,7 @@ export default function Order() {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="box-shadow m-2 w-[200px] rounded-lg bg-[#F7C12F] p-2 text-center">
+            <button className="m-2 w-[200px] rounded-lg bg-[#F7C12F] p-2 text-center">
               Tripadvisor
             </button>
           </a>

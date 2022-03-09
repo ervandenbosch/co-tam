@@ -113,14 +113,14 @@ export default function Home() {
       </Head>
       <main>
         <div
-          className="bg local w-full bg-cover bg-no-repeat"
+          className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat sm:h-screen"
           id="top"
           style={{ backgroundImage: "url('./bg-orig2.jpg.webp')" }}
         >
-          <div className="lg2:w-1/2 m-auto mb-2 w-2/3 pt-[72px] sm:w-3/4">
+          <div className="lg2:w-1/2 m-auto mb-2 w-2/3 pt-[72px] sm:w-4/5">
             <img src="./cotamlogo.webp" />
           </div>
-          <div className="sm:text-md m-auto px-32 text-center text-xl text-white sm:px-10 md:px-16 md:text-lg">
+          <div className="sm:text-md m-auto px-48 text-center text-xl text-white sm:px-10 md:px-16 md:text-lg">
             Welcome to the Authentic Vietnamese restaurant Cô Tâm in Haarlem. We
             are open for takeaway and delivery. We are open for table
             reservations. Call
@@ -129,9 +129,9 @@ export default function Home() {
             </Link>
             during opening hours to reserve a table.
           </div>
-          <div className="py-8 text-center sm:px-14">
+          <div className="py-10 text-center sm:px-14 sm:pb-12">
             <Link href="./order">
-              <button className="sm2:mr-4 w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm:mb-4 sm:w-full">
+              <button className="sm2:mr-4 w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm:mb-8 sm:w-full">
                 Order
               </button>
             </Link>

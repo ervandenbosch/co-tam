@@ -2,13 +2,17 @@ import Head from "next/head";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
-import { config } from "/config";
 
 export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(config.SERVICE_ID, config.TEMPLATE_ID, e.target, config.USER_ID)
+      .sendForm(
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
+        e.target,
+        process.env.USER_ID
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -44,40 +48,52 @@ export default function Contact() {
           or any suggestion would be appreciated for our improvement.
         </p>
         <Form onSubmit={handleSubmit}>
-          Email*
+          Email *
           <Form.Field
             id="form-input-control-email"
             control={Input}
             name="email"
-            placeholder=" Email…"
+            placeholder=" …"
             required
             icon="mail"
             iconPosition="left"
             className="my-2 rounded-md border-2"
+            style={{
+              padding: 5,
+              paddingLeft: 1,
+            }}
           />
-          Name*
+          Name *
           <Form.Field
             id="form-input-control-name"
             control={Input}
             name="name"
-            placeholder=" Name…"
+            placeholder=" …"
             required
             icon="user circle"
             iconPosition="left"
             className="my-2 rounded-md border-2"
+            style={{
+              padding: 5,
+              paddingLeft: 1,
+            }}
           />
-          Phone number*
+          Phone number *
           <Form.Field
             id="form-input-control-phone"
             control={Input}
             name="phone"
-            placeholder=" Phone number…"
+            placeholder=" …"
             required
             icon="user circle"
             iconPosition="left"
             className="my-2 rounded-md border-2"
+            style={{
+              padding: 5,
+              paddingLeft: 1,
+            }}
           />
-          Message*
+          Message *
           <Form.Field
             id="form-textarea-control-opinion"
             control={TextArea}
@@ -85,11 +101,19 @@ export default function Contact() {
             placeholder=" Text here.."
             required
             className="my-2 rounded-md border-2"
+            style={{
+              padding: 5,
+              paddingLeft: 1,
+            }}
           />
           <Button
             type="submit"
             color="green"
             className="rounded-md border bg-yellow-400 py-2 px-4"
+            style={{
+              padding: 5,
+              paddingLeft: 1,
+            }}
           >
             Submit
           </Button>
