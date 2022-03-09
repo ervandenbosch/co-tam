@@ -117,7 +117,7 @@ export default function Home() {
           id="top"
           style={{ backgroundImage: "url('./bg-orig2.jpg.webp')" }}
         >
-          <div className="m-auto mb-2 mt-[94px] w-2/3 lg2:w-1/2 sm:w-full sm:px-2">
+          <div className="m-auto mb-2 mt-[84px] w-2/3 lg2:w-1/2 sm:w-full sm:px-2">
             <img src="./cotamlogo.webp" />
           </div>
           <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
