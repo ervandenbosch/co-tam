@@ -140,7 +140,7 @@ function MyApp({ Component, pageProps }) {
         style={{ textAlign: "center", fontSize: "14px" }}
         buttonStyle={{
           marginRight: "50px",
-          padding: 8,
+          padding: "10px",
           textAlign: "center",
         }}
         expires={150}
