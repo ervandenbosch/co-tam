@@ -110,8 +110,9 @@ export default function Contact() {
               className="rounded-md border bg-yellow-400 py-2 px-4"
               style={{
                 padding: 5,
-                paddingLeft: 12,
-                paddingRight: 12,
+                paddingLeft: 14,
+                paddingRight: 14,
+                marginTop: 12,
               }}
             >
               Submit

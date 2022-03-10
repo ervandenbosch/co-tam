@@ -12,18 +12,22 @@ export function Details() {
         <b>Directions to Cô Tâm Restaurant</b>
         <br />
         The nearest bus stop is
-        <Link href="https://www.google.com/maps/dir/verwulft+haarlem+bus/@52.3886846,4.6217076,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47c5ef6b265bb9f3:0xec91f5ae73f24209!2m2!1d4.632842!2d52.3801086!3e3">
+        <a
+          href="https://www.google.com/maps/place/Centrum%2FVerwulft/@52.380401,4.63256,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5ef6b2f741257:0x70b30bb02f11ff82!8m2!3d52.380401!4d4.63256"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <a className="text-yellow-500"> Centrum/Verwulft</a>
-        </Link>
+        </a>
         <br />
         The nearest parking garage is
-        <Link
-          href="https://www.google.com/maps/dir/Parkeergarage+de+Kamp,+De+Kamp,+De+Witstraat,+Haarlem/@52.3886846,4.6217076,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47c5ef6a0bd632a5:0xc5b40fd003a4c966!2m2!1d4.636914!2d52.3774229!3e3"
+        <a
+          href="https://www.google.com/maps/place/Parkeergarage+de+Kamp/@52.3774357,4.6281807,15z/data=!3m1!4b1!4m5!3m4!1s0x47c5ef6a0bd632a5:0xc5b40fd003a4c966!8m2!3d52.3772006!4d4.6370498"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <a className="text-yellow-500"> De Kamp</a>
-        </Link>
+        </a>
         <br />
         <br />
         <b>Phone number:</b> <br />
@@ -51,19 +55,30 @@ export function Details() {
           <li className="py-1">16:00 - 21:30</li>
         </ul>
       </div>
-      <div className="mt-4 flex flex-col sm:mt-2 md:mt-6 md:p-8">
-        <img
-          src="./location.jpg"
-          alt="cotam-location"
-          width="320"
-          height="230"
-        />
+      <div className="mt-6 flex flex-col md:m-8 sm:mt-2">
         <Link
           href="https://www.google.com/maps/place/C%C3%B4+T%C3%A2m+Restaurant/@52.3791754,4.6353804,16.33z/data=!4m12!1m6!3m5!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!2zQ8O0IFTDom0gUmVzdGF1cmFudA!8m2!3d52.3783644!4d4.6377021!3m4!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!8m2!3d52.3783644!4d4.6377021?authuser=1"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
-          <button className="m-auto mt-8 w-[100px] rounded-lg bg-[#F7C12F] p-2 text-center text-black">
+          <button alt="directions to co tam">
+            <img
+              src="/images/location.webp"
+              alt="location co tam restaurant"
+              width="300"
+              height="220"
+            />
+          </button>
+        </Link>
+        <Link
+          href="https://www.google.com/maps/place/C%C3%B4+T%C3%A2m+Restaurant/@52.3791754,4.6353804,16.33z/data=!4m12!1m6!3m5!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!2zQ8O0IFTDom0gUmVzdGF1cmFudA!8m2!3d52.3783644!4d4.6377021!3m4!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!8m2!3d52.3783644!4d4.6377021?authuser=1"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <button
+            className="m-auto mt-6 w-[100px] rounded-lg bg-[#F7C12F] p-2 text-center text-black"
+            alt="directions to co tam"
+          >
             Go to maps
           </button>
         </Link>

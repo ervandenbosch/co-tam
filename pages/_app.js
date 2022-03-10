@@ -2,7 +2,8 @@ import "../styles/globals.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import navbarlogo from "../public/navbarlogo.webp";
+import Head from "next/head";
+import navbarlogo from "../public/images/navbarlogo.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "../components/dropdown";
@@ -67,6 +68,15 @@ function MyApp({ Component, pageProps }) {
           gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
         `}
       </Script>
+      <Head>
+        <meta charset="UTF-8" />
+        <meta
+          name="keywords"
+          content="Cô Tâm restaurant, vietnamese, vietnamees, restaurant, haarlem, authentiek"
+        />
+        <meta name="author" content="Cô Tâm" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <nav
         className="
         fixed top-0 flex h-[64px] w-full flex-row flex-nowrap justify-between bg-black p-4"
@@ -84,7 +94,7 @@ function MyApp({ Component, pageProps }) {
             </Link>
             <span className="px-4">|</span>
             <a
-              href="/menu.pdf"
+              href="/files/menu.pdf"
               alt="alt text"
               target="_blank"
               rel="noopener noreferrer"

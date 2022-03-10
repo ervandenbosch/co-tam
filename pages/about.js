@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export default function About() {
   return (
-    <>
+    <div className="m-auto lg2:w-4/5">
       <Head>
         <title>About Cô Tâm</title>
       </Head>
@@ -39,25 +39,34 @@ export default function About() {
             of a hard working couple.
           </p>
         </div>
-        <div className="m-auto w-1/2 pl-4 pr-8 sm:w-2/3 md:mt-12">
-          <Carousel
-            autoPlay
-            swipeable
-            emulateTouch
-            infiniteLoop
-            centerMode
-            dynamicHeight
-            centerSlidePercentage={80}
-            stopOnHover
-          >
+        <div className="m-auto w-1/2 pl-4 pr-8 md:mt-12 sm:w-4/5">
+          <Carousel dynamicHeight labels autoPlay centerMode swipeable>
             <div>
-              <img src="/about-1.webp" />
+              <img
+                src="/images/about-1.webp"
+                style={{
+                  maxHeight: 500,
+                  zIndex: -2,
+                }}
+              />
             </div>
             <div>
-              <img src="/carousel2.webp" />
+              <img
+                src="/images/carousel2.webp"
+                style={{
+                  maxHeight: 500,
+                  zIndex: -2,
+                }}
+              />
             </div>
             <div>
-              <img src="/carousel4.webp" />
+              <img
+                src="/images/carousel4.webp"
+                style={{
+                  maxHeight: 500,
+                  zIndex: -2,
+                }}
+              />
             </div>
           </Carousel>
         </div>
@@ -71,6 +80,6 @@ export default function About() {
         </p>
         <p className="text-md pb-8 text-gray-200">-Tam Nguyenova-</p>
       </div>
-    </>
+    </div>
   );
 }
