@@ -34,6 +34,11 @@ module.exports = {
         destination: "/order",
         permanent: true,
       },
+      {
+        source: "/pages/order-takeaway",
+        destination: "/order",
+        permanent: true,
+      },
     ];
   },
 };
