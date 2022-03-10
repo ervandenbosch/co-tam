@@ -175,15 +175,16 @@ export default function Home() {
           <div className="">
             <Testimonials />
           </div>
-          <Link
+          <a
             href="https://www.google.com/maps/place/C%C3%B4+T%C3%A2m+Restaurant/@52.3783644,4.6355134,17z/data=!4m7!3m6!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!8m2!3d52.3783644!4d4.6377021!9m1!1b1"
             target="_blank"
             rel="noreferrer"
+            className="m-auto"
           >
             <button className="m-auto mt-10 w-[200px] rounded-lg border-2 bg-[#F7C12F] p-2 text-center text-gray-600">
               See all reviews
             </button>
-          </Link>
+          </a>
         </div>
         <div className="relative m-auto pl-4 pr-8 md:mt-8">
           <Carousel labels autoPlay centerMode swipeable>
