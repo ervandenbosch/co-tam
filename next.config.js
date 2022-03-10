@@ -7,8 +7,4 @@ module.exports = {
     SERVICE_ID: "service_u7hyqd6",
     GA_ID: "UA-180717693-1",
   },
-  images: {
-    loader: "imgix",
-    path: "/",
-  },
 };
