@@ -1,6 +1,7 @@
 import { reviews } from "../data/reviews";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 export default function Testimonials() {
@@ -14,7 +15,7 @@ export default function Testimonials() {
       {reviews.slice(0, 5).map((item, i) => (
         <div
           key={i}
-          className="w-60 overflow-hidden rounded-xl border border-slate-200 bg-white xs:w-48"
+          className="w-60 overflow-hidden rounded-xl border border-slate-200 bg-white sm:w-2/3"
         >
           <div className="relative flex flex-col justify-between">
             <div className="p-3">
@@ -29,10 +30,15 @@ export default function Testimonials() {
                     className="text-yellow-400"
                   />
                 ))}
+                <a href={item.user.link}>
+                  <button className="ml-2 text-red-600" alt="see full review">
+                    <FontAwesomeIcon icon={faGoogle} size="1x" />
+                  </button>
+                </a>
               </div>
             </div>
             <div>
-              <p className="text-justified m-auto p-3 text-sm text-gray-400 ">
+              <p className="text-justified m-auto px-3 pb-4 text-sm text-gray-400 ">
                 {!toggle && item.snippet.substring(0, 90)}{" "}
                 {item.snippet.length > 90 && !toggle && (
                   <button
