@@ -14,6 +14,16 @@ module.exports = {
         destination: "/files/menu.pdf",
         permanent: true,
       },
+      {
+        source: "/pages/menukaart",
+        destination: "/files/menu.pdf",
+        permanent: true,
+      },
+      {
+        source: "/pages/contact",
+        destination: "/contact",
+        permanent: true,
+      },
     ];
   },
 };
