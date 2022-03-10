@@ -11,12 +11,8 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { Details } from "../components/details";
 import CookieConsent from "react-cookie-consent";
 import { useRouter } from "next/router";
-
+import Script from "next/script";
 import * as ga from "../lib/ga";
-
-export function reportWebVitals(metric) {
-  console.log(metric);
-}
 
 function MyApp({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
@@ -49,11 +45,8 @@ function MyApp({ Component, pageProps }) {
     const handleRouteChange = (url) => {
       ga.pageview(url);
     };
-    //When the component is mounted, subscribe to router changes
-    //and log those page views
+
     router.events.on("routeChangeComplete", handleRouteChange);
-    // If the component is unmounted, unsubscribe
-    // from the event with the `off` method
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
@@ -61,13 +54,26 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className="min-h-screen" id="app">
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+        `}
+      </Script>
       <nav
         className="
         fixed top-0 flex h-[64px] w-full flex-row flex-nowrap justify-between bg-black p-4"
         id="navbar"
       >
         <Link href="./">
-          <a className="lg2:ml-4 mr-1 self-start" onClick={closeMenu}>
+          <a className="mr-1 self-start lg2:ml-4" onClick={closeMenu}>
             <Image src={navbarlogo} placeholder="blur" width="90" height="30" />
           </a>
         </Link>
@@ -115,7 +121,7 @@ function MyApp({ Component, pageProps }) {
               <FontAwesomeIcon icon={faInstagram} width="40px" size="lg" />
             </a>
           </span>
-          <span className="md2:hidden pl-4 pr-2">
+          <span className="pl-4 pr-2 md2:hidden">
             <button onClick={handleOpen}>
               <FontAwesomeIcon
                 icon={open ? faXmark : faBars}
