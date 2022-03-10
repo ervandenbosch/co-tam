@@ -7,4 +7,13 @@ module.exports = {
     SERVICE_ID: "service_u7hyqd6",
     NEXT_PUBLIC_GA_ID: "G-HFN3SJJB67",
   },
+  async redirects() {
+    return [
+      {
+        source: "/pages/menu",
+        destination: "/files/menu.pdf",
+        permanent: true,
+      },
+    ];
+  },
 };
