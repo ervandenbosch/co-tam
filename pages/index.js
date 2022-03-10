@@ -3,6 +3,7 @@ import Head from "next/head";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import Testimonials from "../components/testimonials";
 
 export default function Home() {
   const url =
@@ -167,17 +168,20 @@ export default function Home() {
             <img src="/images/img-2.webp" className="rounded-2xl" />
           </div>
         </div>
-        <div className="flex flex-col border-t-2 border-black bg-white py-16 md:w-full">
-          <h2 className="px-8 text-center text-2xl font-bold text-black">
-            What our customers say about us
+        <div className="flex flex-col border-t-2 border-black bg-white pb-10 md:w-full">
+          <h2 className="p-12 text-center text-2xl font-bold text-black">
+            What our customers say about us on Google
           </h2>
+          <div className="">
+            <Testimonials />
+          </div>
           <Link
             href="https://www.google.com/maps/place/C%C3%B4+T%C3%A2m+Restaurant/@52.3783644,4.6355134,17z/data=!4m7!3m6!1s0x47c5ef611944cb6f:0x18c54ffd336c3bac!8m2!3d52.3783644!4d4.6377021!9m1!1b1"
             target="_blank"
             rel="noreferrer"
           >
             <button className="m-auto mt-10 w-[200px] rounded-lg border-2 bg-[#F7C12F] p-2 text-center text-gray-600">
-              Go to reviews
+              See all reviews
             </button>
           </Link>
         </div>
