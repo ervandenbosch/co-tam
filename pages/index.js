@@ -117,7 +117,7 @@ export default function Home() {
           id="top"
           style={{ backgroundImage: "url('./bg-orig2.jpg.webp')" }}
         >
-          <div className="m-auto mt-[72px] w-2/3 lg2:w-1/2 sm:mt-[84px] sm:w-full sm:px-2">
+          <div className="m-auto mt-[72px] w-2/3 lg2:w-1/2 sm:mt-[90px] sm:w-full sm:px-2">
             <img src="./cotamlogo.webp" />
           </div>
           <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
@@ -129,7 +129,7 @@ export default function Home() {
             </Link>
             during opening hours to reserve a table.
           </div>
-          <div className="py-10 text-center sm:px-14 sm:pb-12">
+          <div className="py-10 text-center sm:mb-12 sm:px-14">
             <Link href="./order">
               <button className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:mb-8 sm:w-full">
                 Order
