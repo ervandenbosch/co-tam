@@ -24,6 +24,11 @@ module.exports = {
         destination: "/contact",
         permanent: true,
       },
+      {
+        source: "/pages/about",
+        destination: "/about",
+        permanent: true,
+      },
     ];
   },
 };
