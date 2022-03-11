@@ -25,7 +25,8 @@ export default function Home() {
     return (
       <div
         style={{
-          background: "url('images/bg-dark.png.webp') no-repeat center",
+          background:
+            "url('https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/bg-dark.png.webp') no-repeat center",
           backgroundSize: "cover",
           borderRadius: 2,
           paddingBottom: 48,
@@ -116,11 +117,14 @@ export default function Home() {
         <div
           className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat sm:h-screen"
           id="top"
-          style={{ backgroundImage: "url('/images/bg-orig2.jpg.webp')" }}
+          style={{
+            backgroundImage:
+              "url('https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/bg-orig2.jpg.webp')",
+          }}
         >
           <div className="m-auto mt-[72px] w-2/3 lg2:w-1/2 sm:mt-[90px] sm:w-full sm:px-2">
             <img
-              src="/images/cotamlogo.webp"
+              src={cdnImage("cotamlogo.webp")}
               alt="co tam vietnamese restaurant logo"
             />
           </div>

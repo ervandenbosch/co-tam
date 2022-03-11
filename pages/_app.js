@@ -147,7 +147,10 @@ function MyApp({ Component, pageProps }) {
               alt="co tam restaurant tripadvisor"
               className="inline-block px-3"
             >
-              <img src="images/tripadvisorwhite.png" width="22px" />
+              <img
+                src="https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/tripadvisorwhite.png"
+                width="22px"
+              />
             </a>
           </span>
           <span className="pl-4 pr-2 md2:hidden">

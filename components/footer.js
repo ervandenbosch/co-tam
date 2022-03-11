@@ -55,7 +55,7 @@ export function Footer() {
               alt="co tam tripadvisor"
             >
               <img
-                src="/images/tripadvisor.png"
+                src="https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/tripadvisor.png"
                 alt="tripadvisor co tam"
                 width="21px"
               />
