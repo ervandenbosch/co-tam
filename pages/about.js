@@ -45,6 +45,7 @@ export default function About() {
             <div>
               <img
                 src={cdnImage("about-1.webp")}
+                alt="vietnamese cuisine"
                 style={{
                   maxHeight: 500,
                   zIndex: -2,
@@ -54,6 +55,7 @@ export default function About() {
             <div>
               <img
                 src={cdnImage("carousel2.webp")}
+                alt="vietnamese cuisine"
                 style={{
                   maxHeight: 500,
                   zIndex: -2,
@@ -63,6 +65,7 @@ export default function About() {
             <div>
               <img
                 src={cdnImage("carousel4.webp")}
+                alt="vietnamese cuisine"
                 style={{
                   maxHeight: 500,
                   zIndex: -2,

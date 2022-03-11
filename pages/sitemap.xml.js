@@ -1,57 +1,38 @@
-import fs from "fs";
-
-const Sitemap = () => {};
-
-export const getServerSideProps = ({ res }) => {
-  const baseUrl = {
-    development: "http://localhost:3000",
-    production: "https://cotam.nl",
-  }[process.env.NODE_ENV];
-
-  const staticPages = fs
-    .readdirSync(
-      {
-        development: "pages",
-        production: "pages",
-      }[process.env.NODE_ENV]
-    )
-    .filter((staticPage) => {
-      return ![
-        ".DS_Store",
-        "_app.js",
-        "404.js",
-        "500.js",
-        "sitemap.xml.js",
-      ].includes(staticPage);
-    })
-    .map((staticPagePath) => {
-      return `${baseUrl}/${staticPagePath}`;
-    });
-
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${staticPages
-        .map((url) => {
-          return `
-            <url>
-              <loc>${url}</loc>
-              <lastmod>${new Date().toISOString()}</lastmod>
-              <changefreq>monthly</changefreq>
-              <priority>1.0</priority>
-            </url>
-          `;
-        })
-        .join("")}
-    </urlset>
-  `;
-
-  res.setHeader("Content-Type", "text/xml");
-  res.write(sitemap);
-  res.end();
-
-  return {
-    props: {},
-  };
-};
-
-export default Sitemap;
+<xml version="1.0" encoding="UTF-8">
+  <urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+  >
+    <url>
+      <loc>https://cotam.nl/</loc>
+      <lastmod>2022-03-11T10:07:02+00:00</lastmod>
+      <priority>1.00</priority>
+    </url>
+    <url>
+      <loc>https://cotam.nl/files/menu.pdf</loc>
+      <lastmod>2022-03-11T10:07:02+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>https://cotam.nl/order</loc>
+      <lastmod>2022-03-11T10:07:02+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>https://cotam.nl/about</loc>
+      <lastmod>2022-03-11T10:07:02+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>https://cotam.nl/contact</loc>
+      <lastmod>2022-03-11T10:07:02+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>https://cotam.nl/privacy-policy</loc>
+      <lastmod>2022-03-11T10:07:02+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+  </urlset>
+</xml>;

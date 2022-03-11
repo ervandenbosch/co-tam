@@ -33,7 +33,10 @@ export default function Testimonials() {
                     />
                   ))}
                   <a href={item.user.link}>
-                    <button className="mx-2 text-red-600" alt="see full review">
+                    <button
+                      className="mx-2 text-red-600 hover:text-blue-400"
+                      alt="see full review "
+                    >
                       <FontAwesomeIcon icon={faGoogle} size="1x" />
                     </button>
                   </a>
@@ -45,7 +48,7 @@ export default function Testimonials() {
                   {!toggle && item.snippet.substring(0, 90)}{" "}
                   {item.snippet.length > 90 && !toggle && (
                     <button
-                      className="text-xs font-bold text-blue-400"
+                      className="text-xs font-bold text-blue-400 hover:text-red-500"
                       onClick={handleToggle}
                       alt="read full description"
                     >
@@ -56,7 +59,7 @@ export default function Testimonials() {
                   {toggle && item.snippet}
                   {toggle && (
                     <button
-                      className="ml-2 text-xs font-bold text-blue-400"
+                      className="ml-2 text-xs font-bold text-blue-400 hover:text-red-500"
                       onClick={handleToggle}
                       alt="close description"
                     >

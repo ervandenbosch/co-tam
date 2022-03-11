@@ -84,7 +84,13 @@ function MyApp({ Component, pageProps }) {
       >
         <Link href="./">
           <a className="mr-1 self-start lg2:ml-4" onClick={closeMenu}>
-            <Image src={navbarlogo} placeholder="blur" width="90" height="30" />
+            <Image
+              src={navbarlogo}
+              placeholder="blur"
+              width="90"
+              height="30"
+              alt="co tam homepage logo"
+            />
           </a>
         </Link>
         <div className="mt-1">
@@ -95,7 +101,7 @@ function MyApp({ Component, pageProps }) {
             <span className="px-4">|</span>
             <a
               href="/files/menu.pdf"
-              alt="alt text"
+              alt="menu co tam"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -89,7 +89,7 @@ export default function Home() {
             fontSize: "1em",
             backgroundColor: "#F7C12F",
           }}
-          className="rounded-lg px-4 py-2"
+          className="rounded-lg px-4 py-2 shadow-md hover:shadow-gray-500 "
           onClick={submit}
         >
           Submit
@@ -119,7 +119,10 @@ export default function Home() {
           style={{ backgroundImage: "url('/images/bg-orig2.jpg.webp')" }}
         >
           <div className="m-auto mt-[72px] w-2/3 lg2:w-1/2 sm:mt-[90px] sm:w-full sm:px-2">
-            <img src="/images/cotamlogo.webp" />
+            <img
+              src="/images/cotamlogo.webp"
+              alt="co tam vietnamese restaurant logo"
+            />
           </div>
           <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welcome to the Authentic Vietnamese restaurant Cô Tâm in Haarlem. We
@@ -192,7 +195,10 @@ export default function Home() {
             rel="noreferrer"
             className="m-auto"
           >
-            <button className="m-auto mt-10 w-[200px] rounded-lg border-2 bg-[#F7C12F] p-2 text-center text-gray-600">
+            <button
+              className="m-auto mt-10 w-[200px] rounded-lg border-2 bg-[#F7C12F] p-2 text-center text-gray-600 shadow-sm shadow-slate-300 hover:shadow-inner"
+              alt="see all google reviews "
+            >
               See all reviews
             </button>
           </a>
@@ -206,7 +212,7 @@ export default function Home() {
                 zIndex: -2,
               }}
             >
-              <img src={cdnImage("about-1.webp")} />
+              <img src={cdnImage("about-1.webp")} alt="vietnamese cuisine" />
             </div>
             <div
               id="slide2"
@@ -215,7 +221,7 @@ export default function Home() {
                 zIndex: -2,
               }}
             >
-              <img src={cdnImage("carousel2.webp")} />
+              <img src={cdnImage("carousel2.webp")} alt="vietnamese cuisine" />
             </div>
             <div
               id="slide3"
@@ -224,7 +230,7 @@ export default function Home() {
                 zIndex: -2,
               }}
             >
-              <img src={cdnImage("carousel4.webp")} />
+              <img src={cdnImage("carousel4.webp")} alt="vietnamese cuisine" />
             </div>
             <div
               id="slide4"
@@ -233,7 +239,7 @@ export default function Home() {
                 zIndex: -2,
               }}
             >
-              <img src={cdnImage("carousel5.webp")} />
+              <img src={cdnImage("carousel5.webp")} alt="vietnamese cuisine" />
             </div>
           </Carousel>
         </div>
