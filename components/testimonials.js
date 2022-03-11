@@ -17,7 +17,7 @@ export default function Testimonials() {
             className="w-60 overflow-hidden rounded-xl border border-slate-200 bg-white sm:w-2/3"
           >
             <div className=" flex flex-col justify-between">
-              <div className="p-3">
+              <div className="px-3 py-2">
                 <p className="xs:text-md pr-8 text-left text-lg font-semibold ">
                   {item.user.name}
                 </p>
@@ -25,17 +25,17 @@ export default function Testimonials() {
                   {[...Array(item.rating)].map((x, i) => (
                     <img
                       src="/images/star.svg"
-                      width="16px"
+                      width="20px"
                       key={i}
-                      className="text-yellow-400"
+                      className="inline-block pb-2 text-yellow-400"
                     />
                   ))}
                   <a href={item.user.link}>
                     <button
-                      className="mx-2 text-red-600 hover:text-blue-400"
+                      className="inline-block px-2 text-red-600 hover:text-blue-400"
                       alt="see full review "
                     >
-                      <img src="/images/google.svg" width="16px" />
+                      <img src="/images/google.svg" width="19px" />
                     </button>
                   </a>
                   <span className="text-xs">{item.date}..</span>
