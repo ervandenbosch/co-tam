@@ -18,7 +18,10 @@ export function Details() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <a className="text-yellow-500"> Centrum/Verwulft</a>
+          <a className="text-yellow-500 hover:text-blue-400">
+            {" "}
+            Centrum/Verwulft
+          </a>
         </a>
         <br />
         The nearest parking garage is
@@ -27,13 +30,13 @@ export function Details() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <a className="text-yellow-500"> De Kamp</a>
+          <a className="text-yellow-500 hover:text-blue-400"> De Kamp</a>
         </a>
         <br />
         <br />
         <b>Phone number:</b> <br />
         <Link href="tel:023-583-4384">
-          <a className="text-yellow-500">(023) 583 4384</a>
+          <a className="text-yellow-500 hover:text-blue-400">(023) 583 4384</a>
         </Link>
       </div>
       <div className="mb-4 mt-6 flex flex-row px-6 sm:mt-8">
@@ -77,7 +80,7 @@ export function Details() {
           target="_blank"
         >
           <button
-            className="m-auto mt-6 w-[100px] rounded-lg bg-[#F7C12F] p-2 text-center text-black"
+            className="m-auto mt-6 w-[100px] rounded-lg bg-[#F7C12F] p-2 text-center text-black hover:shadow-inner hover:shadow-gray-900"
             alt="directions to co tam"
           >
             Go to maps

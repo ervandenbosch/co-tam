@@ -89,7 +89,7 @@ export default function Home() {
             fontSize: "1em",
             backgroundColor: "#F7C12F",
           }}
-          className="rounded-lg px-4 py-2 shadow-md hover:shadow-gray-500 "
+          className="rounded-lg px-4 py-2 shadow-md hover:shadow-gray-500"
           onClick={submit}
         >
           Submit
@@ -128,8 +128,11 @@ export default function Home() {
             Welcome to the Authentic Vietnamese restaurant Cô Tâm in Haarlem. We
             are open for takeaway and delivery. We are open for table
             reservations. Call
-            <Link href="tel:023-583-4384">
-              <a className="text-yellow-500"> (023) 583 4384 </a>
+            <Link href="tel:023-583-4384" alt="co tam phone number">
+              <a className="text-yellow-500 hover:text-blue-400">
+                {" "}
+                (023) 583 4384{" "}
+              </a>
             </Link>
             during opening hours to reserve a table.
           </div>

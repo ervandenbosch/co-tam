@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export function Dropdown({ closeMenu }) {
   return (
@@ -47,6 +48,35 @@ export function Dropdown({ closeMenu }) {
               CONTACT
             </a>
           </Link>
+        </div>
+        <div className="border-t py-4 pb-5 text-center text-white">
+          <a
+            href="https://www.facebook.com/Cotamrestaurant/"
+            target="_blank"
+            rel="noreferrer"
+            alt="co tam restaurant facebook"
+            className="px-2"
+          >
+            <FontAwesomeIcon icon={faFacebook} size="lg" />
+          </a>
+          <a
+            href="https://www.instagram.com/cotam.restaurant/?hl=en"
+            target="_blank"
+            rel="noreferrer"
+            alt="co tam restaurant instagram"
+            className="px-2"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="lg" />
+          </a>
+          <a
+            href="https://www.tripadvisor.nl/Restaurant_Review-g188593-d21491723-Reviews-Co_Tam_Restaurant-Haarlem_North_Holland_Province.html"
+            target="_blank"
+            rel="noreferrer"
+            alt="co tam restaurant tripadvisor"
+            className="inline-block px-3"
+          >
+            <img src="images/tripadvisorwhite.png" width="23px" />
+          </a>
         </div>
       </div>
     </div>

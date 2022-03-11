@@ -121,20 +121,33 @@ function MyApp({ Component, pageProps }) {
             </Link>
             <span className="px-4">|</span>
           </span>
-          <span className="text-white">
+          <span className={open ? "hidden" : "text-white"}>
             <a
               href="https://www.facebook.com/Cotamrestaurant/"
               target="_blank"
               rel="noreferrer"
+              alt="co tam restaurant facebook"
+              className="px-2"
             >
-              <FontAwesomeIcon icon={faFacebook} width="40px" size="lg" />
+              <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
             <a
               href="https://www.instagram.com/cotam.restaurant/?hl=en"
               target="_blank"
               rel="noreferrer"
+              alt="co tam restaurant instagram"
+              className="px-2"
             >
-              <FontAwesomeIcon icon={faInstagram} width="40px" size="lg" />
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
+            </a>
+            <a
+              href="https://www.tripadvisor.nl/Restaurant_Review-g188593-d21491723-Reviews-Co_Tam_Restaurant-Haarlem_North_Holland_Province.html"
+              target="_blank"
+              rel="noreferrer"
+              alt="co tam restaurant tripadvisor"
+              className="inline-block px-3"
+            >
+              <img src="images/tripadvisorwhite.png" width="23px" />
             </a>
           </span>
           <span className="pl-4 pr-2 md2:hidden">
