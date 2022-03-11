@@ -4,11 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import navbarlogo from "../public/images/navbarlogo.webp";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "../components/dropdown";
 import { Footer } from "../components/footer";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 import { Details } from "../components/details";
 import CookieConsent from "react-cookie-consent";
 import { useRouter } from "next/router";
@@ -121,31 +121,31 @@ function MyApp({ Component, pageProps }) {
             </Link>
             <span className="px-4">|</span>
           </span>
-          <span className={open ? "hidden" : "text-white"}>
+          <span className={open ? "hidden" : ""}>
             <a
               href="https://www.facebook.com/Cotamrestaurant/"
               target="_blank"
               rel="noreferrer"
               alt="co tam restaurant facebook"
-              className="px-2"
+              className="inline-block px-3 pb-[1px]"
             >
-              <FontAwesomeIcon icon={faFacebook} size="md" />
+              <img src="images/facebook.svg" width="16px" />
             </a>
             <a
               href="https://www.instagram.com/cotam.restaurant/?hl=en"
               target="_blank"
               rel="noreferrer"
               alt="co tam restaurant instagram"
-              className="px-2"
+              className="inline-block px-3 pt-[1px]"
             >
-              <FontAwesomeIcon icon={faInstagram} size="sm:md" />
+              <img src="images/instagram.svg" width="16px" />
             </a>
             <a
               href="https://www.tripadvisor.nl/Restaurant_Review-g188593-d21491723-Reviews-Co_Tam_Restaurant-Haarlem_North_Holland_Province.html"
               target="_blank"
               rel="noreferrer"
               alt="co tam restaurant tripadvisor"
-              className="inline-block px-3"
+              className="inline-block px-3 pb-[3px]"
             >
               <img
                 src="https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/tripadvisorwhite.png"
@@ -153,12 +153,11 @@ function MyApp({ Component, pageProps }) {
               />
             </a>
           </span>
-          <span className="pl-4 pr-2 md2:hidden">
+          <span className="pl-5 pr-2 md2:hidden">
             <button onClick={handleOpen}>
-              <FontAwesomeIcon
-                icon={open ? faXmark : faBars}
-                size="xl"
-                className="text-white"
+              <img
+                src={open ? "/images/close.svg" : "/images/open.svg"}
+                width="20px"
               />
             </button>
           </span>
