@@ -4,8 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import navbarlogo from "../public/images/navbarlogo.webp";
-
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "../components/dropdown";
 import { Footer } from "../components/footer";
 

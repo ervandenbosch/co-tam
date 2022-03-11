@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 export function Footer() {
@@ -8,10 +5,10 @@ export function Footer() {
     <div className="relative flex w-full flex-row justify-around border-t bg-white py-8 text-center text-sm font-bold text-gray-600 sm:px-2 sm:text-xs">
       <div className="flex flex-row sm:flex-wrap">
         <div>
-          <FontAwesomeIcon
-            icon={faCopyright}
-            className="mx-2 inline-block"
-            width="14px"
+          <img
+            src="/images/copyright.svg"
+            className="mr-2 inline-block"
+            width="15px"
           />
           2022 Cô Tâm.
         </div>
@@ -19,33 +16,24 @@ export function Footer() {
       </div>
       <div className="flex flex-row sm:flex-wrap">
         Interact with Cô Tâm:
-        <div className="flex flex-row sm:mt-1">
+        <div className="flex flex-row pl-3 sm:mt-2">
           <a
             href="https://www.facebook.com/Cotamrestaurant/"
             target="_blank"
             rel="noreferrer"
             alt="co tam restaurant facebook"
-            className="mx-3 sm:mt-1"
+            className="mx-3"
           >
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="color-blue-400"
-              size="lg"
-            />
+            <img src="images/facebook-dark.svg" width="18px" />
           </a>
           <a
             href="https://www.instagram.com/cotam.restaurant/?hl=en"
             target="_blank"
             rel="noreferrer"
             alt="co tam restaurant instagram"
-            className="mr-3 sm:mt-1"
-            size="lg"
+            className="mr-3"
           >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="bg-color-purple"
-              size="lg"
-            />
+            <img src="images/instagram-dark.svg" width="16px" />
           </a>
           <span>
             <a
@@ -57,7 +45,7 @@ export function Footer() {
               <img
                 src="https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/tripadvisor.png"
                 alt="tripadvisor co tam"
-                width="21px"
+                width="18px"
               />
             </a>
           </span>

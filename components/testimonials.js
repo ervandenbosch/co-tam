@@ -1,7 +1,4 @@
 import { reviews } from "../data/reviews";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 export default function Testimonials() {
@@ -26,8 +23,9 @@ export default function Testimonials() {
                 </p>
                 <div id="rating">
                   {[...Array(item.rating)].map((x, i) => (
-                    <FontAwesomeIcon
-                      icon={faStar}
+                    <img
+                      src="/images/star.svg"
+                      width="16px"
                       key={i}
                       className="text-yellow-400"
                     />
@@ -37,7 +35,7 @@ export default function Testimonials() {
                       className="mx-2 text-red-600 hover:text-blue-400"
                       alt="see full review "
                     >
-                      <FontAwesomeIcon icon={faGoogle} size="1x" />
+                      <img src="/images/google.svg" width="16px" />
                     </button>
                   </a>
                   <span className="text-xs">{item.date}..</span>
