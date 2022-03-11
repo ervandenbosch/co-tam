@@ -129,7 +129,7 @@ function MyApp({ Component, pageProps }) {
               alt="co tam restaurant facebook"
               className="px-2"
             >
-              <FontAwesomeIcon icon={faFacebook} size="lg" />
+              <FontAwesomeIcon icon={faFacebook} size="md" />
             </a>
             <a
               href="https://www.instagram.com/cotam.restaurant/?hl=en"
@@ -138,7 +138,7 @@ function MyApp({ Component, pageProps }) {
               alt="co tam restaurant instagram"
               className="px-2"
             >
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
+              <FontAwesomeIcon icon={faInstagram} size="sm:md" />
             </a>
             <a
               href="https://www.tripadvisor.nl/Restaurant_Review-g188593-d21491723-Reviews-Co_Tam_Restaurant-Haarlem_North_Holland_Province.html"
@@ -147,7 +147,7 @@ function MyApp({ Component, pageProps }) {
               alt="co tam restaurant tripadvisor"
               className="inline-block px-3"
             >
-              <img src="images/tripadvisorwhite.png" width="23px" />
+              <img src="images/tripadvisorwhite.png" width="22px" />
             </a>
           </span>
           <span className="pl-4 pr-2 md2:hidden">
