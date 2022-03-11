@@ -30,10 +30,10 @@ export default function Testimonials() {
                       className="inline-block pb-2 text-yellow-400"
                     />
                   ))}
-                  <a href={item.user.link}>
+                  <a href={item.user.link} target="_blank" rel="noreferrer">
                     <button
                       className="inline-block px-2 text-red-600 hover:text-blue-400"
-                      alt="see full review "
+                      alt="see full review"
                     >
                       <img src="/images/google.svg" width="19px" />
                     </button>
