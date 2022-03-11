@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Testimonials from "../components/testimonials";
+import { cdnImage } from "../components/utils";
 
 export default function Home() {
   const url =
@@ -24,7 +25,7 @@ export default function Home() {
     return (
       <div
         style={{
-          background: "url('/images/bg-dark.png.webp') no-repeat center",
+          background: "url('images/bg-dark.png.webp') no-repeat center",
           backgroundSize: "cover",
           borderRadius: 2,
           paddingBottom: 48,
@@ -136,12 +137,18 @@ export default function Home() {
               rel="noopener noreferrer"
               alt="order at co tam"
             >
-              <button className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:mb-8 sm:w-full">
+              <button
+                className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:mb-8 sm:w-full"
+                alt="order"
+              >
                 Order
               </button>
             </a>
             <Link href="/files/menu.pdf" alt="menu co tam">
-              <button className="mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:w-full">
+              <button
+                className="mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:w-full"
+                alt="see menu"
+              >
                 See menu
               </button>
             </Link>
@@ -165,7 +172,11 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto mb-8 max-w-sm self-center sm:w-full sm:px-8">
-            <img src="/images/img-2.webp" className="rounded-2xl" />
+            <img
+              src={cdnImage("img-2.webp")}
+              className="rounded-2xl"
+              alt="wok & stir fried food"
+            />
           </div>
         </div>
         <div className="flex flex-col border-t-2 border-black bg-white pb-10 md:w-full">
@@ -195,7 +206,7 @@ export default function Home() {
                 zIndex: -2,
               }}
             >
-              <img src="/images/about-1.webp" />
+              <img src={cdnImage("about-1.webp")} />
             </div>
             <div
               id="slide2"
@@ -204,7 +215,7 @@ export default function Home() {
                 zIndex: -2,
               }}
             >
-              <img src="/images/carousel2.webp" />
+              <img src={cdnImage("carousel2.webp")} />
             </div>
             <div
               id="slide3"
@@ -213,7 +224,7 @@ export default function Home() {
                 zIndex: -2,
               }}
             >
-              <img src="/images/carousel4.webp" />
+              <img src={cdnImage("carousel4.webp")} />
             </div>
             <div
               id="slide4"
@@ -222,7 +233,7 @@ export default function Home() {
                 zIndex: -2,
               }}
             >
-              <img src="/images/carousel5.webp" />
+              <img src={cdnImage("carousel5.webp")} />
             </div>
           </Carousel>
         </div>

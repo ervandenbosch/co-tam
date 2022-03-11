@@ -11,18 +11,18 @@ export default function Testimonials() {
   }
 
   return (
-    <div className="flex-cols-5 flex flex-wrap justify-center gap-4 lg:grid-cols-4 sm:grid-cols-2">
+    <div className="flex-cols-5 z-0 flex flex-wrap justify-center gap-4 lg:grid-cols-4 sm:grid-cols-2">
       {reviews.slice(0, 5).map((item, i) => (
         <div
           key={i}
           className="w-60 overflow-hidden rounded-xl border border-slate-200 bg-white sm:w-2/3"
         >
-          <div className="relative flex flex-col justify-between">
+          <div className=" flex flex-col justify-between">
             <div className="p-3">
               <p className="xs:text-md pr-8 text-left text-lg font-semibold ">
                 {item.user.name}
               </p>
-              <div id="rating" className="">
+              <div id="rating">
                 {[...Array(item.rating)].map((x, i) => (
                   <FontAwesomeIcon
                     icon={faStar}
@@ -35,7 +35,7 @@ export default function Testimonials() {
                     <FontAwesomeIcon icon={faGoogle} size="1x" />
                   </button>
                 </a>
-                <span className="text-xs">{item.date}</span>
+                <span className="text-xs">{item.date}..</span>
               </div>
             </div>
             <div>
@@ -45,21 +45,23 @@ export default function Testimonials() {
                   <button
                     className="text-xs font-bold text-blue-400"
                     onClick={handleToggle}
+                    alt="read full description"
                   >
                     {" "}
                     ...read more
                   </button>
                 )}{" "}
+                {toggle && item.snippet}
                 {toggle && (
                   <button
-                    className="absolute top-5 right-3 text-xs font-bold text-blue-400"
+                    className="ml-2 text-xs font-bold text-blue-400"
                     onClick={handleToggle}
+                    alt="close description"
                   >
                     {" "}
-                    close
+                    ...less
                   </button>
                 )}
-                {toggle && item.snippet}
               </p>
             </div>
           </div>

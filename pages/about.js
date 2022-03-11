@@ -1,6 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Head from "next/head";
+import { cdnImage } from "../components/utils";
 
 export default function About() {
   return (
@@ -43,7 +44,7 @@ export default function About() {
           <Carousel dynamicHeight labels autoPlay centerMode swipeable>
             <div>
               <img
-                src="/images/about-1.webp"
+                src={cdnImage("about-1.webp")}
                 style={{
                   maxHeight: 500,
                   zIndex: -2,
@@ -52,7 +53,7 @@ export default function About() {
             </div>
             <div>
               <img
-                src="/images/carousel2.webp"
+                src={cdnImage("carousel2.webp")}
                 style={{
                   maxHeight: 500,
                   zIndex: -2,
@@ -61,7 +62,7 @@ export default function About() {
             </div>
             <div>
               <img
-                src="/images/carousel4.webp"
+                src={cdnImage("carousel4.webp")}
                 style={{
                   maxHeight: 500,
                   zIndex: -2,

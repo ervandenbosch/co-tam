@@ -12,11 +12,17 @@ export const getServerSideProps = ({ res }) => {
     .readdirSync(
       {
         development: "pages",
-        production: "./",
+        production: "pages",
       }[process.env.NODE_ENV]
     )
     .filter((staticPage) => {
-      return !["_app.js", "sitemap.xml.js"].includes(staticPage);
+      return ![
+        ".DS_Store",
+        "_app.js",
+        "404.js",
+        "500.js",
+        "sitemap.xml.js",
+      ].includes(staticPage);
     })
     .map((staticPagePath) => {
       return `${baseUrl}/${staticPagePath}`;

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cdnImage } from "../components/utils";
 
 export function Details() {
   return (
@@ -63,7 +64,7 @@ export function Details() {
         >
           <button alt="directions to co tam">
             <img
-              src="/images/location.webp"
+              src={cdnImage("location.webp")}
               alt="location co tam restaurant"
               width="300"
               height="220"
