@@ -2,7 +2,7 @@ export const reviews = [
   {
     user: {
       name: "Beno Baars",
-      link: "https://www.google.com/maps/contrib/117585232823509446739?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegQIARBB",
+      link: "https://www.google.com/maps/contrib/117585232823509446739?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegQIARBB",
       thumbnail:
         "https://lh3.googleusercontent.com/a-/AOh14GiH58bXBfLO_h8RIIwP-2XwvjSgCge0DVfiYRo9iA=s40-c-c0x00000000-cc-rp-mo-ba4-br100",
       local_guide: true,
@@ -10,7 +10,7 @@ export const reviews = [
       photos: 45,
     },
     rating: 4,
-    date: "a day ago",
+    date: "2 days ago",
     snippet: "Lekker eten bij deze Vietnamees.",
     images: [
       "https://lh5.googleusercontent.com/p/AF1QipNCn5xO6ZXxFZCfo85cxKCfcty3yJkcH8ymlhmy=w100-h100-p-n-k-no",
@@ -19,7 +19,7 @@ export const reviews = [
   {
     user: {
       name: "Marianna M",
-      link: "https://www.google.com/maps/contrib/101770104303571060178?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegQIARBP",
+      link: "https://www.google.com/maps/contrib/101770104303571060178?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegQIARBP",
       thumbnail:
         "https://lh3.googleusercontent.com/a-/AOh14GhgGHlkPM7-MruQVICnbEdi1_HY0-aTvOOKUV99Xyg=s40-c-c0x00000000-cc-rp-mo-br100",
       reviews: 7,
@@ -36,33 +36,33 @@ export const reviews = [
       "https://lh5.googleusercontent.com/p/AF1QipOSu5MJj5yfvL6Pjik1vjt_ktqqTf4MjhIDcC5d=w100-h100-p-n-k-no",
     ],
     response: {
-      date: "5 days ago",
+      date: "6 days ago",
       snippet: "Thank you so much!",
     },
   },
   {
     user: {
       name: "Cesar Hennevelt",
-      link: "https://www.google.com/maps/contrib/110844555245120768559?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegQIARBh",
+      link: "https://www.google.com/maps/contrib/110844555245120768559?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegQIARBh",
       thumbnail:
         "https://lh3.googleusercontent.com/a/AATXAJySgk--seJa-csVQTLT8MbYdIT3gdnhWxcs5eoQ=s40-c-c0x00000000-cc-rp-mo-br100",
       reviews: 2,
     },
     rating: 5,
-    date: "3 days ago",
+    date: "4 days ago",
     snippet: "Excellent service, food is incredible!",
   },
   {
     user: {
       name: "Mahi G",
-      link: "https://www.google.com/maps/contrib/107208536186777951838?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegQIARBt",
+      link: "https://www.google.com/maps/contrib/107208536186777951838?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegQIARBt",
       thumbnail:
         "https://lh3.googleusercontent.com/a/AATXAJylWQ85qVBHHvDWuk-cboFDX2N2Xv2rbkBTR_vK=s40-c-c0x00000000-cc-rp-mo-br100",
       reviews: 8,
       photos: 1,
     },
     rating: 5,
-    date: "6 days ago",
+    date: "a week ago",
     snippet:
       "We enjoyed every item we got, and they came in perfect proportions. You could tell their ingredients were fresh, and with lots of care. The service was great too! I would’ve appreciated some traditional Vietnamese drinks, but it’s not a deal breaker. Highly recommend you come here with friends and get the good seating by the windows.",
     images: [
@@ -72,7 +72,7 @@ export const reviews = [
   {
     user: {
       name: "Alessandro Mautone",
-      link: "https://www.google.com/maps/contrib/100729854589851580628?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegQIARB7",
+      link: "https://www.google.com/maps/contrib/100729854589851580628?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegQIARB7",
       thumbnail:
         "https://lh3.googleusercontent.com/a-/AOh14GiTPLKMB1oM5uZw7BLEM_HUI-RDYZOtCmzIjN_kt0g=s40-c-c0x00000000-cc-rp-mo-ba5-br100",
       local_guide: true,
@@ -87,7 +87,7 @@ export const reviews = [
   {
     user: {
       name: "Rafael Dijkstra",
-      link: "https://www.google.com/maps/contrib/112718362621289533202?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegUIARCHAQ",
+      link: "https://www.google.com/maps/contrib/112718362621289533202?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegUIARCHAQ",
       thumbnail:
         "https://lh3.googleusercontent.com/a/AATXAJxXxMTLY4Bbjg3M124E37amY1cU07gWm5nrc3APPw=s40-c-c0x00000000-cc-rp-mo-br100",
       reviews: 3,
@@ -99,7 +99,7 @@ export const reviews = [
   {
     user: {
       name: "Eline Hendrickx",
-      link: "https://www.google.com/maps/contrib/104778740427695937890?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegUIARCQAQ",
+      link: "https://www.google.com/maps/contrib/104778740427695937890?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegUIARCQAQ",
       thumbnail:
         "https://lh3.googleusercontent.com/a/AATXAJwk9eTp_pHQ-89HrLUzKcIIH816nzqTlkTW9Dcy=s40-c-c0x00000000-cc-rp-mo-br100",
       reviews: 3,
@@ -112,7 +112,7 @@ export const reviews = [
   {
     user: {
       name: "jkz",
-      link: "https://www.google.com/maps/contrib/104215268603157554397?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegUIARCdAQ",
+      link: "https://www.google.com/maps/contrib/104215268603157554397?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegUIARCdAQ",
       thumbnail:
         "https://lh3.googleusercontent.com/a-/AOh14GjYrIjTzdbAXE0aF5fkzVy6shsBVGmsTMc_TXSSUw=s40-c-c0x00000000-cc-rp-mo-br100",
     },
@@ -123,7 +123,7 @@ export const reviews = [
   {
     user: {
       name: "Oana Hristea",
-      link: "https://www.google.com/maps/contrib/106342059447111591703?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegUIARCkAQ",
+      link: "https://www.google.com/maps/contrib/106342059447111591703?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegUIARCkAQ",
       thumbnail:
         "https://lh3.googleusercontent.com/a-/AOh14GiD7jZP3MmwqggHMtiQnodqqPvfxtXQUMEobdXbGg=s40-c-c0x00000000-cc-rp-mo-br100",
       reviews: 7,
@@ -136,12 +136,15 @@ export const reviews = [
   {
     user: {
       name: "Monica Simeoni",
-      link: "https://www.google.com/maps/contrib/114379619831543146574?hl=en-US&sa=X&ved=2ahUKEwjqkvTax7v2AhVwknIEHY_PA0AQvvQBegUIARCvAQ",
+      link: "https://www.google.com/maps/contrib/114379619831543146574?hl=en-US&sa=X&ved=2ahUKEwjBq6LG4L32AhWEoHIEHQwVAiUQvvQBegUIARCvAQ",
       thumbnail:
         "https://lh3.googleusercontent.com/a-/AOh14GilYb_nzSaDfDvISXevnYhprOmn-HVRuW6G44OM-g=s40-c-c0x00000000-cc-rp-mo-ba3-br100",
       local_guide: true,
       reviews: 20,
       photos: 50,
     },
+    rating: 5,
+    date: "a month ago",
+    snippet: "",
   },
 ];
