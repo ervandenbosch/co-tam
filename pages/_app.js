@@ -79,11 +79,11 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <nav
         className="
-        fixed top-0 flex h-[64px] w-full flex-row flex-nowrap justify-between bg-black p-4"
+        fixed top-0 flex h-[64px] w-full flex-row  justify-between bg-black p-4"
         id="navbar"
       >
         <Link href="./">
-          <a className="mr-1 self-start lg2:ml-4" onClick={closeMenu}>
+          <a className="mr-1 justify-start lg2:ml-4" onClick={closeMenu}>
             <Image
               src={navbarlogo}
               placeholder="blur"
@@ -93,8 +93,8 @@ function MyApp({ Component, pageProps }) {
             />
           </a>
         </Link>
-        <div>
-          <span className="font-bold text-white md:hidden">
+        <div className="flex flex-row">
+          <div className="font-bold text-white md:hidden">
             <Link href="./">
               <a onClick={closeMenu}>HOME</a>
             </Link>
@@ -120,14 +120,14 @@ function MyApp({ Component, pageProps }) {
               <a onClick={closeMenu}>CONTACT</a>
             </Link>
             <span className="px-4">|</span>
-          </span>
-          <span className={open ? "hidden" : ""}>
+          </div>
+          <div className={open ? "hidden" : "pt-[3px] pl-3"}>
             <a
               href="https://www.facebook.com/Cotamrestaurant/"
               target="_blank"
               rel="noreferrer"
               alt="co tam restaurant facebook"
-              className="inline-block px-3 pb-[1px]"
+              className="inline-block pr-3"
             >
               <img src="images/facebook.svg" width="16px" />
             </a>
@@ -136,23 +136,23 @@ function MyApp({ Component, pageProps }) {
               target="_blank"
               rel="noreferrer"
               alt="co tam restaurant instagram"
-              className="inline-block px-3 pt-[1px]"
+              className="inline-block px-3"
             >
-              <img src="images/instagram.svg" width="16px" />
+              <img src="images/instagram.svg" width="14px" />
             </a>
             <a
               href="https://www.tripadvisor.nl/Restaurant_Review-g188593-d21491723-Reviews-Co_Tam_Restaurant-Haarlem_North_Holland_Province.html"
               target="_blank"
               rel="noreferrer"
               alt="co tam restaurant tripadvisor"
-              className="inline-block px-3 pb-[3px]"
+              className="inline-block px-3 pb-[2px]"
             >
               <img
                 src="https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/tripadvisorwhite.png"
                 width="22px"
               />
             </a>
-          </span>
+          </div>
           <span className="pl-5 pr-2 md2:hidden">
             <button onClick={handleOpen}>
               <img
