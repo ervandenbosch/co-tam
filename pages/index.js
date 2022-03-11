@@ -164,7 +164,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="mt-6 flex flex-row bg-white py-4 md:flex-wrap">
+        <div className="flex flex-row bg-white pt-12 pb-8 md:flex-wrap">
           <div className="flex w-1/2 flex-col px-8 md:w-full md:px-10">
             <h2 className="m-auto max-w-[600px] text-center text-xl font-bold text-black">
               With us you will experience a wide variety of authentic Vietnamese
@@ -181,7 +181,7 @@ export default function Home() {
               the best version of the Vietnamese cuisine.
             </p>
           </div>
-          <div className="mx-auto mb-8 max-w-sm self-center sm:w-full sm:px-8">
+          <div className="m-auto max-w-sm sm:w-full sm:px-8">
             <img
               src={cdnImage("img-2.webp")}
               className="rounded-2xl"

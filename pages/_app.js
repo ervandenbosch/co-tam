@@ -93,7 +93,7 @@ function MyApp({ Component, pageProps }) {
             />
           </a>
         </Link>
-        <div className="mt-1">
+        <div>
           <span className="font-bold text-white md:hidden">
             <Link href="./">
               <a onClick={closeMenu}>HOME</a>
