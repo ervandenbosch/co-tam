@@ -7,8 +7,6 @@ export function MainDishes() {
   return (
     <div className="m-auto max-w-[700px] pt-6">
       {Object.keys(maindishesdata).map((key) => {
-        console.log(Object.keys(maindishesdata));
-        console.log(key);
         return (
           <>
             <h2 className="pt-6 pb-4 pl-6 text-lg font-bold">{key}</h2>
