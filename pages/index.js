@@ -154,7 +154,7 @@ export default function Home() {
                 Order
               </button>
             </a>
-            <Link href="/files/menu.pdf" alt="menu co tam">
+            <Link href="/menu" alt="menu co tam">
               <button
                 className="mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:w-full"
                 alt="see menu"

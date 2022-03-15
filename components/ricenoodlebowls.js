@@ -1,5 +1,0 @@
-export function RiceNoodleBowls(){
-  return(
-    
-  )
-}

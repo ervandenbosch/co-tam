@@ -15,12 +15,7 @@ export function Dropdown({ closeMenu }) {
           </Link>
         </div>
         <div className="pb-8 pl-10 lg:pl-6">
-          <a
-            href="/files/menu.pdf"
-            alt="alt text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/menu" alt="alt text">
             <a className="mr-8" onClick={closeMenu}>
               MENU
             </a>

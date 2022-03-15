@@ -97,12 +97,7 @@ function MyApp({ Component, pageProps }) {
               <a onClick={closeMenu}>HOME</a>
             </Link>
             <span className="px-4">|</span>
-            <a
-              href="/files/menu.pdf"
-              alt="menu co tam"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/menu" alt="menu co tam">
               <a onClick={closeMenu}>MENU</a>
             </a>
             <span className="px-4">|</span>
