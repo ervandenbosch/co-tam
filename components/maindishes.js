@@ -11,7 +11,7 @@ export function MainDishes() {
         console.log(key);
         return (
           <>
-            <h2 className="pt-8 pb-4 pl-6 text-lg font-bold">{key}</h2>
+            <h2 className="pt-6 pb-4 pl-6 text-lg font-bold">{key}</h2>
             <div className="m-auto border-b border-black pr-4 pl-7">
               {console.log(maindishesdata[key])}
               {maindishesdata[key].map((item, i) => (
