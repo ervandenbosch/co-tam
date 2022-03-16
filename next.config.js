@@ -11,12 +11,12 @@ module.exports = {
     return [
       {
         source: "/pages/menu",
-        destination: "/files/menu.pdf",
+        destination: "/menu/",
         permanent: true,
       },
       {
         source: "/pages/menukaart",
-        destination: "/files/menu.pdf",
+        destination: "/menu/",
         permanent: true,
       },
       {
