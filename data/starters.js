@@ -1,5 +1,5 @@
 export const startersdata = {
-  "Cold starters": [
+  Cold_starters: [
     {
       name: "Goi cuon (Summer rolls)",
       description:
@@ -64,7 +64,7 @@ export const startersdata = {
       mainallergens: ["peanut", "sesam", "soy", "pepper"],
     },
   ],
-  "Steamed starters": [
+  Steamed_starters: [
     {
       name: "Banh bao",
       description:
@@ -124,7 +124,7 @@ export const startersdata = {
       mainallergens: ["soy"],
     },
   ],
-  "Fried/grilled starters": [
+  "Fried/grilled_starters": [
     {
       name: "Nem (Spring rolls)",
       description:

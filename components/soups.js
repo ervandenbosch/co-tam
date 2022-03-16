@@ -6,8 +6,8 @@ export function Soups() {
 
   return (
     <div className="m-auto max-w-[700px]  pt-12">
-      <h2 className="pl-6 pb-4 text-lg font-bold">Soups</h2>
-      <div className="m-auto border-b border-black pr-4 pl-7">
+      <h2 className="ml-6 pb-4 text-lg font-bold">Soups</h2>
+      <div className="m-auto mx-6">
         {soupsdata.map((item, i) => {
           return (
             <div className="flex flex-col">
@@ -22,7 +22,7 @@ export function Soups() {
                       return (
                         <img
                           src={prefix + x + postfix}
-                          width="18px"
+                          width="14px"
                           style={{
                             display: "inline-block",
                             marginLeft: 5,
@@ -51,7 +51,7 @@ export function Soups() {
                               return (
                                 <img
                                   src={prefix + y + postfix}
-                                  width="18px"
+                                  width="14px"
                                   style={{
                                     display: "inline-block",
                                     marginLeft: 5,
@@ -64,7 +64,7 @@ export function Soups() {
                           ) : (
                             <img
                               src={prefix + item.allergens[i] + postfix}
-                              width="18px"
+                              width="14px"
                               style={{
                                 display: "inline-block",
                                 marginLeft: 5,

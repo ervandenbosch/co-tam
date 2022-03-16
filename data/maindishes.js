@@ -28,7 +28,7 @@ export const maindishesdata = {
       ],
     },
   ],
-  "Main meals": [
+  Main_meals: [
     {
       name: "Curry do",
       description:
@@ -164,7 +164,7 @@ export const maindishesdata = {
       allergens: ["sesam", "soy"],
     },
   ],
-  "Noodle specialties": [
+  Noodle_specialties: [
     {
       name: "Bun bo nam bo",
       description: "Rice noodles with beef",
@@ -208,7 +208,7 @@ export const maindishesdata = {
       mainallergens: ["fish", "peanut", "sesam"],
     },
   ],
-  "Fish & sea specialties": [
+  "Fish_&_sea_specialties": [
     {
       name: "Ginger salmon",
       description:
