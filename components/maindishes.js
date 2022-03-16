@@ -12,15 +12,15 @@ export function MainDishes() {
           return (
             <>
               <Link id={key} href={`#${key.toString()}`}>
-                <a>
+                <a className="lg2:text-md text-sm font-normal sm:text-xs">
                   <button
                     className={
-                      "text-center text-xs hover:underline hover:underline-offset-4"
+                      "lg2:text-md text-center text-sm hover:underline hover:underline-offset-4 sm:text-xs"
                     }
                   >
-                    {key.replace(/_/g, " ") +
-                      (key === "Fish_&_sea_specialties" ? "" : "  |")}
-                  </button>{" "}
+                    {key.replace(/_/g, " ")}
+                  </button>
+                  {key === "Fish_&_sea_specialties" ? "" : " | "}
                 </a>
               </Link>
             </>
@@ -31,7 +31,10 @@ export function MainDishes() {
         {Object.keys(maindishesdata).map((key) => {
           return (
             <>
-              <h2 id={key} className="ml-6 pt-6 pb-4 text-lg font-bold">
+              <h2
+                id={key}
+                className="ml-6 pt-6 pb-4 text-lg font-bold underline underline-offset-4"
+              >
                 {key.replace(/_/g, " ")}
               </h2>
               <div className="m-auto mx-6 border-b border-black">

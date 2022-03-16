@@ -5,15 +5,17 @@ export function Soups() {
   let postfix = ".jpg";
 
   return (
-    <div className="m-auto max-w-[700px]  pt-12">
-      <h2 className="ml-6 pb-4 text-lg font-bold">Soups</h2>
+    <div className="m-auto max-w-[700px] pt-12">
+      <h2 className="ml-6 pb-4 text-lg font-bold underline underline-offset-4">
+        Soups
+      </h2>
       <div className="m-auto mx-6">
         {soupsdata.map((item, i) => {
           return (
             <div className="flex flex-col">
               <div
                 key={i}
-                className="flex flex-row justify-between text-sm font-bold"
+                className="flex flex-row justify-between text-sm font-bold "
               >
                 <div>
                   {item.name}

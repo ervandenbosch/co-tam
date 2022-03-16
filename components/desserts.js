@@ -6,7 +6,9 @@ export function Desserts() {
 
   return (
     <div className="m-auto max-w-[700px] pt-6">
-      <h2 className="ml-6 pt-6 pb-4 text-lg font-bold">Desserts</h2>
+      <h2 className="ml-6 pt-6 pb-4 text-lg font-bold underline underline-offset-4">
+        Desserts
+      </h2>
       <div className="m-auto mx-6">
         {dessertsdata.map((item, i) => {
           return (
