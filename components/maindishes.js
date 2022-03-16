@@ -8,23 +8,26 @@ export function MainDishes() {
   return (
     <>
       <div className="mt-4 text-center">
-        |{" "}
         {Object.keys(maindishesdata).map((key) => {
           return (
             <>
               <Link id={key} href={`#${key.toString()}`}>
                 <a>
-                  <button className={"px-1 text-center text-xs"}>
-                    {key.replace(/_/g, " ")}
+                  <button
+                    className={
+                      "text-center text-xs hover:underline hover:underline-offset-4"
+                    }
+                  >
+                    {key.replace(/_/g, " ") +
+                      (key === "Fish_&_sea_specialties" ? "" : "  |")}
                   </button>{" "}
                 </a>
               </Link>
-              |{" "}
             </>
           );
         })}
       </div>
-      <div className="m-auto max-w-[700px] pt-4">
+      <div className="m-auto max-w-[700px] pt-2">
         {Object.keys(maindishesdata).map((key) => {
           return (
             <>
@@ -32,7 +35,6 @@ export function MainDishes() {
                 {key.replace(/_/g, " ")}
               </h2>
               <div className="m-auto mx-6 border-b border-black">
-                {console.log(maindishesdata[key])}
                 {maindishesdata[key].map((item, i) => (
                   <div className="flex flex-col">
                     <div className="flex flex-row justify-between text-sm font-bold">

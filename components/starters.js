@@ -8,18 +8,21 @@ export function Starters() {
   return (
     <>
       <div className="mt-4 text-center">
-        |{"  "}
         {Object.keys(startersdata).map((key) => {
           return (
             <>
               <Link id={key} href={`#${key.toString()}`}>
                 <a>
-                  <button className={"px-1 text-center text-xs"}>
-                    {key.replace(/_/g, " ")}
+                  <button
+                    className={
+                      "text-center text-xs hover:underline hover:underline-offset-4"
+                    }
+                  >
+                    {key.replace(/_/g, " ") +
+                      (key === "Fried/grilled_starters" ? "" : "  |")}
                   </button>{" "}
                 </a>
               </Link>
-              |{" "}
             </>
           );
         })}

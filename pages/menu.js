@@ -45,33 +45,35 @@ export default function Menu() {
         <title>Menu Cô Tâm</title>
       </Head>
       <div className="pt-[64px]">
-        <div className="text-md md2: pt-10 text-center lg2:text-lg sm:text-sm">
+        <div className="text-md pt-10 text-center lg2:text-lg sm:text-sm">
           <button
-            className={"px-2 " + (starters && "font-bold")}
+            className={"px-2 hover:font-bold " + (starters && "font-bold")}
             onClick={openStarters}
           >
             STARTERS
-          </button>{" "}
-          |{" "}
+          </button>
+          <b>|</b>
           <button
             className={
-              "px-2 " + (soups && "font-bold underline underline-offset-8")
+              "px-2 hover:font-bold " +
+              (soups && "font-bold underline underline-offset-8")
             }
             onClick={openSoups}
           >
             SOUPS
-          </button>{" "}
-          |{" "}
+          </button>
+          <b>|</b>
           <button
-            className={"px-2 " + (maindishes && "font-bold")}
+            className={"px-2 hover:font-bold " + (maindishes && "font-bold")}
             onClick={openMaindishes}
           >
             MAIN DISHES
-          </button>{" "}
-          |{" "}
+          </button>
+          <b>|</b>
           <button
             className={
-              "px-2 " + (desserts && "font-bold underline underline-offset-8")
+              "px-2 hover:font-bold " +
+              (desserts && "font-bold underline underline-offset-8")
             }
             onClick={openDesserts}
           >
