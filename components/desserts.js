@@ -56,7 +56,7 @@ export function Desserts() {
               {Array.isArray(item.options) && item.options
                 ? item.options.map((x, i) => {
                     return (
-                      <div className="flex flex-row justify-between text-sm">
+                      <div className="flex flex-row justify-between pr-16 text-sm">
                         <div>
                           <li className="list-disc font-normal">
                             {x}{" "}
@@ -98,7 +98,7 @@ export function Desserts() {
                 : item.options && (
                     <div className="flex flex-row justify-between text-sm">
                       <div>
-                        <li className="list-disc font-normal">
+                        <li className="list-disc pr-16 font-normal">
                           {item.options}{" "}
                           {item.allergens && (
                             <img
