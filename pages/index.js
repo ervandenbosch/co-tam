@@ -115,7 +115,7 @@ export default function Home() {
       </Head>
       <main>
         <div
-          className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat sm:h-screen"
+          className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat sm:min-h-screen"
           id="top"
           style={{
             backgroundImage:

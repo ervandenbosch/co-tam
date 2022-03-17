@@ -15,6 +15,7 @@ import * as ga from "../lib/ga";
 
 function MyApp({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   const handleOpen = () => setOpen(!open);
   const closeMenu = () => setOpen(false);
@@ -36,8 +37,31 @@ function MyApp({ Component, pageProps }) {
     };
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
+
+  function toTopButton() {
+    const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
+      if (scrolled > 300) {
+        setVisible(true);
+      } else if (scrolled <= 300) {
+        setVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisible);
+  }
+
   useEffect(() => {
     hideMenu();
+    toTopButton();
   }, []);
 
   useEffect(() => {
@@ -160,6 +184,20 @@ function MyApp({ Component, pageProps }) {
       <div id="Dropdown">
         {open && <Dropdown closeMenu={closeMenu} />}
         <Component {...pageProps} />
+      </div>
+
+      <div
+        className={
+          "fixed right-[46%] bottom-6 z-10 lg2:right-[48.6%] " +
+          (visible ? "block" : "hidden")
+        }
+      >
+        <button
+          className="h-10 w-10 rounded-full bg-black pt-1 text-xl text-white opacity-80"
+          onClick={scrollToTop}
+        >
+          ^
+        </button>
       </div>
 
       <Details />
