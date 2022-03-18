@@ -113,7 +113,7 @@ function MyApp({ Component, pageProps }) {
     }
   }
   return (
-    <div className="min-h-screen" id="app">
+    <div className="min-h-screen overscroll-y-none" id="app">
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
         strategy="afterInteractive"
