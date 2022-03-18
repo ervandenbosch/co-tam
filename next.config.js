@@ -10,13 +10,28 @@ module.exports = {
   async redirects() {
     return [
       {
+        source: "/nl/bestellen",
+        destination: "/bestellen",
+        permanent: true,
+      },
+      {
+        source: "/nl/menukaart",
+        destination: "/menukaart",
+        permanent: true,
+      },
+      {
+        source: "/nl/over",
+        destination: "/over",
+        permanent: true,
+      },
+      {
         source: "/pages/menu",
         destination: "/menu/",
         permanent: true,
       },
       {
         source: "/pages/menukaart",
-        destination: "/menu/",
+        destination: "/nl/menu/",
         permanent: true,
       },
       {

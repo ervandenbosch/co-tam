@@ -1,16 +1,14 @@
-import { maindishesdata } from "../data/maindishes";
+import { startersdataNL } from "../data/startersnl";
 import Link from "next/link";
-import { useEffect } from "react";
-import { Z_ASCII } from "zlib";
 
-export function MainDishes() {
+export function StartersNL() {
   let prefix = "/images/";
   let postfix = ".jpg";
 
   return (
     <>
       <div className="mt-4 text-center">
-        {Object.keys(maindishesdata).map((key) => {
+        {Object.keys(startersdataNL).map((key) => {
           return (
             <>
               <Link id={key} href={`#${key.toString()}`}>
@@ -22,7 +20,7 @@ export function MainDishes() {
                   >
                     {key.replace(/_/g, " ")}
                   </button>
-                  {key === "Fish_&_sea_specialties" ? "" : " | "}
+                  {key === "Fried/grilled_starters" ? "" : " | "}
                 </a>
               </Link>
             </>
@@ -30,7 +28,7 @@ export function MainDishes() {
         })}
       </div>
       <div className="m-auto max-w-[700px] pt-2">
-        {Object.keys(maindishesdata).map((key) => {
+        {Object.keys(startersdataNL).map((key, i) => {
           return (
             <>
               <h2
@@ -40,37 +38,28 @@ export function MainDishes() {
                 {key.replace(/_/g, " ")}
               </h2>
               <div className="m-auto mx-6 border-b border-black">
-                {maindishesdata[key].map((item, i) => (
+                {startersdataNL[key].map((item, z) => (
                   <div className="flex flex-col">
-                    <div className="flex flex-row justify-between text-sm font-bold">
+                    <div
+                      key={z}
+                      className="flex flex-row justify-between text-sm font-bold"
+                    >
                       <div>
                         {item.name}
                         {item.mainallergens &&
-                          (Array.isArray(item.mainallergens) ? (
-                            item.mainallergens.map((x) => {
-                              return (
-                                <img
-                                  src={prefix + x + postfix}
-                                  width="14px"
-                                  style={{
-                                    display: "inline-block",
-                                    marginLeft: 5,
-                                    marginBottom: 1,
-                                  }}
-                                />
-                              );
-                            })
-                          ) : (
-                            <img
-                              src={prefix + item.mainallergens + postfix}
-                              width="14px"
-                              style={{
-                                display: "inline-block",
-                                marginLeft: 5,
-                                marginBottom: 1,
-                              }}
-                            />
-                          ))}
+                          item.mainallergens.map((x) => {
+                            return (
+                              <img
+                                src={prefix + x + postfix}
+                                width="14px"
+                                style={{
+                                  display: "inline-block",
+                                  marginLeft: 5,
+                                  marginBottom: 1,
+                                }}
+                              />
+                            );
+                          })}
                       </div>
                       {!Array.isArray(item.price) && (
                         <div className="inline-block">{item.price}.00</div>

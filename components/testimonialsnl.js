@@ -1,7 +1,7 @@
 import { reviews } from "../data/reviews";
 import { useState } from "react";
 
-export default function Testimonials() {
+export default function TestimonialsNL() {
   const [toggle, setToggle] = useState(false);
   function handleToggle() {
     setToggle(!toggle);
@@ -50,7 +50,7 @@ export default function Testimonials() {
                       alt="read full description"
                     >
                       {" "}
-                      ...read more
+                      ...lees meer
                     </button>
                   )}{" "}
                   {toggle && item.snippet}
@@ -61,7 +61,7 @@ export default function Testimonials() {
                       alt="close description"
                     >
                       {" "}
-                      ...less
+                      ...minder
                     </button>
                   )}
                 </p>

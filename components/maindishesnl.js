@@ -1,16 +1,14 @@
-import { maindishesdata } from "../data/maindishes";
+import { maindishesdataNL } from "../data/maindishesnl";
 import Link from "next/link";
-import { useEffect } from "react";
-import { Z_ASCII } from "zlib";
 
-export function MainDishes() {
+export function MainDishesNL() {
   let prefix = "/images/";
   let postfix = ".jpg";
 
   return (
     <>
       <div className="mt-4 text-center">
-        {Object.keys(maindishesdata).map((key) => {
+        {Object.keys(maindishesdataNL).map((key) => {
           return (
             <>
               <Link id={key} href={`#${key.toString()}`}>
@@ -30,7 +28,7 @@ export function MainDishes() {
         })}
       </div>
       <div className="m-auto max-w-[700px] pt-2">
-        {Object.keys(maindishesdata).map((key) => {
+        {Object.keys(maindishesdataNL).map((key) => {
           return (
             <>
               <h2
@@ -40,7 +38,7 @@ export function MainDishes() {
                 {key.replace(/_/g, " ")}
               </h2>
               <div className="m-auto mx-6 border-b border-black">
-                {maindishesdata[key].map((item, i) => (
+                {maindishesdataNL[key].map((item, i) => (
                   <div className="flex flex-col">
                     <div className="flex flex-row justify-between text-sm font-bold">
                       <div>
