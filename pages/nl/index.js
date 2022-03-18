@@ -157,9 +157,9 @@ export default function HomeNL() {
             <Link href="/nl/menu" alt="menu co tam">
               <button
                 className="mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:w-full"
-                alt="see menu"
+                alt="zie het menu"
               >
-                Naar menu
+                Menukaart
               </button>
             </Link>
           </div>
