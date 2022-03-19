@@ -130,7 +130,7 @@ export default function HomeNL() {
           </div>
           <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welkom bij het authentieke Vietnamees restaurant Cô Tâm in Haarlem.
-            Wij zijn open voor afhalen en bezorgen. Tevens zijn open voor
+            Wij zijn open voor afhalen en bezorgen. Tevens zijn wij open voor
             tafelreserveringen. Bel
             <Link href="tel:023-583-4384" alt="co tam phone number">
               <a className="text-yellow-500 hover:text-blue-400">
