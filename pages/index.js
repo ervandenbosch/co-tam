@@ -106,12 +106,12 @@ export default function Home() {
         <title>Home of Cô Tâm Vietnamees Restaurant Haarlem</title>
         <meta
           name="description"
-          content="Welkom bij Cô Tâm Vietnamees restaurant. De authentieke Vietnamese keuken in het centrum van Haarlem. Geniet van heerlijk Vietnamees eten aan het Spaarne."
+          content="Welcome to Cô Tâm Vietnamese restaurant. The authentic Vietnamese cuisine in the center of Haarlem. Enjoy delicious Vietnamese food at the Spaarne."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <meta property="og:locale" content="en_US"></meta>
-        <meta property="og:locale:alternate" content="nl_BE"></meta>
+        <meta property="og:locale:alternate" content="nl_NL"></meta>
       </Head>
       <main>
         <div
@@ -129,7 +129,7 @@ export default function Home() {
             />
           </div>
           <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
-            Welcome to the Authentic Vietnamese restaurant Cô Tâm in Haarlem. We
+            Welcome to the authentic Vietnamese restaurant Cô Tâm in Haarlem. We
             are open for takeaway and delivery. We are open for table
             reservations. Call
             <Link href="tel:023-583-4384" alt="co tam phone number">

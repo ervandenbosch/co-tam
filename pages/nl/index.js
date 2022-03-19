@@ -129,8 +129,8 @@ export default function HomeNL() {
             />
           </div>
           <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
-            Welkom bij het Authentieke Vietnamees restaurant Cô Tâm in Haarlem.
-            We zijn open voor afhalen en bezorgen. We zijn momenteel open voor
+            Welkom bij het authentieke Vietnamees restaurant Cô Tâm in Haarlem.
+            Wij zijn open voor afhalen en bezorgen. Tevens zijn open voor
             tafelreserveringen. Bel
             <Link href="tel:023-583-4384" alt="co tam phone number">
               <a className="text-yellow-500 hover:text-blue-400">
@@ -220,7 +220,7 @@ export default function HomeNL() {
                 zIndex: -2,
               }}
             >
-              <img src={cdnImage("about-1.webp")} alt="vietnamese cuisine" />
+              <img src={cdnImage("about-1.webp")} alt="vietnamese keuken" />
             </div>
             <div
               id="slide2"
@@ -229,7 +229,7 @@ export default function HomeNL() {
                 zIndex: -2,
               }}
             >
-              <img src={cdnImage("carousel2.webp")} alt="vietnamese cuisine" />
+              <img src={cdnImage("carousel2.webp")} alt="vietnamese keuken" />
             </div>
             <div
               id="slide3"
@@ -238,7 +238,7 @@ export default function HomeNL() {
                 zIndex: -2,
               }}
             >
-              <img src={cdnImage("carousel4.webp")} alt="vietnamese cuisine" />
+              <img src={cdnImage("carousel4.webp")} alt="vietnamese keuken" />
             </div>
             <div
               id="slide4"
@@ -247,7 +247,7 @@ export default function HomeNL() {
                 zIndex: -2,
               }}
             >
-              <img src={cdnImage("carousel5.webp")} alt="vietnamese cuisine" />
+              <img src={cdnImage("carousel5.webp")} alt="vietnamese keuken" />
             </div>
           </Carousel>
         </div>
