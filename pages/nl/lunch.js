@@ -1,4 +1,4 @@
-import { Lunch } from "./components/lunch";
+import { Lunch } from "/components/lunch";
 import Head from "next/head";
 
 export default function LunchMenu() {
