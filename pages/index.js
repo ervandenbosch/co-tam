@@ -153,7 +153,7 @@ export default function Home({ langNL }) {
               alt="order at co tam"
             >
               <button
-                className="w-[250px] rounded-md border border-black bg-[#F7C12F] p-2 text-black hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:w-4/5"
+                className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:w-4/5"
                 alt="order"
               >
                 Order to Takeaway
@@ -242,56 +242,45 @@ export default function Home({ langNL }) {
           </a>
         </div>
 
-        <div className="flex w-screen justify-center">
-          <div className="relative m-auto pl-4 pr-8 md:mt-8">
-            <Carousel labels autoPlay centerMode swipeable>
-              <div
-                id="slide1"
-                style={{
-                  maxHeight: 500,
-                  zIndex: -2,
-                }}
-              >
-                <img src={cdnImage("about-1.webp")} alt="vietnamese cuisine" />
-              </div>
-              <div
-                id="slide2"
-                style={{
-                  maxHeight: 500,
-                  zIndex: -2,
-                }}
-              >
-                <img
-                  src={cdnImage("carousel2.webp")}
-                  alt="vietnamese cuisine"
-                />
-              </div>
-              <div
-                id="slide3"
-                style={{
-                  maxHeight: 500,
-                  zIndex: -2,
-                }}
-              >
-                <img
-                  src={cdnImage("carousel4.webp")}
-                  alt="vietnamese cuisine"
-                />
-              </div>
-              <div
-                id="slide4"
-                style={{
-                  maxHeight: 500,
-                  zIndex: -2,
-                }}
-              >
-                <img
-                  src={cdnImage("carousel5.webp")}
-                  alt="vietnamese cuisine"
-                />
-              </div>
-            </Carousel>
-          </div>
+        <div className="relative m-auto pl-4 pr-8 md:mt-8">
+          <Carousel labels autoPlay centerMode swipeable>
+            <div
+              id="slide1"
+              style={{
+                maxHeight: 500,
+                zIndex: -2,
+              }}
+            >
+              <img src={cdnImage("about-1.webp")} alt="vietnamese cuisine" />
+            </div>
+            <div
+              id="slide2"
+              style={{
+                maxHeight: 500,
+                zIndex: -2,
+              }}
+            >
+              <img src={cdnImage("carousel2.webp")} alt="vietnamese cuisine" />
+            </div>
+            <div
+              id="slide3"
+              style={{
+                maxHeight: 500,
+                zIndex: -2,
+              }}
+            >
+              <img src={cdnImage("carousel4.webp")} alt="vietnamese cuisine" />
+            </div>
+            <div
+              id="slide4"
+              style={{
+                maxHeight: 500,
+                zIndex: -2,
+              }}
+            >
+              <img src={cdnImage("carousel5.webp")} alt="vietnamese cuisine" />
+            </div>
+          </Carousel>
         </div>
 
         <MailchimpSubscribe
