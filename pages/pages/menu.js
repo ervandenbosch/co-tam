@@ -1,7 +1,7 @@
-import { MainDishes } from "../components/maindishes";
-import { Soups } from "../components/soups";
-import { Starters } from "../components/starters";
-import { Desserts } from "../components/desserts";
+import { MainDishes } from "./components/maindishes";
+import { Soups } from "./components/soups";
+import { Starters } from "./components/starters";
+import { Desserts } from "./components/desserts";
 import { useState } from "react";
 import Head from "next/head";
 

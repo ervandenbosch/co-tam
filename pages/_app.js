@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
   const [menuButtons, setMenuButtons] = useState(false);
 
   const handleOpen = () => setOpen(!open);
-  const handleMenuDropdown = () => setMenuDropdown(true);
+  const handleMenuDropdown = () => setMenuDropdown(!menuDropdown);
 
   const router = useRouter();
   let href = router.asPath;
