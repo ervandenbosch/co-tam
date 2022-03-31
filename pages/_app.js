@@ -16,11 +16,14 @@ import * as ga from "../lib/ga";
 
 function MyApp({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
+  const [menuDropdown, setMenuDropdown] = useState(false);
   const [visible, setVisible] = useState(false);
   const [langNL, setLangNL] = useState(false);
 
+  const [menuButtons, setMenuButtons] = useState(false);
+
   const handleOpen = () => setOpen(!open);
-  const closeMenu = () => setOpen(false);
+  const handleMenuDropdown = () => setMenuDropdown(true);
 
   const router = useRouter();
   let href = router.asPath;
@@ -67,6 +70,12 @@ function MyApp({ Component, pageProps }) {
       top: 0,
     });
   };
+
+  function closeDropdown() {
+    setOpen(false);
+    setMenuDropdown(false);
+    setMenuButtons(false);
+  }
 
   function toTopButton() {
     const toggleVisible = () => {
@@ -142,7 +151,7 @@ function MyApp({ Component, pageProps }) {
         id="navbar"
       >
         <Link href="./">
-          <a className="mr-1 justify-start lg2:ml-4" onClick={closeMenu}>
+          <a className="mr-1 justify-start lg2:ml-4" onClick={closeDropdown}>
             <Image
               src={navbarlogo}
               placeholder="blur"
@@ -155,23 +164,53 @@ function MyApp({ Component, pageProps }) {
         <div className="flex flex-row">
           <div className="font-bold text-white md:hidden">
             <Link href={langNL ? "/nl" : "/"}>
-              <a onClick={closeMenu}>HOME</a>
+              <a onClick={closeDropdown}>HOME</a>
             </Link>
             <span className="px-4">|</span>
-            <Link href={langNL ? "/nl/menu" : "/menu"} alt="menu co tam">
-              <a onClick={closeMenu}>MENU</a>
-            </Link>
+            <span>
+              <button
+                className="font-bold"
+                onMouseEnter={handleMenuDropdown}
+                onClick={handleMenuDropdown}
+              >
+                MENU
+              </button>
+              <ul
+                onMouseLeave={closeDropdown}
+                className={
+                  (menuDropdown ? "visible block" : "none hidden") +
+                  " absolute mt-6 ml-[70px] w-[80px] rounded-b-lg bg-[#F7C12F] py-2 text-center text-black"
+                }
+              >
+                <li className="pb-2">
+                  <Link href="/lunch">
+                    <button className="font-bold" onClick={closeDropdown}>
+                      Lunch
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={langNL ? "/nl/menu" : "/menu"}>
+                    <button className="font-bold" onClick={closeDropdown}>
+                      {langNL ? <>Diner</> : <>Dinner</>}
+                    </button>
+                  </Link>
+                </li>
+              </ul>
+            </span>
             <span className="px-4">|</span>
             <Link href={langNL ? "/nl/order" : "/order"}>
-              <a onClick={closeMenu}>{langNL ? <>BESTELLEN</> : <>ORDER</>}</a>
+              <a onClick={closeDropdown}>
+                {langNL ? <>BESTELLEN</> : <>ORDER</>}
+              </a>
             </Link>
             <span className="px-4">|</span>
             <Link href={langNL ? "/nl/about" : "/about"}>
-              <a onClick={closeMenu}>{langNL ? <>OVER</> : <>ABOUT</>}</a>
+              <a onClick={closeDropdown}>{langNL ? <>OVER</> : <>ABOUT</>}</a>
             </Link>
             <span className="px-4">|</span>
             <Link href={langNL ? "/nl/contact" : "/contact"}>
-              <a onClick={closeMenu}>CONTACT</a>
+              <a onClick={closeDropdown}>CONTACT</a>
             </Link>
           </div>
           <span className="px-4 text-white md:hidden">|</span>
@@ -222,7 +261,15 @@ function MyApp({ Component, pageProps }) {
       </nav>
 
       <div id="Dropdown">
-        {open && <Dropdown closeMenu={closeMenu} langNL={langNL} />}
+        {open && (
+          <Dropdown
+            open={open}
+            menuDropdown={menuDropdown}
+            closeDropdown={closeDropdown}
+            langNL={langNL}
+          />
+        )}
+
         <Component {...pageProps} />
       </div>
 

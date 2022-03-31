@@ -24,7 +24,7 @@ export function Footer() {
             alt="co tam restaurant facebook"
             className="mx-3"
           >
-            <img src="images/facebook-dark.svg" width="18px" />
+            <img src="/images/facebook-dark.svg" width="18px" />
           </a>
           <a
             href="https://www.instagram.com/cotam.restaurant/?hl=en"
@@ -33,7 +33,7 @@ export function Footer() {
             alt="co tam restaurant instagram"
             className="mr-3"
           >
-            <img src="images/instagram-dark.svg" width="16px" />
+            <img src="/images/instagram-dark.svg" width="16px" />
           </a>
           <span>
             <a

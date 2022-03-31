@@ -1,12 +1,17 @@
 import Link from "next/link";
 import Head from "next/head";
+import { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import TestimonialsNL from "/components/testimonialsnl";
 import { cdnImage } from "/components/utils";
 
-export default function HomeNL() {
+export default function HomeNL({ langNL }) {
+  const [menuButtons, setMenuButtons] = useState(false);
+
+  const handleMenuButtons = () => setMenuButtons(true);
+
   const url =
     "https://cotam.us2.list-manage.com/subscribe/post?u=6d4a8b5dd3caa61e591833f74&amp;id=e1dad9f537";
 
@@ -140,7 +145,7 @@ export default function HomeNL() {
             </Link>
             gedurende openingstijden om een tafel te reserveren.
           </div>
-          <div className="py-10 text-center sm:mb-12 sm:px-14">
+          <div className="mx-auto flex flex-row flex-wrap justify-center py-10 text-center sm:w-full sm:flex-col">
             <a
               href="https://weborder-eu.spont.cash/widget/?key=fa9610655bd04ad896c4fcb6a5c49bc9&source=direct&autoopen=pickup"
               target="_blank"
@@ -148,20 +153,46 @@ export default function HomeNL() {
               alt="order at co tam"
             >
               <button
-                className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:mb-8 sm:w-full"
+                className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:w-4/5"
                 alt="order"
               >
-                Bestellen
+                Bestellen voor afhaal
               </button>
             </a>
-            <Link href="/nl/menu" alt="menu co tam">
-              <button
-                className="mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:w-full"
-                alt="zie het menu"
-              >
-                Menukaart
-              </button>
-            </Link>
+
+            <button
+              className={
+                (menuButtons ? "none hidden" : "visible m-auto") +
+                " mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-4 sm:w-4/5"
+              }
+              alt="zie het menu"
+              onClick={handleMenuButtons}
+            >
+              Menukaart
+            </button>
+
+            <div
+              className={
+                (menuButtons
+                  ? "visible m-auto flex w-[250px]  flex-row justify-center"
+                  : "none hidden") + " rounded-b-lg py-1 text-center text-black"
+              }
+            >
+              <div className="w-full">
+                <Link href="/lunch">
+                  <button className="w-[80px] rounded-md border-2 bg-[#F7C12F] p-1 ">
+                    Lunch
+                  </button>
+                </Link>
+              </div>
+              <div>
+                <Link href={langNL ? "/nl/menu" : "/menu"}>
+                  <button className=" w-[80px] rounded-md border-2 bg-[#F7C12F] p-1">
+                    {langNL ? <>Diner</> : <>Dinner</>}
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-row bg-white pt-12 pb-8 md:flex-wrap">

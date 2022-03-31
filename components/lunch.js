@@ -1,14 +1,14 @@
-import { maindishesdata } from "../data/maindishes";
+import { lunchdata } from "../data/lunch";
 import Link from "next/link";
 
-export function MainDishes() {
+export function Lunch() {
   let prefix = "/images/";
   let postfix = ".jpg";
 
   return (
     <>
       <div className="mt-4 text-center">
-        {Object.keys(maindishesdata).map((key) => {
+        {Object.keys(lunchdata).map((key) => {
           return (
             <>
               <Link id={key} href={`#${key.toString()}`}>
@@ -20,7 +20,7 @@ export function MainDishes() {
                   >
                     {key.replace(/_/g, " ")}
                   </button>
-                  {key === "Fish_&_sea_specialties" ? "" : " | "}
+                  {key === "Noodle_specialties" ? "" : " | "}
                 </a>
               </Link>
             </>
@@ -28,17 +28,26 @@ export function MainDishes() {
         })}
       </div>
       <div className="m-auto max-w-[700px] pt-2">
-        {Object.keys(maindishesdata).map((key) => {
+        {Object.keys(lunchdata).map((key) => {
           return (
             <>
               <h2
                 id={key}
-                className="ml-6 pt-6 pb-4 text-lg font-bold underline underline-offset-4"
+                className="ml-6 pt-6 pb-2 text-lg font-bold underline underline-offset-4"
               >
                 {key.replace(/_/g, " ")}
               </h2>
+              {key === "Noodle_specialities" && (
+                <p className="mx-8 mb-6 text-justify text-xs">
+                  <i>
+                    Fresh rice noodle bowl with lettuce, various vegetables,
+                    rucola, bean sprouts, mango, peanuts, herbs, and fried
+                    onions. Served with a refined fish sauce
+                  </i>
+                </p>
+              )}
               <div className="m-auto mx-6 border-b border-black">
-                {maindishesdata[key].map((item, i) => (
+                {lunchdata[key].map((item, i) => (
                   <div className="flex flex-col">
                     <div className="flex flex-row justify-between text-sm font-bold">
                       <div>

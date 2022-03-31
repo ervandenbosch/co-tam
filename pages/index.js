@@ -1,12 +1,17 @@
 import Link from "next/link";
 import Head from "next/head";
+import { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Testimonials from "../components/testimonials";
 import { cdnImage } from "../components/utils";
 
-export default function Home() {
+export default function Home({ langNL }) {
+  const [menuButtons, setMenuButtons] = useState(false);
+
+  const handleMenuButtons = () => setMenuButtons(true);
+
   const url =
     "https://cotam.us2.list-manage.com/subscribe/post?u=6d4a8b5dd3caa61e591833f74&amp;id=e1dad9f537";
 
@@ -131,7 +136,7 @@ export default function Home() {
           <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welcome to the authentic Vietnamese restaurant Cô Tâm in Haarlem. We
             are open for takeaway and delivery. We are open for table
-            reservations. Call
+            reservations during lunch and dinner. Call
             <Link href="tel:023-583-4384" alt="co tam phone number">
               <a className="text-yellow-500 hover:text-blue-400">
                 {" "}
@@ -140,7 +145,7 @@ export default function Home() {
             </Link>
             during opening hours to reserve a table.
           </div>
-          <div className="py-10 text-center sm:mb-12 sm:px-14">
+          <div className="mx-auto flex flex-row flex-wrap justify-center py-10 text-center sm:w-full sm:flex-col">
             <a
               href="https://weborder-eu.spont.cash/widget/?key=fa9610655bd04ad896c4fcb6a5c49bc9&source=direct&autoopen=pickup"
               target="_blank"
@@ -148,20 +153,46 @@ export default function Home() {
               alt="order at co tam"
             >
               <button
-                className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:mb-8 sm:w-full"
+                className="w-[250px] rounded-md border border-black bg-[#F7C12F] p-2 text-black hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:w-4/5"
                 alt="order"
               >
-                Order
+                Order to Takeaway
               </button>
             </a>
-            <Link href="/menu" alt="menu co tam">
-              <button
-                className="mb-2 w-[250px] rounded-md border-2 border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:w-full"
-                alt="see menu"
-              >
-                See menu
-              </button>
-            </Link>
+
+            <button
+              className={
+                (menuButtons ? "none hidden" : "visible m-auto") +
+                " mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-4 sm:w-4/5"
+              }
+              alt="see menu"
+              onClick={handleMenuButtons}
+            >
+              See menu
+            </button>
+
+            <div
+              className={
+                (menuButtons
+                  ? "visible m-auto flex w-[250px]  flex-row justify-center"
+                  : "none hidden") + " rounded-b-lg py-1 text-center text-black"
+              }
+            >
+              <div className="w-full">
+                <Link href="/lunch">
+                  <button className="w-[80px] rounded-md border-2 bg-[#F7C12F] p-1 ">
+                    Lunch
+                  </button>
+                </Link>
+              </div>
+              <div>
+                <Link href={langNL ? "/nl/menu" : "/menu"}>
+                  <button className=" w-[80px] rounded-md border-2 bg-[#F7C12F] p-1">
+                    {langNL ? <>Diner</> : <>Dinner</>}
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-row bg-white pt-12 pb-8 md:flex-wrap">
@@ -210,45 +241,57 @@ export default function Home() {
             </button>
           </a>
         </div>
-        <div className="relative m-auto pl-4 pr-8 md:mt-8">
-          <Carousel labels autoPlay centerMode swipeable>
-            <div
-              id="slide1"
-              style={{
-                maxHeight: 500,
-                zIndex: -2,
-              }}
-            >
-              <img src={cdnImage("about-1.webp")} alt="vietnamese cuisine" />
-            </div>
-            <div
-              id="slide2"
-              style={{
-                maxHeight: 500,
-                zIndex: -2,
-              }}
-            >
-              <img src={cdnImage("carousel2.webp")} alt="vietnamese cuisine" />
-            </div>
-            <div
-              id="slide3"
-              style={{
-                maxHeight: 500,
-                zIndex: -2,
-              }}
-            >
-              <img src={cdnImage("carousel4.webp")} alt="vietnamese cuisine" />
-            </div>
-            <div
-              id="slide4"
-              style={{
-                maxHeight: 500,
-                zIndex: -2,
-              }}
-            >
-              <img src={cdnImage("carousel5.webp")} alt="vietnamese cuisine" />
-            </div>
-          </Carousel>
+
+        <div className="flex w-screen justify-center">
+          <div className="relative m-auto pl-4 pr-8 md:mt-8">
+            <Carousel labels autoPlay centerMode swipeable>
+              <div
+                id="slide1"
+                style={{
+                  maxHeight: 500,
+                  zIndex: -2,
+                }}
+              >
+                <img src={cdnImage("about-1.webp")} alt="vietnamese cuisine" />
+              </div>
+              <div
+                id="slide2"
+                style={{
+                  maxHeight: 500,
+                  zIndex: -2,
+                }}
+              >
+                <img
+                  src={cdnImage("carousel2.webp")}
+                  alt="vietnamese cuisine"
+                />
+              </div>
+              <div
+                id="slide3"
+                style={{
+                  maxHeight: 500,
+                  zIndex: -2,
+                }}
+              >
+                <img
+                  src={cdnImage("carousel4.webp")}
+                  alt="vietnamese cuisine"
+                />
+              </div>
+              <div
+                id="slide4"
+                style={{
+                  maxHeight: 500,
+                  zIndex: -2,
+                }}
+              >
+                <img
+                  src={cdnImage("carousel5.webp")}
+                  alt="vietnamese cuisine"
+                />
+              </div>
+            </Carousel>
+          </div>
         </div>
 
         <MailchimpSubscribe

@@ -1,6 +1,13 @@
 import Link from "next/link";
+import { useState } from "react";
 
-export function Dropdown({ closeMenu, langNL }) {
+export function Dropdown({ closeDropdown, langNL }) {
+  const [menuDropdown, setMenuDropdown] = useState(false);
+
+  function toggleMenuDropdown() {
+    setMenuDropdown(!menuDropdown);
+  }
+
   return (
     <div
       className="z-5 fixed top-[64px] flex w-screen flex-col justify-between overflow-hidden bg-black text-left font-bold text-white opacity-90"
@@ -9,31 +16,55 @@ export function Dropdown({ closeMenu, langNL }) {
       <div className="mt-6">
         <div className="pb-10 pl-10 lg:pl-6">
           <Link href={langNL ? "/nl" : "/"} alt="home Co Tam">
-            <a className="mr-8" onClick={closeMenu}>
+            <a className="mr-8" onClick={closeDropdown}>
               HOME
             </a>
           </Link>
         </div>
         <div className="pb-10 pl-10 lg:pl-6">
-          <Link href={langNL ? "/nl/menu" : "/menu"} alt="menu co tam">
-            <a className="mr-8" onClick={closeMenu}>
-              {langNL ? <>MENUKAART</> : <>MENU</>}
+          <button className="mr-8 font-bold" onClick={toggleMenuDropdown}>
+            {langNL ? <>MENUKAART</> : <>MENU</>}
+          </button>
+          {menuDropdown && (
+            <div className="pt-6">
+              <div className="pl-4 pb-6 ">
+                <Link href="/lunch" alt="menu co tam">
+                  <button
+                    className="font-bold hover:underline "
+                    onClick={closeDropdown}
+                  >
+                    Lunch
+                  </button>
+                </Link>
+              </div>
+              <div className="pl-4">
+                <Link href={langNL ? "/nl/menu" : "/menu"}>
+                  <button
+                    className="font-bold hover:underline"
+                    onClick={closeDropdown}
+                  >
+                    {langNL ? <>Diner</> : <>Dinner</>}
+                  </button>
+                </Link>
+              </div>
+            </div>
+          )}
+        </div>
+        <div className="pb-10 pl-10 lg:pl-6">
+          <Link href={langNL ? "/nl/order" : "/order"}>
+            <a onClick={closeDropdown}>
+              {langNL ? <>BESTELLEN</> : <>ORDER</>}
             </a>
           </Link>
         </div>
         <div className="pb-10 pl-10 lg:pl-6">
-          <Link href={langNL ? "/nl/order" : "/order"}>
-            <a onClick={closeMenu}>{langNL ? <>BESTELLEN</> : <>ORDER</>}</a>
-          </Link>
-        </div>
-        <div className="pb-10 pl-10 lg:pl-6">
           <Link href={langNL ? "/nl/about" : "/about"}>
-            <a onClick={closeMenu}>{langNL ? <>OVER</> : <>ABOUT</>}</a>
+            <a onClick={closeDropdown}>{langNL ? <>OVER</> : <>ABOUT</>}</a>
           </Link>
         </div>
         <div className="pb-10 pl-10 lg:pl-6">
           <Link href={langNL ? "/nl/contact" : "/contact"}>
-            <a onClick={closeMenu}>CONTACT</a>
+            <a onClick={closeDropdown}>CONTACT</a>
           </Link>
         </div>
         <div className="border-t py-6 text-center text-white">
