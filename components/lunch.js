@@ -7,7 +7,7 @@ export function Lunch() {
 
   return (
     <>
-      <div className="mt-4 text-center">
+      <div className="mt-4 px-1 text-center">
         {Object.keys(lunchdata).map((key) => {
           return (
             <>
