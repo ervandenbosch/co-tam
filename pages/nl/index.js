@@ -6,11 +6,13 @@ import { Carousel } from "react-responsive-carousel";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import TestimonialsNL from "/components/testimonialsnl";
 import { cdnImage } from "/components/utils";
+import { MenuModal } from "/components/menuModal";
 
-export default function HomeNL({ langNL }) {
+export default function HomeNL() {
   const [menuButtons, setMenuButtons] = useState(false);
 
-  const handleMenuButtons = () => setMenuButtons(true);
+  const [langNL, setlangNL] = useState(true);
+  const handleMenuButtons = () => setMenuButtons(!menuButtons);
 
   const url =
     "https://cotam.us2.list-manage.com/subscribe/post?u=6d4a8b5dd3caa61e591833f74&amp;id=e1dad9f537";
@@ -159,19 +161,20 @@ export default function HomeNL({ langNL }) {
                 Bestellen voor afhaal
               </button>
             </a>
-
             <button
-              className={
-                (menuButtons ? "none hidden" : "visible m-auto") +
-                " mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
-              }
+              className="mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
               alt="zie het menu"
               onClick={handleMenuButtons}
             >
               Menukaart
             </button>
-
-            <div
+            {menuButtons && (
+              <MenuModal
+                langNL={langNL}
+                handleMenuButtons={handleMenuButtons}
+              />
+            )}
+            {/* } <div
               className={
                 (menuButtons
                   ? "visible m-auto flex w-[260px]  flex-row justify-center"
@@ -192,6 +195,7 @@ export default function HomeNL({ langNL }) {
                 </Link>
               </div>
             </div>
+            */}
           </div>
         </div>
         <div className="flex flex-row bg-white pt-12 pb-8 md:flex-wrap">
