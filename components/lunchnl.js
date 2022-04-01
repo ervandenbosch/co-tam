@@ -1,14 +1,14 @@
-import { lunchdata } from "../data/lunch";
+import { lunchdatanl } from "../data/lunchnl";
 import Link from "next/link";
 
-export function Lunch() {
+export function LunchNL() {
   let prefix = "/images/";
   let postfix = ".jpg";
 
   return (
     <>
       <div className="mt-4 text-center">
-        {Object.keys(lunchdata).map((key) => {
+        {Object.keys(lunchdatanl).map((key) => {
           return (
             <>
               <Link id={key} href={`#${key.toString()}`}>
@@ -20,7 +20,7 @@ export function Lunch() {
                   >
                     {key.replace(/_/g, " ")}
                   </button>
-                  {key === "Noodle_specialties" ? "" : " | "}
+                  {key === "Noodle_specialiteiten" ? "" : " | "}
                 </a>
               </Link>
             </>
@@ -28,7 +28,7 @@ export function Lunch() {
         })}
       </div>
       <div className="m-auto max-w-[700px] pt-2">
-        {Object.keys(lunchdata).map((key) => {
+        {Object.keys(lunchdatanl).map((key) => {
           return (
             <>
               <h2
@@ -37,17 +37,17 @@ export function Lunch() {
               >
                 {key.replace(/_/g, " ")}
               </h2>
-              {key === "Noodle_specialties" && (
+              {key === "Noodle_specialiteiten" && (
                 <p className="mx-8 mb-6 text-justify text-xs">
                   <i>
-                    Fresh rice noodle bowl with lettuce, various vegetables,
-                    rucola, bean sprouts, mango, peanuts, herbs, and fried
-                    onions. Served with a refined fish sauce
+                    Verse rijstnoedelkom met sla, diverse groenten, rucola,
+                    taugé, mango, pinda's, kruiden en gebakken uien. Geserveerd
+                    met een verfijnde vissaus.
                   </i>
                 </p>
               )}
               <div className="m-auto mx-6 border-b border-black">
-                {lunchdata[key].map((item, i) => (
+                {lunchdatanl[key].map((item, i) => (
                   <div className="flex flex-col">
                     <div className="flex flex-row justify-between text-sm font-bold">
                       <div>

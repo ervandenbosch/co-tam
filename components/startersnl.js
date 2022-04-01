@@ -20,7 +20,7 @@ export function StartersNL() {
                   >
                     {key.replace(/_/g, " ")}
                   </button>
-                  {key === "Fried/grilled_starters" ? "" : " | "}
+                  {key === "Gebakken/gefrituurde_gerechten" ? "" : " | "}
                 </a>
               </Link>
             </>

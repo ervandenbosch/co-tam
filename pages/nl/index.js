@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
@@ -120,32 +120,32 @@ export default function HomeNL({ langNL }) {
       </Head>
       <main>
         <div
-          className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat sm:min-h-screen"
+          className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat sm:max-h-screen"
           id="top"
           style={{
             backgroundImage:
               "url('https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/bg-orig2.jpg.webp')",
           }}
         >
-          <div className="m-auto mt-[72px] w-2/3 lg2:w-1/2 sm:mt-[90px] sm:w-full sm:px-2">
+          <div className="m-auto mt-[72px] w-2/3 py-2 lg2:w-1/2 sm:mt-[90px] sm:w-full sm:px-2">
             <img
               src={cdnImage("cotamlogo.webp")}
               alt="co tam vietnamese restaurant logo"
             />
           </div>
-          <div className="sm:text-md m-auto px-48 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
-            Welkom bij het authentieke Vietnamees restaurant Cô Tâm in Haarlem.
-            Wij zijn open voor afhalen en bezorgen. Tevens zijn wij open voor
-            tafelreserveringen. Bel
+          <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
+            Welkom bij het authentieke Vietnamees restaurant Cô Tâm van Haarlem.
+            Wij zijn open voor tafelreserveringen tijdens lunch en diner! Tevens
+            zijn wij open voor afhalen en bezorgen. Bel
             <Link href="tel:023-583-4384" alt="co tam phone number">
               <a className="text-yellow-500 hover:text-blue-400">
                 {" "}
                 (023) 583 4384{" "}
               </a>
             </Link>
-            gedurende openingstijden om een tafel te reserveren.
+            rond openingstijden om een tafel te reserveren.
           </div>
-          <div className="mx-auto flex flex-row flex-wrap justify-center py-10 text-center sm:w-full sm:flex-col">
+          <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
               href="https://weborder-eu.spont.cash/widget/?key=fa9610655bd04ad896c4fcb6a5c49bc9&source=direct&autoopen=pickup"
               target="_blank"
@@ -163,7 +163,7 @@ export default function HomeNL({ langNL }) {
             <button
               className={
                 (menuButtons ? "none hidden" : "visible m-auto") +
-                " mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-4 sm:w-4/5"
+                " mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
               }
               alt="zie het menu"
               onClick={handleMenuButtons}
@@ -174,21 +174,20 @@ export default function HomeNL({ langNL }) {
             <div
               className={
                 (menuButtons
-                  ? "visible m-auto flex w-[250px]  flex-row justify-center"
+                  ? "visible m-auto flex w-[260px]  flex-row justify-center"
                   : "none hidden") + " rounded-b-lg py-1 text-center text-black"
               }
             >
               <div className="w-full">
-                <Link href="/lunch">
-                  <button className="w-[80px] rounded-md border-2 bg-[#F7C12F] p-1 ">
+                <Link href="lunch">
+                  <button className="mr-3 w-1/3 rounded-md border-2 bg-[#F7C12F] p-1 hover:bg-black hover:text-[#F7C12F]">
                     Lunch
                   </button>
                 </Link>
-              </div>
-              <div>
-                <Link href={langNL ? "/nl/menu" : "/menu"}>
-                  <button className=" w-[80px] rounded-md border-2 bg-[#F7C12F] p-1">
-                    {langNL ? <>Diner</> : <>Dinner</>}
+
+                <Link href={langNL ? "nl/menu" : "menu"}>
+                  <button className="ml-3 w-1/3 rounded-md border-2 bg-[#F7C12F] p-1 hover:bg-black hover:text-[#F7C12F]">
+                    Diner
                   </button>
                 </Link>
               </div>

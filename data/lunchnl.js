@@ -1,4 +1,4 @@
-export const lunchdata = {
+export const lunchdatanl = {
   Starter: [
     {
       name: "Mini Nem (mini spring rolls) - 2pcs",
@@ -7,7 +7,7 @@ export const lunchdata = {
       mainallergens: ["gluten", "fish"],
     },
   ],
-  Big_Soups: [
+  Grote_Soep: [
     {
       name: "Pho",
       description:
@@ -63,7 +63,7 @@ export const lunchdata = {
       allergens: ["fish", "fish", ["fish", "gluten"], ["fish", "soy"]],
     },
   ],
-  Main_meals_with_rice: [
+  Rijstgerechten: [
     {
       name: "Curry do",
       description:
@@ -127,7 +127,7 @@ export const lunchdata = {
       mainallergens: ["sesam", "soy"],
     },
   ],
-  Noodle_specialties: [
+  Noodle_specialiteiten: [
     {
       name: "Bun nem",
       description: "Rice noodles with meat spring rolls",

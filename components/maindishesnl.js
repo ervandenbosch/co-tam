@@ -20,7 +20,7 @@ export function MainDishesNL() {
                   >
                     {key.replace(/_/g, " ")}
                   </button>
-                  {key === "Fish_&_sea_specialties" ? "" : " | "}
+                  {key === "Vis_&_Zeevruchten_specialiteiten" ? "" : " | "}
                 </a>
               </Link>
             </>
