@@ -164,7 +164,7 @@ export default function Home() {
             </a>
 
             <button
-              className=" mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
+              className="mx-auto mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
               alt="see menu"
               onClick={handleMenuButtons}
             >
