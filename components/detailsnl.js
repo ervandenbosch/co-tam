@@ -39,11 +39,11 @@ export function DetailsNL() {
           <a className="text-yellow-500 hover:text-blue-400">(023) 583 4384</a>
         </Link>
       </div>
-      <div className="mb-4 mt-6 flex flex-row px-6 sm:mt-8">
+      <div className="mt-2 flex flex-row px-6 sm:mb-4 sm:mt-10">
         <ul className="mr-8 font-bold">
           <li className="py-1">Ma</li>
           <li className="py-1">Di </li>
-          <br />
+
           <li className="py-1">Wo</li>
           <br />
           <li className="py-1">Do</li>
@@ -57,11 +57,7 @@ export function DetailsNL() {
         </ul>
         <ul>
           <li className="py-1">Gesloten</li>
-          <li className="py-1">
-            {" "}
-            12:00 - 14:30
-            <br /> 17:00 - 22:00
-          </li>
+          <li className="py-1"> 17:00 - 22:00</li>
           <li className="py-1">
             12:00 - 14:30
             <br /> 17:00 - 22:00
