@@ -39,24 +39,49 @@ export function Details() {
           <a className="text-yellow-500 hover:text-blue-400">(023) 583 4384</a>
         </Link>
       </div>
-      <div className="mb-4 mt-6 flex flex-row px-6 sm:mt-8">
+      <div className="mt-2 flex flex-row px-6 sm:mb-4 sm:mt-10">
         <ul className="mr-8 font-bold">
           <li className="py-1">Mon</li>
           <li className="py-1">Tue </li>
+          <br />
           <li className="py-1">Wed</li>
+          <br />
           <li className="py-1">Thu </li>
+          <br />
           <li className="py-1">Fri</li>
+          <br />
           <li className="py-1">Sat</li>
+          <br />
           <li className="py-1">Sun</li>
         </ul>
         <ul>
-          <li className="py-1">Close</li>
-          <li className="py-1">16:00 - 21:30 </li>
-          <li className="py-1">16:00 - 21:30</li>
-          <li className="py-1">16:00 - 21:30</li>
-          <li className="py-1">16:00 - 21:30</li>
-          <li className="py-1">16:00 - 21:30</li>
-          <li className="py-1">16:00 - 21:30</li>
+          <li className="py-1">Closed</li>
+          <li className="py-1">
+            {" "}
+            12:00 - 14:30
+            <br /> 17:00 - 22:00
+          </li>
+          <li className="py-1">
+            12:00 - 14:30
+            <br /> 17:00 - 22:00
+          </li>
+          <li className="py-1">
+            {" "}
+            12:00 - 14:30
+            <br /> 17:00 - 22:00
+          </li>
+          <li className="py-1">
+            {" "}
+            12:00 - 14:30
+            <br /> 17:00 - 22:00
+          </li>
+          <li className="py-1">
+            {" "}
+            12:00 - 14:30
+            <br /> 17:00 - 22:00
+          </li>
+          <li className="py-1">14:00 - 22:00</li>
+          <br />
         </ul>
       </div>
       <div className="mt-6 flex flex-col md:m-8 sm:mt-2">
