@@ -6,12 +6,12 @@ export default function Testimonials() {
   function handleToggle() {
     setToggle(!toggle);
   }
-  let count = 5;
+  let count = 7;
 
   return (
     <div className="flex-cols-5 z-0 flex flex-wrap justify-center gap-4 lg:grid-cols-4 sm:grid-cols-2">
       {reviews.slice(0, count).map((item, i) =>
-        item.rating >= 4 ? (
+        item.rating >= 4 && item.snippet ? (
           <div
             key={i}
             className="w-60 overflow-hidden rounded-xl border border-slate-200 bg-white sm:w-2/3"
