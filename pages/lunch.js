@@ -11,6 +11,7 @@ export default function LunchMenu() {
         <h1 className="pt-8 pb-2 text-center text-2xl font-bold underline">
           Lunch Menu
         </h1>
+        <p className="text-center text-xs">(12:00-14:30)</p>
         <div className="text-md text-left lg2:text-lg sm:text-sm">
           <div className="">
             <Lunch />
