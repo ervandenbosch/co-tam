@@ -167,6 +167,12 @@ function MyApp({ Component, pageProps }) {
               <a onClick={closeDropdown}>HOME</a>
             </Link>
             <span className="px-4">|</span>
+            <Link href={langNL ? "/nl/reservation" : "/reservation"}>
+              <a onClick={closeDropdown}>
+                {langNL ? <>RESERVEREN</> : <>RESERVATION</>}
+              </a>
+            </Link>
+            <span className="px-4">|</span>
             <span>
               <button
                 className="font-bold"
@@ -179,7 +185,7 @@ function MyApp({ Component, pageProps }) {
                 onMouseLeave={closeDropdown}
                 className={
                   (menuDropdown ? "visible block" : "none hidden") +
-                  " absolute mt-6 ml-[70px] w-[80px] rounded-b-lg bg-[#F7C12F] py-2 text-center text-black"
+                  " absolute mt-6 ml-[217px] w-[80px] rounded-b-lg bg-[#F7C12F] py-2 text-center text-black"
                 }
               >
                 <li className="pb-2">

@@ -22,6 +22,13 @@ export function Dropdown({ closeDropdown, langNL }) {
           </Link>
         </div>
         <div className="pb-10 pl-10 lg:pl-6">
+          <Link href={langNL ? "/nl/reservation" : "/reservation"}>
+            <a onClick={closeDropdown}>
+              {langNL ? <>RESERVEREN</> : <>RESERVATION</>}
+            </a>
+          </Link>
+        </div>
+        <div className="pb-10 pl-10 lg:pl-6">
           <button className="mr-8 font-bold" onClick={toggleMenuDropdown}>
             {langNL ? <>MENUKAART</> : <>MENU</>}
           </button>

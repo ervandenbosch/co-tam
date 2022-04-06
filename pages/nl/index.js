@@ -7,6 +7,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import TestimonialsNL from "/components/testimonialsnl";
 import { cdnImage } from "/components/utils";
 import { MenuModal } from "/components/menuModal";
+import Script from "next/script";
 
 export default function HomeNL() {
   const [menuButtons, setMenuButtons] = useState(false);
@@ -110,6 +111,7 @@ export default function HomeNL() {
     <div className="">
       <Head>
         <meta charset="UTF-8" />
+        <html lang="nl" />
         <title>Homepagina van Cô Tâm Vietnamees Restaurant Haarlem</title>
         <meta
           name="description"
@@ -137,15 +139,9 @@ export default function HomeNL() {
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welkom bij het authentieke Vietnamees restaurant Cô Tâm van Haarlem.
-            Wij zijn open voor tafelreserveringen tijdens lunch en diner! Tevens
-            zijn wij open voor afhalen en bezorgen. Bel
-            <Link href="tel:023-583-4384" alt="co tam phone number">
-              <a className="text-yellow-500 hover:text-blue-400">
-                {" "}
-                (023) 583 4384{" "}
-              </a>
-            </Link>
-            rond openingstijden om een tafel te reserveren.
+            Wij zijn open voor tafelreserveringen tijdens lunch en diner. Tevens
+            zijn wij open voor afhalen en bezorgen. Gebruik onze reseringsmodule
+            rechts onderaan uw scherm om een tafel te reserveren!
           </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
@@ -157,6 +153,7 @@ export default function HomeNL() {
               <button
                 className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:w-4/5"
                 alt="order"
+                tabIndex={1}
               >
                 Bestellen voor afhaal
               </button>
@@ -165,6 +162,7 @@ export default function HomeNL() {
               className="mx-auto mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
               alt="zie het menu"
               onClick={handleMenuButtons}
+              tabIndex={2}
             >
               Menukaart
             </button>
@@ -174,28 +172,6 @@ export default function HomeNL() {
                 handleMenuButtons={handleMenuButtons}
               />
             )}
-            {/* } <div
-              className={
-                (menuButtons
-                  ? "visible m-auto flex w-[260px]  flex-row justify-center"
-                  : "none hidden") + " rounded-b-lg py-1 text-center text-black"
-              }
-            >
-              <div className="w-full">
-                <Link href="lunch">
-                  <button className="mr-3 w-1/3 rounded-md border-2 bg-[#F7C12F] p-1 hover:bg-black hover:text-[#F7C12F]">
-                    Lunch
-                  </button>
-                </Link>
-
-                <Link href={langNL ? "nl/menu" : "menu"}>
-                  <button className="ml-3 w-1/3 rounded-md border-2 bg-[#F7C12F] p-1 hover:bg-black hover:text-[#F7C12F]">
-                    Diner
-                  </button>
-                </Link>
-              </div>
-            </div>
-            */}
           </div>
         </div>
         <div className="flex flex-row bg-white pt-12 pb-8 md:flex-wrap">
@@ -285,7 +261,19 @@ export default function HomeNL() {
             </div>
           </Carousel>
         </div>
-
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(g,s,t,p,l,n){
+      g["_gstpln"]={};
+      (l=s.createElement(t)),(n=s.getElementsByTagName(t)[0]);
+      l.async=1;l.src=p;n.parentNode.insertBefore(l,n);
+    })(window,document,"script","https://cdn.guestplan.com/widget.js");
+ 	_gstpln.accessKey = "a61e9fd2920eb894b1f8ca80c3b0984b5e6b6059";
+	_gstpln.useHtmlLanguage = true;
+   _gstpln.open = false;`,
+          }}
+        />
         <MailchimpSubscribe
           url={url}
           render={({ subscribe, status, message }) => (
