@@ -80,9 +80,9 @@ function MyApp({ Component, pageProps }) {
   function toTopButton() {
     const toggleVisible = () => {
       const scrolled = document.documentElement.scrollTop;
-      if (scrolled > 200) {
+      if (scrolled > 1300) {
         setVisible(true);
-      } else if (scrolled <= 200) {
+      } else if (scrolled <= 1300) {
         setVisible(false);
       }
     };
@@ -281,12 +281,12 @@ function MyApp({ Component, pageProps }) {
 
       <div
         className={
-          "fixed right-[48.5%] bottom-6 z-10 xl:right-[48%] lg:right-[47%] md:right-[46.5%] sm:right-[45.5%]  " +
+          "fixed right-[48.5%] bottom-6 z-10 xl:right-[48%] lg:right-[47%] md:right-[46.5%] sm:right-[75%]  " +
           (visible ? "block" : "hidden")
         }
       >
         <button
-          className="rounded-full bg-black py-2 px-4 text-xl text-white opacity-80"
+          className="rounded-full bg-black px-4 pt-[8px] pb-[7px] text-xl font-bold text-white opacity-80"
           onClick={scrollToTop}
         >
           ^
