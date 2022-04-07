@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Head from "next/head";
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -112,7 +111,6 @@ export default function Home() {
     <div className="">
       <Head>
         <meta charset="UTF-8" />
-        <html lang="en" />
         <title>Home of Cô Tâm Vietnamees Restaurant Haarlem</title>
         <meta
           name="description"
@@ -142,7 +140,8 @@ export default function Home() {
             Welcome to the authentic Vietnamese restaurant Cô Tâm from Haarlem.
             We are currently open for table reservations during lunch and
             dinner. We are also open for takeaway and delivery. Use our
-            reservation module at the bottom right to book a table!
+            reservation module at the bottom right of your screen to book a
+            table!
           </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
@@ -272,7 +271,6 @@ export default function Home() {
       l.async=1;l.src=p;n.parentNode.insertBefore(l,n);
     })(window,document,"script","https://cdn.guestplan.com/widget.js");
  	_gstpln.accessKey = "a61e9fd2920eb894b1f8ca80c3b0984b5e6b6059";
-	_gstpln.useHtmlLanguage = true;
    _gstpln.open = false;`,
           }}
         />
