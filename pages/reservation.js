@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 
 export default function Reservation() {
   return (
@@ -14,7 +13,7 @@ export default function Reservation() {
               width: "100%",
               height: "500px",
             }}
-            src="/widgetnl.html"
+            src="/widget.html"
           ></iframe>
         </div>
         <div className="bg-gray-600 py-12 text-center">

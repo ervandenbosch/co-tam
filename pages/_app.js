@@ -186,7 +186,7 @@ function MyApp({ Component, pageProps }) {
                 onMouseLeave={closeDropdown}
                 className={
                   (menuDropdown ? "visible block" : "none hidden") +
-                  " absolute mt-6 ml-[217px] w-[80px] rounded-b-lg bg-[#F7C12F] py-2 text-center text-black"
+                  " absolute mt-6 ml-[188px] w-[72px] rounded-b-lg bg-[#F7C12F] py-2 text-center text-black"
                 }
               >
                 <li className="pb-2">

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Head from "next/head";
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -7,13 +6,23 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import TestimonialsNL from "/components/testimonialsnl";
 import { cdnImage } from "/components/utils";
 import { MenuModal } from "/components/menuModal";
-import Script from "next/script";
+import useScript from "/components/useScript";
 
 export default function HomeNL() {
   const [menuButtons, setMenuButtons] = useState(false);
 
   const [langNL, setlangNL] = useState(true);
   const handleMenuButtons = () => setMenuButtons(!menuButtons);
+
+  useScript(`(function (g, s, t, p, l, n) {
+          g["_gstpln"] = {};
+          (l = s.createElement(t)), (n = s.getElementsByTagName(t)[0]);
+          l.async = 1;
+          l.src = p;
+          n.parentNode.insertBefore(l, n);
+        })(window, document, "script", "https://cdn.guestplan.com/widget.js");
+        _gstpln.accessKey = "a61e9fd2920eb894b1f8ca80c3b0984b5e6b6059";
+        _gstpln.useHtmlLanguage = true;`);
 
   const url =
     "https://cotam.us2.list-manage.com/subscribe/post?u=6d4a8b5dd3caa61e591833f74&amp;id=e1dad9f537";
@@ -121,7 +130,7 @@ export default function HomeNL() {
         <meta property="og:locale" content="nl_NL"></meta>
         <meta property="og:locale:alternate" content="en_US"></meta>
       </Head>
-      <main>
+      <body>
         <div
           className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat sm:max-h-screen"
           id="top"
@@ -260,19 +269,7 @@ export default function HomeNL() {
             </div>
           </Carousel>
         </div>
-        <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(g,s,t,p,l,n){
-      g["_gstpln"]={};
-      (l=s.createElement(t)),(n=s.getElementsByTagName(t)[0]);
-      l.async=1;l.src=p;n.parentNode.insertBefore(l,n);
-    })(window,document,"script","https://cdn.guestplan.com/widget.js");
- 	_gstpln.accessKey = "a61e9fd2920eb894b1f8ca80c3b0984b5e6b6059";
-	_gstpln.useHtmlLanguage = true;
-   _gstpln.open = false;`,
-          }}
-        />
+
         <MailchimpSubscribe
           url={url}
           render={({ subscribe, status, message }) => (
@@ -283,7 +280,7 @@ export default function HomeNL() {
             />
           )}
         />
-      </main>
+      </body>
     </div>
   );
 }
