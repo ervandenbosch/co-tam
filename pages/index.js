@@ -153,7 +153,7 @@ export default function Home() {
               <button
                 className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:w-4/5"
                 alt="order"
-                tabIndex={1}
+                tabIndex={0}
               >
                 Order to Takeaway
               </button>
@@ -163,7 +163,7 @@ export default function Home() {
               className="mx-auto mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2 text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
               alt="see menu"
               onClick={handleMenuButtons}
-              tabIndex={2}
+              tabIndex={0}
             >
               See menu
             </button>

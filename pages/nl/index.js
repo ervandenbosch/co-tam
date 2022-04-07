@@ -111,7 +111,6 @@ export default function HomeNL() {
     <div className="">
       <Head>
         <meta charset="UTF-8" />
-        <html lang="nl" />
         <title>Homepagina van Cô Tâm Vietnamees Restaurant Haarlem</title>
         <meta
           name="description"
@@ -134,7 +133,7 @@ export default function HomeNL() {
           <div className="m-auto mt-[72px] w-2/3 py-2 lg2:w-1/2 sm:mt-[90px] sm:w-full sm:px-2">
             <img
               src={cdnImage("cotamlogo.webp")}
-              alt="co tam vietnamese restaurant logo"
+              alt="co tam vietnamees restaurant logo"
             />
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
@@ -153,7 +152,7 @@ export default function HomeNL() {
               <button
                 className="w-[250px] rounded-md bg-[#F7C12F] p-2 text-black hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F] sm2:mr-4 sm:w-4/5"
                 alt="order"
-                tabIndex={1}
+                tabIndex={0}
               >
                 Bestellen voor afhaal
               </button>
@@ -162,7 +161,7 @@ export default function HomeNL() {
               className="mx-auto mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
               alt="zie het menu"
               onClick={handleMenuButtons}
-              tabIndex={2}
+              tabIndex={0}
             >
               Menukaart
             </button>

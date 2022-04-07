@@ -150,17 +150,18 @@ function MyApp({ Component, pageProps }) {
         fixed top-0 flex h-[64px] w-full flex-row  justify-between bg-black p-4"
         id="navbar"
       >
-        <Link href="./">
-          <a className="mr-1 justify-start lg2:ml-4" onClick={closeDropdown}>
-            <Image
-              src={navbarlogo}
-              placeholder="blur"
-              width="90"
-              height="30"
-              alt="co tam homepage logo"
-            />
-          </a>
-        </Link>
+        <div className="w-[110px]">
+          <Link href="./">
+            <a className="mr-1 justify-start lg2:ml-4" onClick={closeDropdown}>
+              <Image
+                src={navbarlogo}
+                placeholder="blur"
+                alt="co tam homepage logo"
+                layout="responsive"
+              />
+            </a>
+          </Link>
+        </div>
         <div className="flex flex-row">
           <div className="font-bold text-white md:hidden">
             <Link href={langNL ? "/nl" : "/"}>
@@ -248,6 +249,7 @@ function MyApp({ Component, pageProps }) {
                     marginLeft: 8,
                     marginBottom: 3,
                   }}
+                  alt="nederlandse taal"
                 />
               </>
             )}
@@ -260,6 +262,7 @@ function MyApp({ Component, pageProps }) {
               <img
                 src={open ? "/images/close.svg" : "/images/open.svg"}
                 width="20px"
+                alt="menu-dropdown-button"
               />
             </button>
           </span>

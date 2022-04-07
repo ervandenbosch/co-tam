@@ -28,6 +28,7 @@ export default function TestimonialsNL() {
                       width="20px"
                       key={i}
                       className="inline-block pb-2 text-yellow-400"
+                      alt="ster"
                     />
                   ))}
                   <a href={item.user.link} target="_blank" rel="noreferrer">
@@ -35,7 +36,11 @@ export default function TestimonialsNL() {
                       className="inline-block px-2 text-red-600 hover:text-blue-400"
                       alt="see full review"
                     >
-                      <img src="/images/google.svg" width="19px" />
+                      <img
+                        src="/images/google.svg"
+                        width="19px"
+                        alt="google review"
+                      />
                     </button>
                   </a>
                 </div>
@@ -47,7 +52,7 @@ export default function TestimonialsNL() {
                     <button
                       className="text-xs font-bold text-blue-400 hover:text-red-500"
                       onClick={handleToggle}
-                      alt="read full description"
+                      alt="lees volledige beschrijving"
                     >
                       {" "}
                       ...lees meer
@@ -58,7 +63,7 @@ export default function TestimonialsNL() {
                     <button
                       className="ml-2 text-xs font-bold text-blue-400 hover:text-red-500"
                       onClick={handleToggle}
-                      alt="close description"
+                      alt="sluit beschrijving"
                     >
                       {" "}
                       ...minder

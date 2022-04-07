@@ -9,6 +9,7 @@ export function FooterNL() {
             src="/images/copyright.svg"
             className="mr-2 inline-block"
             width="15px"
+            alt="copyright co tam"
           />
           2022 Cô Tâm.
         </div>
@@ -24,7 +25,11 @@ export function FooterNL() {
             alt="co tam restaurant facebook"
             className="mx-3"
           >
-            <img src="/images/facebook-dark.svg" width="18px" />
+            <img
+              src="/images/facebook-dark.svg"
+              width="18px"
+              alt="co tam restaurant facebook"
+            />
           </a>
           <a
             href="https://www.instagram.com/cotam.restaurant/?hl=en"
@@ -33,7 +38,11 @@ export function FooterNL() {
             alt="co tam restaurant instagram"
             className="mr-3"
           >
-            <img src="/images/instagram-dark.svg" width="16px" />
+            <img
+              src="/images/instagram-dark.svg"
+              width="16px"
+              alt="co tam restaurant instagram"
+            />
           </a>
           <span>
             <a
