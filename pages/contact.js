@@ -2,8 +2,20 @@ import Head from "next/head";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
+import useScript from "/components/useScript";
 
 export default function Contact() {
+  useScript(`(function (g, s, t, p, l, n) {
+          g["_gstpln"] = {};
+          (l = s.createElement(t)), (n = s.getElementsByTagName(t)[0]);
+          l.async = 1;
+          l.src = p;
+          n.parentNode.insertBefore(l, n);
+        })(window, document, "script", "https://cdn.guestplan.com/widget.js");
+        _gstpln.accessKey = "a61e9fd2920eb894b1f8ca80c3b0984b5e6b6059";
+        _gstpln.open = false;
+        _gstpln.useHtmlLanguage = true;`);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs

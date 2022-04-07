@@ -16,9 +16,10 @@ export default function useScript(url) {
 
     return () => {
       router.events.off("routeChangeStart", onRouterChange);
-
-      document.body.removeChild(script);
-      router.reload();
+      {
+        router.pathname === "reservation" && document.body.removeChild(script);
+        router.reload();
+      }
     };
   }, [router]);
 }
