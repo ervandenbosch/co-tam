@@ -152,7 +152,7 @@ function MyApp({ Component, pageProps }) {
       >
         <div className="w-[110px]">
           <Link href="./">
-            <a className="mr-1 justify-start lg2:ml-4" onClick={closeDropdown}>
+            <a className="" onClick={closeDropdown}>
               <Image
                 src={navbarlogo}
                 placeholder="blur"
@@ -167,13 +167,13 @@ function MyApp({ Component, pageProps }) {
             <Link href={langNL ? "/nl" : "/"}>
               <a onClick={closeDropdown}>HOME</a>
             </Link>
-            <span className="px-4">|</span>
+            <span className="px-2">|</span>
             <Link href={langNL ? "/nl/reservation" : "/reservation"}>
               <a onClick={closeDropdown}>
                 {langNL ? <>RESERVEREN</> : <>RESERVATION</>}
               </a>
             </Link>
-            <span className="px-4">|</span>
+            <span className="px-2">|</span>
             <span>
               <button
                 className="font-bold"
@@ -205,22 +205,22 @@ function MyApp({ Component, pageProps }) {
                 </li>
               </ul>
             </span>
-            <span className="px-4">|</span>
+            <span className="px-2">|</span>
             <Link href={langNL ? "/nl/order" : "/order"}>
               <a onClick={closeDropdown}>
                 {langNL ? <>BESTELLEN</> : <>ORDER</>}
               </a>
             </Link>
-            <span className="px-4">|</span>
+            <span className="px-2">|</span>
             <Link href={langNL ? "/nl/about" : "/about"}>
               <a onClick={closeDropdown}>{langNL ? <>OVER</> : <>ABOUT</>}</a>
             </Link>
-            <span className="px-4">|</span>
+            <span className="px-2">|</span>
             <Link href={langNL ? "/nl/contact" : "/contact"}>
               <a onClick={closeDropdown}>CONTACT</a>
             </Link>
           </div>
-          <span className="px-4 text-white md:hidden">|</span>
+          <span className="pl-2 pr-4 text-white md:hidden">|</span>
           <button
             className="mb-2 pr-2 font-bold text-white sm:mb-0"
             onClick={changeLang}

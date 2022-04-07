@@ -7,21 +7,15 @@ export default function Reservation() {
       <Head>
         <title>Reserve a table at Cô Tâm</title>
       </Head>
-      <div className="flex flex-col justify-center bg-white">
-        <div className="h-72">
-          <Script
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `(function(g,s,t,p,l,n){
-      g["_gstpln"]={};
-      (l=s.createElement(t)),(n=s.getElementsByTagName(t)[0]);
-      l.async=1;l.src=p;n.parentNode.insertBefore(l,n);
-    })(window,document,"script","https://cdn.guestplan.com/widget.js");
- 	_gstpln.accessKey = "a61e9fd2920eb894b1f8ca80c3b0984b5e6b6059";
-   _gstpln.useHtmlLanguage = true;
-	_gstpln.open = true;`,
+      <div className="flex flex-col justify-center bg-white pt-[64px]">
+        <div className="my-10 w-full">
+          <iframe
+            style={{
+              width: "100%",
+              height: "500px",
             }}
-          />
+            src="/widgetnl.html"
+          ></iframe>
         </div>
         <div className="bg-gray-600 py-12 text-center">
           <h2 className="px-8 pb-12 text-2xl font-bold text-white">
