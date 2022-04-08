@@ -22,6 +22,7 @@ export default function HomeNL() {
           n.parentNode.insertBefore(l, n);
         })(window, document, "script", "https://cdn.guestplan.com/widget.js");
         _gstpln.accessKey = "a61e9fd2920eb894b1f8ca80c3b0984b5e6b6059";
+        _gstpln.open = false;
         _gstpln.useHtmlLanguage = true;`);
 
   const url =
