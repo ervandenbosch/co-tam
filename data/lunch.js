@@ -33,7 +33,7 @@ export const lunchdata = {
       name: "Com rang",
       description: "Stir fried rice with, onion, vegetables and eggs",
       options: ["Chicken", "Beef", "Crispy duck", "Tofu"],
-      price: [16, 17, 18, 19, 15],
+      price: [13, 14, 15, 12],
       allergens: [
         ["egg", "fish"],
         ["egg", "fish"],
@@ -46,7 +46,7 @@ export const lunchdata = {
       description:
         "Stir fried wide rice noodles with vegetables, eggs, fried onion, and herbs",
       options: ["Chicken", "Beef", "Crispy duck", "Tofu"],
-      price: [16, 17, 18, 19, 15],
+      price: [13, 14, 15, 12],
       allergens: [
         ["egg", "fish"],
         ["egg", "fish"],
@@ -69,7 +69,7 @@ export const lunchdata = {
       description:
         "Red curry sauce with cream and coconut milk, green vegetables, eggplant, champignons",
       options: ["Chicken", "Beef", "Crispy duck", "Tofu"],
-      price: [17, 18, 19, 20, 16],
+      price: [13, 14, 15, 12],
       allergens: [
         ["lactose", "fish"],
         ["lactose", "fish"],
@@ -82,7 +82,7 @@ export const lunchdata = {
       name: "Sot lac",
       description: "Peanut sauce with green vegetables, champignons",
       options: ["Chicken", "Crispy duck", "Tofu (vegan on request)"],
-      price: [17, 18, 16],
+      price: [13, 15, 12],
       allergens: [
         ["peanut", "fish"],
         ["peanut", "fish", "gluten"],
@@ -94,7 +94,7 @@ export const lunchdata = {
       description:
         "Ginger sauce with green vegetables, champignons, and bean sprouts",
       options: ["Chicken", "Beef", "Crispy duck", "Tofu (vegan on request)"],
-      price: [17, 18, 19, 20, 16],
+      price: [13, 14, 15, 12],
       allergens: ["fish", "fish", ["fish", "gluten"], ["fish", "soy"]],
       mainallergens: "pepper",
     },
@@ -102,7 +102,7 @@ export const lunchdata = {
       name: "Sot hoisin",
       description: "Hoisin sauce with green vegetables, cashew nuts",
       options: ["Chicken", "Beef", "Crispy duck", "Tofu (vegan on request)"],
-      price: [18, 19, 20, 21, 17],
+      price: [13, 14, 15, 12],
       allergens: ["fish", "fish", ["fish", "gluten"], ["fish", "soy"]],
       mainallergens: ["nuts", "soy", "pepper"],
     },
