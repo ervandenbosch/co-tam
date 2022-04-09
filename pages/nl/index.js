@@ -23,7 +23,7 @@ export default function HomeNL() {
         })(window, document, "script", "https://cdn.guestplan.com/widget.js");
         _gstpln.accessKey = "a61e9fd2920eb894b1f8ca80c3b0984b5e6b6059";
         _gstpln.open = false;
-        _gstpln.useHtmlLanguage = true;`);
+        _gstpln.locale = "nl";`);
 
   const url =
     "https://cotam.us2.list-manage.com/subscribe/post?u=6d4a8b5dd3caa61e591833f74&amp;id=e1dad9f537";
