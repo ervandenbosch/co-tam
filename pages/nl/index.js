@@ -149,8 +149,8 @@ export default function HomeNL() {
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welkom bij het authentieke Vietnamees restaurant Cô Tâm van Haarlem.
             Wij zijn open voor tafelreserveringen tijdens lunch en diner. Tevens
-            zijn wij open voor afhalen en bezorgen. Gebruik onze reseringsmodule
-            rechts onderaan uw scherm om een tafel te reserveren!
+            zijn wij open voor afhalen. Gebruik onze reseringsmodule rechts
+            onderaan uw scherm om een tafel te reserveren!
           </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
@@ -164,7 +164,7 @@ export default function HomeNL() {
                 alt="order"
                 tabIndex={0}
               >
-                Bestellen voor afhaal
+                Bestellen voor afhalen
               </button>
             </a>
             <button
