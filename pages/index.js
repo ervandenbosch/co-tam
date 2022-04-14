@@ -131,6 +131,10 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta property="og:locale" content="en_US"></meta>
         <meta property="og:locale:alternate" content="nl_NL"></meta>
+        <meta
+          name="google-site-verification"
+          content="0McVxhTlTb0g_D-qQOIpqL_KOV6P-sl0Kp3jiHLV8ok"
+        />
       </Head>
       <body>
         <div
