@@ -203,7 +203,7 @@ export const maindishesdata = {
     },
     {
       name: "Bun la lot",
-      description: "Rice noodles with beef betel leaf wraps and spring roll",
+      description: "Rice noodles with beef betel leaf wraps",
       price: 17,
       mainallergens: ["fish", "peanut", "sesam"],
     },
