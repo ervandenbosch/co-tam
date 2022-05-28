@@ -1,6 +1,178 @@
 export const reviews = [
   {
     user: {
+      name: "evert guyt",
+      link: "https://www.google.com/maps/contrib/102815904609861256073?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegQIARBB",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a/AATXAJwGMZSSsRSh3xjfzUY4OxIHA5Jax_eGwnCpe7Bb=s40-c-c0x00000000-cc-rp-mo-br100",
+      reviews: 11,
+      photos: 3,
+    },
+    rating: 5,
+    date: "23 hours ago",
+    snippet:
+      "Heerlijke authentieke smaken en heel lieve bediening. Komen zeker terug!",
+    response: {
+      date: "6 hours ago",
+      snippet:
+        "(Translated by Google) Thank you! :) (Original) Dank je wel! :)",
+    },
+  },
+  {
+    user: {
+      name: "Chiara Saba",
+      link: "https://www.google.com/maps/contrib/118136227992700287609?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegQIARBN",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a/AATXAJzJqls_JM6hZkvBwXeydGPkaZx1dzFHUYZWpBho=s40-c-c0x00000000-cc-rp-mo-br100",
+      reviews: 2,
+    },
+    rating: 5,
+    date: "2 days ago",
+    snippet:
+      "(Translated by Google) Delicious vegan options! (Original) Heerlijke veganistische opties!",
+    response: {
+      date: "6 hours ago",
+      snippet: "(Translated by Google) Fine! (Original) Fijn!",
+    },
+  },
+  {
+    user: {
+      name: "ruurd vdN",
+      link: "https://www.google.com/maps/contrib/113222728050923593663?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegQIARBa",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a/AATXAJyaE4bS6rzFIV9fVQb-KR5NfANHXbXxGiGV94EF=s40-c-c0x00000000-cc-rp-mo-br100",
+      reviews: 2,
+      photos: 1,
+    },
+    rating: 5,
+    date: "5 days ago",
+    snippet:
+      "Erg lekker Vietnamees eten met veel verse groentes en een ruime keuze",
+    response: {
+      date: "6 hours ago",
+      snippet: "Super!",
+    },
+  },
+  {
+    user: {
+      name: "R Leadbetter",
+      link: "https://www.google.com/maps/contrib/111072221347923485613?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegQIARBm",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a/AATXAJypaKPCCJh2hHCYkYHFhJaVk_d2pnQBXbUhj32R=s40-c-c0x00000000-cc-rp-mo-ba2-br100",
+      local_guide: true,
+      reviews: 27,
+      photos: 1,
+    },
+    rating: 5,
+    date: "6 days ago",
+    snippet:
+      "Love this place!!! Not a bad thing on the menu and the staff are very friendly.",
+    response: {
+      date: "6 hours ago",
+      snippet: "Thank you very much!",
+    },
+  },
+  {
+    user: {
+      name: "Lucas",
+      link: "https://www.google.com/maps/contrib/108803202186409223247?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegQIARBy",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a/AATXAJyrnNSAJL-7fQFw-Qmdj6l0YP6iCrJqiEI-cLYN=s40-c-c0x00000000-cc-rp-mo-ba4-br100",
+      local_guide: true,
+      reviews: 56,
+      photos: 21,
+    },
+    rating: 5,
+    date: "6 days ago",
+    snippet:
+      "Un personnel très gentil et à l'écoute du client. Un petit restaurant à l'ambiance très cosy. Les plats servis sont juste délicieux ! Je vous recommande les petits Bao en entrée ils sont excellents. Le restaurant propose un large choix de plats et de boissons il y en a pour tous les goûts. Un rapport qualité/prix très correct je vous invite vivement à l'essayer.",
+    images: [
+      "https://lh5.googleusercontent.com/p/AF1QipPW8R4oLRBdhcxl9277m-2HAJv18gidOHI36wTc=w100-h100-p-n-k-no",
+      "https://lh5.googleusercontent.com/p/AF1QipOt_zfsTyr5Mf_WvKDpXL6fdUMf3cruKcFBJxRA=w100-h100-p-n-k-no",
+    ],
+    response: {
+      date: "6 hours ago",
+      snippet:
+        "(Translated by Google) Thanks very much! (Original) Merci beaucoup!",
+    },
+  },
+  {
+    user: {
+      name: "Sonia Piana",
+      link: "https://www.google.com/maps/contrib/107961900940163360798?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegUIARCCAQ",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a/AATXAJx7TeFDMvtEOxJIzwPglWULgFEnDfRl4MCzsSLQ=s40-c-c0x00000000-cc-rp-mo-br100",
+      reviews: 20,
+      photos: 28,
+    },
+    rating: 5,
+    date: "a week ago",
+    snippet: "",
+    images: [
+      "https://lh5.googleusercontent.com/p/AF1QipNSDam8rz2lu8x0FW6Y4avDjJksFbHcvaUfVOAw=w100-h100-p-n-k-no",
+    ],
+  },
+  {
+    user: {
+      name: "Sawi Wemheuer",
+      link: "https://www.google.com/maps/contrib/102752745294904321732?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegUIARCNAQ",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a-/AOh14GjiZ1EFUsazwT0CpVDfJlIJgCRSuDd59btjnRVOGg=s40-c-c0x00000000-cc-rp-mo-br100",
+      reviews: 3,
+      photos: 7,
+    },
+    rating: 4,
+    date: "a week ago",
+    snippet: "",
+  },
+  {
+    user: {
+      name: "Wouter",
+      link: "https://www.google.com/maps/contrib/103806974763230421295?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegUIARCWAQ",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a-/AOh14GjlPkAwFRKTQeLTj17BS-QEwIhvcf0r37OnCb-nbBs=s40-c-c0x00000000-cc-rp-mo-ba3-br100",
+      local_guide: true,
+      reviews: 16,
+      photos: 6,
+    },
+    rating: 5,
+    date: "a week ago",
+    snippet: "",
+  },
+  {
+    user: {
+      name: "Jan Míka",
+      link: "https://www.google.com/maps/contrib/108734308597573145715?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegUIARCfAQ",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a-/AOh14Gj4r91VVSLUVj7Mg4UdqObjpcLYKT4erAAXc9I3_Xg=s40-c-c0x00000000-cc-rp-mo-ba4-br100",
+      local_guide: true,
+      reviews: 40,
+      photos: 184,
+    },
+    rating: 5,
+    date: "a week ago",
+    snippet:
+      "We stopped in Haarlem and chose this place to eat very randomly, while driving around and being hungry. It was fully booked but we were lucky to get a table which was reserved for a later hour. It turned out to be the best Vietnamese food I have ever eaten. I have chosen my favourite Vietnamese dish - Bun Bo Nam Bo and I swear I have never eaten a better one! And I have eaten it in many places already. Absolutely recommendable.",
+    response: {
+      date: "6 hours ago",
+      snippet: "Glad you stopped by!",
+    },
+  },
+  {
+    user: {
+      name: "nofar van frank",
+      link: "https://www.google.com/maps/contrib/102122475270963724684?hl=en-US&sa=X&ved=2ahUKEwjmur3Y1oL4AhXclWoFHY3iBxgQvvQBegUIARCsAQ",
+      thumbnail:
+        "https://lh3.googleusercontent.com/a/AATXAJwfMSC-39HNBuP3yNM9bFQHA1FnKwRnQzdnR0bM=s40-c-c0x00000000-cc-rp-mo-ba3-br100",
+      local_guide: true,
+      reviews: 78,
+    },
+    rating: 4,
+    date: "2 weeks ago",
+    snippet: "Tasty and good service",
+  },
+  {
+    user: {
       name: "Rami Haikal",
       link: "https://www.google.com/maps/contrib/109768154561594404440?hl=en-US&sa=X&ved=2ahUKEwiK04Dr2v32AhUGj4kEHTZLDAEQvvQBegQIARBB",
       thumbnail:

@@ -150,6 +150,27 @@ export default function Home() {
               src={cdnImage("cotamlogo.webp")}
               alt="co tam vietnamese restaurant logo"
             />
+            <p className="sm:text-md m-auto rounded-md border-2 border-[#F7C12F] p-1 text-center  text-lg text-white md:text-lg sm:mx-10">
+              <img
+                src="/images/exclamation.svg"
+                width="20px"
+                alt="announcement"
+                style={{
+                  display: "inline-block",
+                  margin: "0px 5px 4px 0px",
+                }}
+              />{" "}
+              We will be closed between the 12th and 19th of June for renovation{" "}
+              <img
+                src="/images/exclamation.svg"
+                width="20px"
+                alt="announcement"
+                style={{
+                  display: "inline-block",
+                  margin: "0px 0px 4px 5px",
+                }}
+              />
+            </p>
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welcome to the authentic Vietnamese restaurant Cô Tâm from Haarlem.
