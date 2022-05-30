@@ -133,7 +133,7 @@ export default function HomeNL() {
       </Head>
       <body>
         <div
-          className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat sm:max-h-screen"
+          className="bg local flex w-full flex-col justify-center bg-cover bg-no-repeat"
           id="top"
           style={{
             backgroundImage:
@@ -145,7 +145,7 @@ export default function HomeNL() {
               src={cdnImage("cotamlogo.webp")}
               alt="co tam vietnamees restaurant logo"
             />
-            <p className="sm:text-md m-auto rounded-md border-2 border-[#F7C12F] p-1 text-center  text-lg text-white md:text-lg sm:mx-10">
+            <p className="sm:text-md m-auto rounded-md border-2 border-[#F7C12F] p-1 text-center  text-lg text-white md:text-lg sm:mx-4">
               <img
                 src="/images/exclamation.svg"
                 width="20px"
