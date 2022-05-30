@@ -140,12 +140,12 @@ export default function HomeNL() {
               "url('https://cdn.statically.io/gh/ervandenbosch/co-tam/main/public/images/bg-orig2.jpg.webp')",
           }}
         >
-          <div className="m-auto mt-[72px] w-2/3 py-2 lg2:w-1/2 sm:mt-[70px] sm:w-full sm:px-2">
+          <div className="m-auto mt-[72px] w-2/3 pt-2 lg2:w-1/2 sm:mt-[70px] sm:w-full sm:px-2">
             <img
               src={cdnImage("cotamlogo.webp")}
               alt="co tam vietnamees restaurant logo"
             />
-            <p className="sm:text-md m-auto rounded-md border-2 border-[#F7C12F] p-1 text-center text-lg text-white sm:mx-4">
+            <p className="sm:text-md m-auto mt-1 rounded-md border-2 border-[#F7C12F] p-1 text-center text-lg text-white sm:mx-2">
               <img
                 src="/images/exclamation.svg"
                 width="20px"
