@@ -160,7 +160,7 @@ export default function Home() {
                   margin: "0px 5px 4px 0px",
                 }}
               />{" "}
-              We will be closed between the 12th and 19th of June for renovation{" "}
+              We will be closed between the 12th and 26th of June for renovation{" "}
               <img
                 src="/images/exclamation.svg"
                 width="20px"

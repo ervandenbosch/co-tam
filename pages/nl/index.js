@@ -155,7 +155,7 @@ export default function HomeNL() {
                   margin: "0px 5px 4px 0px",
                 }}
               />{" "}
-              We zijn tussen 12 en 19 juni gesloten i.v.m. renovatie{" "}
+              We zijn van 12 t/m 26 juni gesloten i.v.m. renovatie{" "}
               <img
                 src="/images/exclamation.svg"
                 width="20px"
