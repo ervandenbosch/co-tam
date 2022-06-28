@@ -45,39 +45,33 @@ export function DetailsNL() {
           <li className="py-1">Di </li>
 
           <li className="py-1">Wo</li>
-          <br />
           <li className="py-1">Do</li>
           <br />
           <li className="py-1">Vrij</li>
           <br />
           <li className="py-1">Zat</li>
-          <br />
           <li className="py-1">Zon</li>
           <br />
         </ul>
         <ul>
           <li className="py-1">Gesloten</li>
-          <li className="py-1"> 17:00 - 22:00</li>
+          <li className="py-1">17:00 - 22:00</li>
+          <li className="py-1">
+            17:00 - 22:00
+            <br />
+          </li>
           <li className="py-1">
             12:00 - 14:30
             <br /> 17:00 - 22:00
           </li>
           <li className="py-1">
-            {" "}
             12:00 - 14:30
-            <br /> 17:00 - 22:00
+            <br />
+            17:00 - 23:00
           </li>
-          <li className="py-1">
-            {" "}
-            12:00 - 14:30
-            <br /> 17:00 - 22:00
-          </li>
-          <li className="py-1">
-            {" "}
-            12:00 - 14:30
-            <br /> 17:00 - 22:00
-          </li>
-          <li className="py-1">16:00 - 21:30</li>
+          <li className="py-1">14:00 - 23:00</li>
+          <li className="py-1">14:00 - 22:00</li>
+          <br />
         </ul>
       </div>
       <div className="mt-6 flex flex-col md:m-8 sm:mt-2">

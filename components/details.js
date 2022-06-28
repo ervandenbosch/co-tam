@@ -45,37 +45,31 @@ export function Details() {
           <li className="py-1">Tue </li>
 
           <li className="py-1">Wed</li>
-          <br />
           <li className="py-1">Thu </li>
           <br />
           <li className="py-1">Fri</li>
           <br />
           <li className="py-1">Sat</li>
-          <br />
+
           <li className="py-1">Sun</li>
         </ul>
         <ul>
           <li className="py-1">Closed</li>
-          <li className="py-1"> 17:00 - 22:00</li>
+          <li className="py-1">17:00 - 22:00</li>
+          <li className="py-1">
+            17:00 - 22:00
+            <br />
+          </li>
           <li className="py-1">
             12:00 - 14:30
             <br /> 17:00 - 22:00
           </li>
           <li className="py-1">
-            {" "}
             12:00 - 14:30
-            <br /> 17:00 - 22:00
+            <br />
+            17:00 - 23:00
           </li>
-          <li className="py-1">
-            {" "}
-            12:00 - 14:30
-            <br /> 17:00 - 22:00
-          </li>
-          <li className="py-1">
-            {" "}
-            12:00 - 14:30
-            <br /> 17:00 - 22:00
-          </li>
+          <li className="py-1">14:00 - 23:00</li>
           <li className="py-1">14:00 - 22:00</li>
           <br />
         </ul>
