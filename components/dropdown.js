@@ -29,10 +29,10 @@ export function Dropdown({ closeDropdown, langNL }) {
           </Link>
         </div>
         <div className="pb-10 pl-10 lg:pl-6">
-          <button className="mr-8 font-bold" onClick={toggleMenuDropdown}>
-            {langNL ? <>MENUKAART</> : <>MENU</>}
-          </button>
-          {menuDropdown && (
+          <Link href={langNL ? "/nl/menu" : "/menu"}>
+            <a onClick={closeDropdown}>{langNL ? <>MENUKAART</> : <>MENU</>}</a>
+          </Link>
+          {/*{menuDropdown && (
             <div className="pt-6">
               <div className="pl-4 pb-6 ">
                 <Link href="/lunch" alt="menu co tam">
@@ -55,7 +55,7 @@ export function Dropdown({ closeDropdown, langNL }) {
                 </Link>
               </div>
             </div>
-          )}
+          )}*/}
         </div>
         <div className="pb-10 pl-10 lg:pl-6">
           <Link href={langNL ? "/nl/order" : "/order"}>

@@ -46,7 +46,7 @@ export function Details() {
 
           <li className="py-1">Wed</li>
           <li className="py-1">Thu </li>
-          <br />
+
           <li className="py-1">Fri</li>
           <br />
           <li className="py-1">Sat</li>
@@ -56,14 +56,8 @@ export function Details() {
         <ul>
           <li className="py-1">Closed</li>
           <li className="py-1">17:00 - 22:00</li>
-          <li className="py-1">
-            17:00 - 22:00
-            <br />
-          </li>
-          <li className="py-1">
-            12:00 - 14:30
-            <br /> 17:00 - 22:00
-          </li>
+          <li className="py-1">17:00 - 22:00</li>
+          <li className="py-1">17:00 - 22:00</li>
           <li className="py-1">
             12:00 - 14:30
             <br />

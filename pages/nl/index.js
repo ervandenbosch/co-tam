@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -167,20 +168,20 @@ export default function HomeNL() {
                 Bestellen voor afhalen
               </button>
             </a>
-            <button
-              className="mx-auto mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
-              alt="zie het menu"
-              onClick={handleMenuButtons}
-              tabIndex={0}
-            >
-              Menukaart
-            </button>
-            {menuButtons && (
+            <Link href="nl/menu">
+              <button
+                className="mx-auto mb-2 w-[250px] rounded-md border border-[#F7C12F] p-2  text-[#F7C12F] hover:bg-[#F7C12F] hover:text-gray-800 sm2:ml-4 sm:mt-2 sm:w-4/5"
+                alt="zie het menu"
+              >
+                Menukaart
+              </button>
+            </Link>
+            {/*{menuButtons && (
               <MenuModal
                 langNL={langNL}
                 handleMenuButtons={handleMenuButtons}
               />
-            )}
+            )}*/}
           </div>
         </div>
         <div className="flex flex-row bg-white pt-12 pb-8 md:flex-wrap">

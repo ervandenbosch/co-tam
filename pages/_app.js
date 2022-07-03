@@ -175,13 +175,16 @@ function MyApp({ Component, pageProps }) {
             </Link>
             <span className="px-2">|</span>
             <span>
-              <button
-                className="font-bold"
-                onMouseEnter={handleMenuDropdown}
-                onClick={handleMenuDropdown}
-              >
-                MENU
-              </button>
+              <Link href={langNL ? "/nl/menu" : "/menu"}>
+                <button
+                  className="font-bold"
+                  onMouseEnter={handleMenuDropdown}
+                  onClick={handleMenuDropdown}
+                >
+                  MENU
+                </button>
+              </Link>
+              {/*
               <ul
                 onMouseLeave={closeDropdown}
                 className={
@@ -190,10 +193,7 @@ function MyApp({ Component, pageProps }) {
                 }
               >
                 <li className="pb-2">
-                  <Link href="/lunch">
-                    <button className="font-bold" onClick={closeDropdown}>
-                      Lunch
-                    </button>
+                    <button className="font-bold">Lunch</button>
                   </Link>
                 </li>
                 <li>
@@ -204,6 +204,7 @@ function MyApp({ Component, pageProps }) {
                   </Link>
                 </li>
               </ul>
+              */}
             </span>
             <span className="px-2">|</span>
             <Link href={langNL ? "/nl/order" : "/order"}>

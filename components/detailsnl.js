@@ -46,7 +46,7 @@ export function DetailsNL() {
 
           <li className="py-1">Wo</li>
           <li className="py-1">Do</li>
-          <br />
+
           <li className="py-1">Vrij</li>
           <br />
           <li className="py-1">Zat</li>
@@ -56,14 +56,8 @@ export function DetailsNL() {
         <ul>
           <li className="py-1">Gesloten</li>
           <li className="py-1">17:00 - 22:00</li>
-          <li className="py-1">
-            17:00 - 22:00
-            <br />
-          </li>
-          <li className="py-1">
-            12:00 - 14:30
-            <br /> 17:00 - 22:00
-          </li>
+          <li className="py-1">17:00 - 22:00</li>
+          <li className="py-1">17:00 - 22:00</li>
           <li className="py-1">
             12:00 - 14:30
             <br />
