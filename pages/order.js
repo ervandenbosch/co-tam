@@ -15,7 +15,7 @@ export default function Order() {
             rel="noreferrer"
           >
             <button className="w-[200px] rounded-lg bg-[#F7C12F] p-2 text-center hover:inset-2 hover:border-2 hover:border-[#F7C12F] hover:bg-transparent hover:text-[#F7C12F]">
-              Order
+              Order to Takeaway
             </button>
           </a>
           <p className="w-[200px] pt-6 text-justify">
