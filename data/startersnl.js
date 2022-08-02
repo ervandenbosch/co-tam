@@ -11,7 +11,7 @@ export const startersdataNL = {
         "Shrimps",
         "Tofu (vegan)",
       ],
-      price: 8,
+      price: [8, 8, 9, 9, 8],
       allergens: [
         ["gluten"],
         ["gluten"],
@@ -23,7 +23,7 @@ export const startersdataNL = {
     {
       name: "Goi xoai, ga",
       description: "Mango salad with herbs and fried chicken stripes",
-      price: 9,
+      price: 10,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
@@ -41,7 +41,7 @@ export const startersdataNL = {
     {
       name: "Goi dudu, tom",
       description: "Papaya salad with herbs and shrimps",
-      price: 12,
+      price: 13,
       mainallergens: ["crust", "peanut", "fish", "pepper"],
     },
     {
@@ -70,7 +70,7 @@ export const startersdataNL = {
       description:
         "Steamed bao bun sandwich filled with vegetables, spring onion and herbs, with hoisin sauce. 2pcs",
       options: ["Chicken", "Beef", "Crispy duck", "Tofu"],
-      price: [9, 10, 10, 9],
+      price: [10, 11, 11, 10],
       allergens: [
         ["gluten", "lactose"],
         ["gluten", "lactose"],
@@ -120,7 +120,7 @@ export const startersdataNL = {
     {
       name: "Edamame (vegan)",
       description: "Whole, steamed soybeans",
-      price: 6,
+      price: 7,
       mainallergens: ["soy"],
     },
   ],
@@ -150,13 +150,13 @@ export const startersdataNL = {
       name: "Tom chien",
       description:
         "Crispy fried king prawns in young rice flakes with chilli dip",
-      price: 9,
+      price: 10,
       mainallergens: ["gluten", "crust"],
     },
     {
       name: "Tom cun",
       description: "Crispy fried shrimps with walnuts and mayo dip",
-      price: 8,
+      price: 9,
       mainallergens: ["gluten", "crust", "peanut"],
     },
     {
@@ -174,7 +174,7 @@ export const startersdataNL = {
     {
       name: "Ga popcorn",
       description: "Crispy fried chicken pieces with chilli-mayo dip",
-      price: 8,
+      price: 9,
       mainallergens: ["gluten"],
     },
     {
@@ -188,13 +188,13 @@ export const startersdataNL = {
       name: "Bo la lot",
       description:
         "Pickled beef meat wrapped in a betel leaf with fish sauce. 5pcs",
-      price: 8,
+      price: 9,
       mainallergens: ["sesam", "peanut"],
     },
     {
       name: "Ga sate",
       description: "Chicken sate served with peanut sauce. 2pcs",
-      price: 7,
+      price: 8,
       mainallergens: ["peanut"],
     },
   ],
