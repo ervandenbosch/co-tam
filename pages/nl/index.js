@@ -147,6 +147,9 @@ export default function HomeNL() {
               alt="co tam vietnamees restaurant logo"
             />
           </div>
+          <div className="sm:text-md m-auto px-48 py-1 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
+            We zijn gesloten op 27 en 28 september.
+          </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welkom bij het authentieke Vietnamees restaurant Cô Tâm van Haarlem.
             Wij zijn open voor tafelreserveringen tijdens lunch en diner. Tevens
