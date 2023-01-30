@@ -31,4 +31,10 @@ export const dessertsdata = [
     price: 8,
     mainallergens: "gluten",
   },
+  {
+    name: "Sesame balls",
+    description: "2 pieces of sesame rice balls (traditional Vietnamese snack)",
+    mainprice: 4,
+    mainallergens: ["gluten", "egg", "sesam", "soy"],
+  },
 ];

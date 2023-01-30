@@ -11,7 +11,7 @@ export const startersdata = {
         "Shrimps",
         "Tofu (vegan)",
       ],
-      price: [8, 8, 9, 9, 8],
+      price: [9, 9, 10, 10, 8],
       allergens: [
         ["gluten"],
         ["gluten"],
@@ -23,44 +23,44 @@ export const startersdata = {
     {
       name: "Goi xoai, ga",
       description: "Mango salad with herbs and fried chicken stripes",
-      price: 10,
+      price: 11,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
       name: "Goi xoai, vit",
       description: "Mango salad with herbs and crispy duck",
-      price: 10,
+      price: 11,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
       name: "Goi dudu, ga",
       description: "Papaya salad with herbs and fried chicken strips",
-      price: 11,
+      price: 12,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
       name: "Goi dudu, tom",
       description: "Papaya salad with herbs and shrimps",
-      price: 13,
+      price: 14,
       mainallergens: ["crust", "peanut", "fish", "pepper"],
     },
     {
       name: "Goi buoi, ga",
       description: "Fresh pomelo salad with herbs and fried chicken stripes",
-      price: 12,
+      price: 13,
       mainallergens: ["peanut", "fish", "sesam", "pepper"],
     },
     {
       name: "Goi buoi, tom",
       description: "Fresh pomelo salad with prawns and herbs",
-      price: 14,
+      price: 15,
       mainallergens: ["fish", "peanut", "fish", "sesam", "pepper"],
     },
     {
       name: "Spinach salad (vegan)",
       description:
         "Baby spinach salad with red onion, sesame dressing, lime juice, chili, and crispy tofu sheet",
-      price: 9,
+      price: 10,
       mainallergens: ["peanut", "sesam", "soy", "pepper"],
     },
   ],
@@ -70,7 +70,7 @@ export const startersdata = {
       description:
         "Steamed bao bun sandwich filled with vegetables, spring onion and herbs, with hoisin sauce. 2pcs",
       options: ["Chicken", "Beef", "Crispy duck", "Tofu"],
-      price: [10, 11, 11, 10],
+      price: [11, 12, 12, 11],
       allergens: [
         ["gluten", "lactose"],
         ["gluten", "lactose"],
@@ -129,22 +129,28 @@ export const startersdata = {
       name: "Nem (Spring rolls)",
       description:
         "Home made fried spring rolls with glass noodles, vegetables,wood ear mushrooms, and minced pork meat. 2pcs (popular)",
-      price: 7,
+      price: 8,
       mainallergens: ["gluten", "fish"],
     },
     {
       name: "Nem chay (vegan on request) ",
       description:
         "Home made fried vegetarian spring rolls with fish sauce. 2pcs",
-      price: 6,
+      price: 8,
       mainallergens: ["gluten", "soy"],
     },
     {
       name: "Nem 3 loai",
       description:
         "3 types of fried spring rolls (meat, vegetarian, crab) with chili dip. 4pcs",
-      price: 10,
+      price: 11,
       mainallergens: ["gluten", "crust", "fish"],
+    },
+    {
+      name: "Tom cun",
+      description: "Crispy fried shrimps with walnuts and mayo dip",
+      price: 10,
+      mainallergens: ["gluten", "crust", "peanut"],
     },
     {
       name: "Tom chien",
@@ -154,26 +160,20 @@ export const startersdata = {
       mainallergens: ["gluten", "crust"],
     },
     {
-      name: "Tom cun",
-      description: "Crispy fried shrimps with walnuts and mayo dip",
-      price: 9,
-      mainallergens: ["gluten", "crust", "peanut"],
-    },
-    {
-      name: "Muc chien",
-      description: "Crispy fried squid rings, with chili dip",
-      price: 9,
-      mainallergens: ["gluten", "crust"],
-    },
-    {
       name: "Cua chien",
       description: "Crispy fried soft crab pieces, 2pcs",
-      price: 12,
+      price: 13,
       mainallergens: ["gluten", "crust"],
     },
     {
       name: "Ga popcorn",
       description: "Crispy fried chicken pieces with chilli-mayo dip",
+      price: 10,
+      mainallergens: ["gluten"],
+    },
+    {
+      name: "Tofu popcorn (vegan)",
+      description: "Crispy fried tofu pieces with peanut sauce",
       price: 9,
       mainallergens: ["gluten"],
     },
@@ -194,7 +194,7 @@ export const startersdata = {
     {
       name: "Ga sate",
       description: "Chicken sate served with peanut sauce. 2pcs",
-      price: 8,
+      price: 9,
       mainallergens: ["peanut"],
     },
   ],

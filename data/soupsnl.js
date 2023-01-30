@@ -2,14 +2,14 @@ export const soupsdataNL = [
   {
     name: "Hoanh thanh sup",
     description: "Soup with Wan Tan dumplings, pak choi, green onion",
-    price: 9,
+    price: 10,
     mainallergens: ["gluten", "fish", "sesam"],
   },
   {
     name: "Sup ga",
     description:
       "Chicken soup with white fungus and goji berries, spring onion, coriander",
-    price: 9,
+    price: 10,
   },
   {
     name: "Pho",
@@ -18,11 +18,9 @@ export const soupsdataNL = [
     options: [
       "Chicken (Vietnamese classic)",
       "Beef (Vietnamese classic)",
-      "Crispy duck",
-      "Shrimps",
       "Tofu",
     ],
-    price: [15, 16, 17, 19, 14],
+    price: [16, 17, 15],
     allergens: [
       "fish",
       ["gluten", "fish"],
@@ -35,7 +33,7 @@ export const soupsdataNL = [
     name: "Bun bo Hue",
     description:
       "Traditional soup of Hue city. Beef and chicken broth with rice noodles with beef, lemongrass, onion, bean sprouts, chili",
-    price: 17,
+    price: 18,
     mainallergens: ["fish", "pepper"],
   },
 ];
