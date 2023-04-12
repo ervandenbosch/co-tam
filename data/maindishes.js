@@ -48,7 +48,7 @@ export const maindishesdata = {
       name: "Sot lac",
       description: "Peanut sauce with green vegetables, champignons",
       options: ["Chicken", "Crispy duck", "Tofu (vegan)"],
-      price: [18, 19, 17],
+      price: [18, 20, 17],
       allergens: [
         ["peanut", "fish"],
         ["peanut", "fish", "gluten"],
