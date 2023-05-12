@@ -148,6 +148,10 @@ export default function HomeNL() {
             />
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
+            <div>
+              LET OP: We zijn op vakantie van 16 juni t/m 23 juni.
+              <div>-</div>
+            </div>
             Welkom bij het authentieke Vietnamees restaurant Cô Tâm van Haarlem.
             Wij zijn open voor tafelreserveringen tijdens lunch en diner. Tevens
             zijn wij open voor afhalen. Gebruik onze reseringsmodule rechts
