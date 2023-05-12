@@ -154,7 +154,7 @@ export default function Home() {
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             <div>
-              ATTENTION: We are closed 16 June until 23 June due to holidays.
+              ATTENTION: We are closed 16 May until 23 May due to holidays.
               <div>-</div>
             </div>
             Welcome to the authentic Vietnamese restaurant Cô Tâm from Haarlem.
