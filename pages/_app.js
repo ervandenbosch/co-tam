@@ -137,7 +137,7 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="keywords"
           content="Cô Tâm restaurant, vietnamese, vietnamees, restaurant, haarlem, authentiek"

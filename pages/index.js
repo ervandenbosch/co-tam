@@ -122,7 +122,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <title>Home of Cô Tâm Vietnamees Restaurant Haarlem</title>
         <meta
           name="description"
