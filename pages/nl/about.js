@@ -30,7 +30,7 @@ export default function Over() {
       <div className="mt-4 flex flex-row bg-white text-black md:flex-wrap">
         <div className="w-2/3 px-4 text-justify md:w-full">
           <p className="px-3">
-            Ik en mijn man Phien hebben vele jaren gewerkt in restaurants in
+            Mijn man Phien en ik hebben vele jaren gewerkt in restaurants in
             Duitsland en we droomden ervan om ons eigen restaurant te openen. We
             hadden geld gespaard en wachtten op de beste gelegenheid. Onze
             dochter, die naar Nederland is verhuisd en waar we al 10 jaar apart
