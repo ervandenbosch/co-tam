@@ -28,9 +28,9 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   let href = router.asPath;
 
-  function hideMenu() {
+  /*/ function hideMenu() {
     var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
+      window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
@@ -42,6 +42,7 @@ function MyApp({ Component, pageProps }) {
       prevScrollpos = currentScrollPos;
     };
   }
+/*/
 
   const setSmoothScroll = (isSmooth) => {
     document.documentElement.style.scrollBehavior = isSmooth
@@ -97,7 +98,7 @@ function MyApp({ Component, pageProps }) {
   }
 
   useEffect(() => {
-    hideMenu();
+    // hideMenu();
     toTopButton();
     checkLang();
   }, []);
