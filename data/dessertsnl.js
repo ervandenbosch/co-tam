@@ -26,9 +26,7 @@ export const dessertsdataNL = [
   {
     name: "Chuoi chien",
     description: "Fried banana with almond strips, mango ice cream, honey",
-    options: "with ice cream of your choice (see options above)",
-    mainprice: 5,
-    price: 8,
+    mainprice: 6,
     mainallergens: "gluten",
   },
   {

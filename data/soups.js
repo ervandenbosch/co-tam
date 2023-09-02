@@ -2,7 +2,7 @@ export const soupsdata = [
   {
     name: "Hoanh thanh sup",
     description: "Soup with Wan Tan dumplings, pak choi, green onion",
-    price: 10,
+    price: 11,
     mainallergens: ["gluten", "fish", "sesam"],
   },
   {
@@ -20,7 +20,7 @@ export const soupsdata = [
       "Beef (Vietnamese classic)",
       "Tofu",
     ],
-    price: [16, 17, 15],
+    price: [16.5, 17.5, 16.5],
     allergens: [
       "fish",
       ["gluten", "fish"],

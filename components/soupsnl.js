@@ -78,7 +78,7 @@ export function SoupsNL() {
                         </li>
                       </div>
                       {Array.isArray(item.price) && (
-                        <div className="inline-block">{item.price[i]}.00</div>
+                        <div className="inline-block">{item.price[i]}</div>
                       )}
                     </div>
                   );

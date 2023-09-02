@@ -1,14 +1,14 @@
 export const soupsdataNL = [
   {
     name: "Hoanh thanh sup",
-    description: "Soup with Wan Tan dumplings, pak choi, green onion",
-    price: 10,
+    description: "Soep met Wan Tan dumplings, pak choi en groene ui",
+    price: 11,
     mainallergens: ["gluten", "fish", "sesam"],
   },
   {
     name: "Sup ga",
     description:
-      "Chicken soup with white fungus and goji berries, spring onion, coriander",
+      "Kippensoep met witte paddestoel, goji berries, bosui en koriander",
     price: 10,
   },
   {
@@ -20,7 +20,7 @@ export const soupsdataNL = [
       "Beef (Vietnamese classic)",
       "Tofu",
     ],
-    price: [16, 17, 15],
+    price: [16.5, 17.5, 16.5],
     allergens: [
       "fish",
       ["gluten", "fish"],

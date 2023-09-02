@@ -4,16 +4,9 @@ export const startersdataNL = {
       name: "Goi cuon (Summer rolls)",
       description:
         "Rice noodles, fresh vegetables and herbs wrapped in rice paper rolls, with hoisin sauce. 2pcs",
-      options: [
-        "Chicken",
-        "Beef (popular)",
-        "Crispy duck",
-        "Shrimps",
-        "Tofu (vegan)",
-      ],
-      price: [9, 9, 10, 10, 8],
+      options: ["Chicken", "Crispy duck", "Shrimps (popular)", "Tofu (vegan)"],
+      price: [9, 10, 10, 9],
       allergens: [
-        ["gluten"],
         ["gluten"],
         ["gluten"],
         ["gluten", "crust"],
@@ -56,23 +49,15 @@ export const startersdataNL = {
       price: 15,
       mainallergens: ["fish", "peanut", "fish", "sesam", "pepper"],
     },
-    {
-      name: "Spinach salad (vegan)",
-      description:
-        "Baby spinach salad with red onion, sesame dressing, lime juice, chili, and crispy tofu sheet",
-      price: 10,
-      mainallergens: ["peanut", "sesam", "soy", "pepper"],
-    },
   ],
   Gestoomde_gerechten: [
     {
       name: "Banh bao",
       description:
         "Steamed bao bun sandwich filled with vegetables, spring onion and herbs, with hoisin sauce. 2pcs",
-      options: ["Chicken", "Beef", "Crispy duck", "Tofu"],
-      price: [11, 12, 12, 11],
+      options: ["Chicken", "Crispy duck", "Tofu"],
+      price: [11, 12, 11],
       allergens: [
-        ["gluten", "lactose"],
         ["gluten", "lactose"],
         ["gluten", "lactose"],
         ["gluten", "soy", "lactose"],
@@ -82,7 +67,7 @@ export const startersdataNL = {
       name: "Ha cao tom",
       description: "Shrimp Dim sum dumplings. 4pcs",
       price: 7,
-      mainallergens: ["gluten", "crust", "fish", "sesam", "egg", "soy"],
+      mainallergens: ["crust", "fish", "sesam", "egg", "soy"],
     },
     {
       name: "Xiu mai tom",
@@ -91,25 +76,17 @@ export const startersdataNL = {
       mainallergens: ["gluten", "crust", "fish", "sesam", "soy"],
     },
     {
-      name: "Gyoza chay (vegan)",
-      description: "Vegetarian gyoza dumplings with tofu and vegetables. 3pcs",
+      name: "Gyoza ga",
+      description: "Gyoza dumplings with chicken. 3pcs",
       price: 7,
-      mainallergens: [
-        "gluten",
-        "crust",
-        "fish",
-        "sesam",
-        "egg",
-        "soy",
-        "shell",
-      ],
+      mainallergens: ["gluten", "sesam", "soy"],
     },
     {
       name: "Gyoza rau den (vegan)",
       description:
         "Spinach gyoza dumplings with cabbage and soybeans, carrots, onions. 3pcs",
       price: 7,
-      mainallergens: ["sesam", "gluten", "soy"],
+      mainallergens: ["sesam", "soy"],
     },
     {
       name: "Gyoza tom",
@@ -147,17 +124,17 @@ export const startersdataNL = {
       mainallergens: ["gluten", "crust", "fish"],
     },
     {
+      name: "Tom cun",
+      description: "Crispy fried shrimps with walnuts and mayo dip",
+      price: 10,
+      mainallergens: ["gluten", "crust", "peanut"],
+    },
+    {
       name: "Tom chien",
       description:
         "Crispy fried king prawns in young rice flakes with chilli dip",
       price: 10,
       mainallergens: ["gluten", "crust"],
-    },
-    {
-      name: "Tom cun",
-      description: "Crispy fried shrimps with walnuts and mayo dip",
-      price: 10,
-      mainallergens: ["gluten", "crust", "peanut"],
     },
     {
       name: "Cua chien",
@@ -172,10 +149,10 @@ export const startersdataNL = {
       mainallergens: ["gluten"],
     },
     {
-      name: "Tofu popcorn (vega)",
+      name: "Tofu popcorn (vegan)",
       description: "Crispy fried tofu pieces with peanut sauce",
       price: 9,
-      mainallergens: ["gluten"],
+      mainallergens: ["gluten", "soy"],
     },
     {
       name: "Wan tan chien",

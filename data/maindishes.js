@@ -3,8 +3,14 @@ export const maindishesdata = {
     {
       name: "Com rang",
       description: "Stir fried rice with, onion, vegetables and eggs",
-      options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu (vegan)"],
-      price: [17, 18, 20, 21, 16],
+      options: [
+        "Chicken",
+        "Beef",
+        "Crispy duck",
+        "Shrimp",
+        "Tofu (vegan on request)",
+      ],
+      price: [17, 18, 20, 21, 17],
       allergens: [
         ["egg", "fish"],
         ["egg", "fish"],
@@ -17,8 +23,14 @@ export const maindishesdata = {
       name: "Pho xao",
       description:
         "Stir fried wide rice noodles with vegetables, eggs, fried onion, and herbs",
-      options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu (vegan)"],
-      price: [17, 18, 20, 21, 16],
+      options: [
+        "Chicken",
+        "Beef",
+        "Crispy duck",
+        "Shrimp",
+        "Tofu (vegan on request)",
+      ],
+      price: [17, 18, 20, 21, 17],
       allergens: [
         ["egg", "fish"],
         ["egg", "fish"],
@@ -27,6 +39,14 @@ export const maindishesdata = {
         ["egg", "soy"],
       ],
     },
+    {
+      name: "Udon xao",
+      description:
+        "Stir fried udon noodles with vegetables, eggs, fried onion, and herbs",
+      options: ["Crispy duck", "Tofu (vegan)"],
+      price: [21, 18],
+      allergens: [["egg", "fish"], ["soy"]],
+    },
   ],
   Main_meals: [
     {
@@ -34,7 +54,7 @@ export const maindishesdata = {
       description:
         "Red curry sauce with cream and coconut milk, green vegetables, eggplant, champignons",
       options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu"],
-      price: [18, 19, 20, 22, 17],
+      price: [19, 20, 21, 23, 19],
       allergens: [
         ["lactose", "fish"],
         ["lactose", "fish"],
@@ -42,13 +62,13 @@ export const maindishesdata = {
         ["lactose", "fish", "crust"],
         ["lactose", "fish", "soy"],
       ],
-      mainallergens: ["pepper", "pepper"],
+      mainallergens: "pepper",
     },
     {
       name: "Sot lac",
       description: "Peanut sauce with green vegetables, champignons",
       options: ["Chicken", "Crispy duck", "Tofu (vegan)"],
-      price: [18, 20, 17],
+      price: [19, 21, 19],
       allergens: [
         ["peanut", "fish"],
         ["peanut", "fish", "gluten"],
@@ -60,7 +80,7 @@ export const maindishesdata = {
       description:
         "Ginger sauce with green vegetables, champignons, and bean sprouts",
       options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu (vegan)"],
-      price: [18, 19, 20, 22, 17],
+      price: [19, 20, 21, 23, 19],
       allergens: [
         "fish",
         "fish",
@@ -75,7 +95,7 @@ export const maindishesdata = {
       description:
         "Lemongrass sauce with green vegetables, champignons and chilli",
       options: ["Chicken", "Beef", "Shrimp", "Tofu (vegan)"],
-      price: [18, 19, 22, 17],
+      price: [20, 21, 24, 20],
       allergens: ["fish", "fish", ["fish", "crust"], ["soy"]],
       mainallergens: ["pepper", "pepper"],
     },
@@ -84,7 +104,7 @@ export const maindishesdata = {
       description:
         "Tamarind sauce with grilled asparagus, sugar snaps, dried chilli",
       options: ["Crispy chicken", "Crispy beef", "Crispy shrimp"],
-      price: [19, 20, 23],
+      price: [21, 22, 25],
       allergens: [
         ["fish", "gluten"],
         ["fish", "gluten"],
@@ -96,7 +116,7 @@ export const maindishesdata = {
       name: "Sot basilicum",
       description: "Basil sauce with green vegetables and champignons",
       options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu (vegan)"],
-      price: [19, 20, 21, 23, 18],
+      price: [20, 21, 22, 24, 20],
       allergens: [
         "fish",
         "fish",
@@ -110,7 +130,7 @@ export const maindishesdata = {
       name: "Sot hoisin",
       description: "Hoisin sauce with green vegetables, cashew nuts",
       options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu (vegan)"],
-      price: [18, 19, 20, 22, 17],
+      price: [19, 20, 21, 23, 20],
       allergens: [
         "fish",
         "fish",
@@ -124,34 +144,34 @@ export const maindishesdata = {
       name: "Dua Xao Bo",
       description:
         "Sliced beef with pineapple, spring onion, cherry tomatoes and ginger",
-      price: 20,
-      mainallergens: ["soy", "crust", "celery", "pepper"],
+      price: 21,
+      mainallergens: ["crust", "celery", "pepper"],
     },
     {
       name: "Stir fried white fungus (vegan)",
       description:
         "Stir fried white fungus with green vegetables, bean sprouts, crispy tofu",
-      price: 18,
+      price: 19,
       mainallergens: ["sesam", "soy"],
     },
   ],
-  Noodle_specialties: [
+  Noodle_salad_bowl: [
     {
       name: "Bun bo nam bo",
       description: "Rice noodles with beef",
-      price: 19,
+      price: 20,
       mainallergens: ["fish", "peanut"],
     },
     {
       name: "Bun nem",
       description: "Rice noodles with meat spring rolls",
-      price: 17,
+      price: 20,
       mainallergens: ["fish", "peanut"],
     },
     {
       name: "Bun vit",
       description: "Rice noodles with crispy duck",
-      price: 19,
+      price: 22,
       mainallergens: ["fish", "peanut", "gluten"],
     },
     {
@@ -163,19 +183,19 @@ export const maindishesdata = {
     {
       name: "Bun tom",
       description: "Rice noodles with prawns",
-      price: 22,
+      price: 23,
       mainallergens: ["fish", "peanut", "crust"],
     },
     {
-      name: "Bun chay (vegan on request",
+      name: "Bun chay (vegan on request) ",
       description: "Rice noodles with tofu",
-      price: 17,
+      price: 19,
       mainallergens: ["fish", "peanut", "soy"],
     },
     {
       name: "Bun la lot",
       description: "Rice noodles with beef betel leaf wraps",
-      price: 19,
+      price: 20,
       mainallergens: ["fish", "peanut", "sesam"],
     },
   ],
@@ -184,21 +204,7 @@ export const maindishesdata = {
       name: "Ginger salmon",
       description:
         "Grilled salmon with grilled asparagus and shiitake mushrooms, and ginger sauce, rice on side",
-      price: 24,
-      mainallergens: ["fish", "pepper"],
-    },
-    {
-      name: "Sea bream filet",
-      description:
-        "Crispy fried sea bream with asparagus, shiitake mushrooms and ginger sauce, rice on side",
-      price: 24,
-      mainallergens: ["fish", "pepper"],
-    },
-    {
-      name: "Grilled tiger prawns",
-      description:
-        "Grilled tiger prawns (2pcs.) with green vegetables, rice on side",
-      price: 29,
+      price: 25,
       mainallergens: ["fish", "pepper"],
     },
     {
