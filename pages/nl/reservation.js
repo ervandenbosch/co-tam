@@ -7,13 +7,13 @@ export default function Reserveren() {
         <title>Reserveer een tafel bij Cô Tâm</title>
       </Head>
       <div className="flex flex-col justify-center bg-white pt-[64px]">
-        <div className="my-[32px] w-full sm:my-[0px]">
+        <div className="my-[32px] w-full items-center pr-[150px] sm:my-[8px] sm:pr-0">
           <iframe
             style={{
               width: "100%",
               height: "500px",
             }}
-            src="/widgetnl.html"
+            src="/widget.html"
           ></iframe>
         </div>
         <div className="bg-gray-600 py-12 text-center">

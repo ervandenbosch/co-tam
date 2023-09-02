@@ -7,7 +7,7 @@ export default function Reservation() {
         <title>Reserve a table at Cô Tâm</title>
       </Head>
       <div className="flex flex-col justify-center bg-white pt-[64px]">
-        <div className="my-[32px] w-full sm:my-[0px]">
+        <div className="my-[32px] w-full items-center pr-[150px] sm:my-[8px] sm:pr-0">
           <iframe
             style={{
               width: "100%",
