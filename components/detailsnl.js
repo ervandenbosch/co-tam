@@ -35,8 +35,8 @@ export function DetailsNL() {
         <br />
         <br />
         <b>Telefoonnummer:</b> <br />
-        <Link href="tel:0681968898">
-          <a className="text-yellow-500 hover:text-blue-400">0681968898</a>
+        <Link href="tel:023-583-4384">
+          <a className="text-yellow-500 hover:text-blue-400">(023) 583 4384</a>
         </Link>
       </div>
       <div className="mt-2 flex flex-row px-6 sm:mb-4 sm:mt-10">
