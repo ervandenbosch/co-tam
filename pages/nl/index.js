@@ -124,11 +124,9 @@ export default function HomeNL() {
         <meta charSet="UTF-8" />
         <title>Homepagina van Cô Tâm Vietnamees Restaurant Haarlem</title>
         <meta
-          name="description"
+          name="beschrijving"
           content="Welkom bij Cô Tâm Vietnamees restaurant. De authentieke Vietnamese keuken in het centrum van Haarlem. Geniet van heerlijk Vietnamees eten aan het Spaarne."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
         <meta property="og:locale" content="nl_NL"></meta>
         <meta property="og:locale:alternate" content="en_US"></meta>
       </Head>

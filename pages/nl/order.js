@@ -5,6 +5,12 @@ export default function Bestellen() {
     <>
       <Head>
         <title>Bestellen bij Cô Tâm</title>
+        <meta
+          name="beschrijving"
+          content="Welkom bij Cô Tâm Vietnamees restaurant. De authentieke Vietnamese keuken in het centrum van Haarlem. Geniet van heerlijk Vietnamees eten aan het Spaarne."
+        />
+        <meta property="og:locale" content="nl_NL"></meta>
+        <meta property="og:locale:alternate" content="en_US"></meta>
       </Head>
       ;
       <div className="flex flex-col justify-center bg-white pt-[64px]">

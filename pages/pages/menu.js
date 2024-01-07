@@ -43,6 +43,13 @@ export default function Menu() {
     <>
       <Head>
         <title>Menu Cô Tâm</title>
+        <meta
+          name="description"
+          content="Welcome to Cô Tâm Vietnamese restaurant. The authentic Vietnamese cuisine in the center of Haarlem. Enjoy delicious Vietnamese food at the Spaarne."
+        />
+
+        <meta property="og:locale" content="en_US"></meta>
+        <meta property="og:locale:alternate" content="nl_NL"></meta>
       </Head>
       <div className="pt-[64px]">
         <div className="text-md pt-10 text-center lg2:text-lg sm:text-sm">
@@ -86,11 +93,11 @@ export default function Menu() {
           {maindishes && <MainDishes />}
           {desserts && <Desserts />}
         </div>
-        <div className="py-12 px-4">
+        <div className="px-4 py-12">
           <h2 className="pb-4 text-center text-sm font-bold">Allergens</h2>
           <img
             src="/images/allergens.webp"
-            className="m-auto max-w-[500px] sm:w-full sm:pl-3 sm:pr-1"
+            className="max-w-[500px] m-auto sm:w-full sm:pl-3 sm:pr-1"
           />
         </div>
       </div>

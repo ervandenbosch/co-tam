@@ -144,7 +144,9 @@ function MyApp({ Component, pageProps }) {
           content="Cô Tâm restaurant, vietnamese, vietnamees, restaurant, haarlem, authentiek"
         />
         <meta name="author" content="Cô Tâm" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width
+        =device-width, initial-scale=1.0" />
+             <meta name="robots" content="index, follow" />
       </Head>
       <nav
         className="

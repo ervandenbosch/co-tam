@@ -20,6 +20,12 @@ export default function Over() {
     <div className="m-auto lg2:w-4/5">
       <Head>
         <title>Over Cô Tâm</title>
+              <meta
+          name="description"
+          content="Welcome to Cô Tâm Vietnamese restaurant. The authentic Vietnamese cuisine in the center of Haarlem. Enjoy delicious Vietnamese food at the Spaarne."
+        />
+        <meta property="og:locale" content="en_US"></meta>
+        <meta property="og:locale:alternate" content="nl_NL"></meta>
       </Head>
       <h1 className="mt-[64px] pt-8 text-center text-3xl font-bold">
         Ons verhaal

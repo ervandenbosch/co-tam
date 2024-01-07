@@ -43,6 +43,13 @@ export default function Menukaart() {
     <>
       <Head>
         <title>Menu Cô Tâm</title>
+        <meta
+          name="beschrijving"
+          content="Welkom bij Cô Tâm Vietnamees restaurant. De authentieke Vietnamese keuken in het centrum van Haarlem. Geniet van heerlijk Vietnamees eten aan het Spaarne."
+        />
+
+        <meta property="og:locale" content="nl_NL"></meta>
+        <meta property="og:locale:alternate" content="en_US"></meta>
       </Head>
       <div className="pt-[64px]">
         <div className="text-md pt-10 text-center lg2:text-lg sm:text-sm">
@@ -86,11 +93,11 @@ export default function Menukaart() {
           {maindishes && <MainDishesNL />}
           {desserts && <DessertsNL />}
         </div>
-        <div className="py-12 px-4">
+        <div className="px-4 py-12">
           <h2 className="pb-4 text-center text-sm font-bold">Allergenen</h2>
           <img
             src="/images/allergens.webp"
-            className="m-auto max-w-[500px] sm:w-full sm:pl-3 sm:pr-1"
+            className="max-w-[500px] m-auto sm:w-full sm:pl-3 sm:pr-1"
           />
         </div>
       </div>

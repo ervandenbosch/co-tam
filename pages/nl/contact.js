@@ -49,6 +49,13 @@ export default function ContactNL() {
     <>
       <Head>
         <title>Contact Cô Tâm</title>
+        <meta
+          name="beschrijving"
+          content="Welkom bij Cô Tâm Vietnamees restaurant. De authentieke Vietnamese keuken in het centrum van Haarlem. Geniet van heerlijk Vietnamees eten aan het Spaarne."
+        />
+    
+        <meta property="og:locale" content="nl_NL"></meta>
+        <meta property="og:locale:alternate" content="en_US"></meta>
       </Head>
       <div className="m-auto w-1/2 px-16 py-[64px] md:w-2/3 sm:w-full sm:px-12">
         <h2 className="mt-12 text-center text-xl font-bold">

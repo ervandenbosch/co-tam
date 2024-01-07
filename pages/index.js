@@ -128,8 +128,7 @@ export default function Home() {
           name="description"
           content="Welcome to Cô Tâm Vietnamese restaurant. The authentic Vietnamese cuisine in the center of Haarlem. Enjoy delicious Vietnamese food at the Spaarne."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
+
         <meta property="og:locale" content="en_US"></meta>
         <meta property="og:locale:alternate" content="nl_NL"></meta>
         <meta
