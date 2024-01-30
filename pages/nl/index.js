@@ -146,10 +146,12 @@ export default function HomeNL() {
             />
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
-            Welkom bij het authentieke Vietnamees restaurant Cô Tâm van Haarlem.
-            Wij zijn open voor tafelreserveringen tijdens lunch en diner. Tevens
-            zijn wij open voor afhalen. Gebruik onze reseringsmodule rechts
-            onderaan uw scherm om een tafel te reserveren!
+            LET OP: We zijn momenteel gesloten tot 6 februari en zijn weer
+            geopened op 7 februari. Welkom bij het authentieke Vietnamees
+            restaurant Cô Tâm van Haarlem. Wij zijn open voor tafelreserveringen
+            tijdens lunch en diner. Tevens zijn wij open voor afhalen. Gebruik
+            onze reseringsmodule rechts onderaan uw scherm om een tafel te
+            reserveren!
           </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
@@ -182,7 +184,7 @@ export default function HomeNL() {
             )}*/}
           </div>
         </div>
-        <div className="flex flex-row bg-white pt-12 pb-8 md:flex-wrap">
+        <div className="flex flex-row bg-white pb-8 pt-12 md:flex-wrap">
           <div className="flex w-1/2 flex-col px-8 md:w-full md:px-10">
             <h2 className="m-auto max-w-[600px] text-center text-xl font-bold text-black">
               Bij ons proef je een brede variatie aan authentieke Vietnamese
