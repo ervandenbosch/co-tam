@@ -5,7 +5,16 @@ import { DessertsNL } from "/components/dessertsnl";
 import { useState } from "react";
 import Head from "next/head";
 
-export default function Menukaart() {
+export default function Coming_soon() {
+  return (
+    <h1 className="mt-[64px] py-20 text-center text-lg font-bold">
+      {" "}
+      ~Binnenkort geupdated~
+    </h1>
+  );
+}
+
+export function Menukaart() {
   const [maindishes, setMaindishes] = useState(true);
   const [soups, setSoups] = useState(false);
   const [starters, setStarters] = useState(false);
@@ -97,7 +106,7 @@ export default function Menukaart() {
           <h2 className="pb-4 text-center text-sm font-bold">Allergenen</h2>
           <img
             src="/images/allergens.webp"
-            className="max-w-[500px] m-auto sm:w-full sm:pl-3 sm:pr-1"
+            className="m-auto max-w-[500px] sm:w-full sm:pl-3 sm:pr-1"
           />
         </div>
       </div>
