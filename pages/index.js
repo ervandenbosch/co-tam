@@ -152,10 +152,10 @@ export default function Home() {
             />
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
-            Welcome to the authentic Vietnamese restaurant Cô Tâm from Haarlem.
-            We are currently open for table reservations during lunch and
-            dinner. We are also open for takeaway. Use our reservation module at
-            the bottom right of your screen to book a table!
+            We bring the vibrant, fresh, and bold flavours of Vietnam to
+            Haarlem. From traditional Vietnamese dishes to innovative Asian
+            fusion creations by our chef. Make a reservation to join us for
+            dinner or order takeaway.
           </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
@@ -191,8 +191,8 @@ export default function Home() {
         <div className="flex flex-row bg-white pb-8 pt-12 md:flex-wrap">
           <div className="flex w-1/2 flex-col px-8 md:w-full md:px-10">
             <h2 className="m-auto max-w-[600px] text-center text-xl font-bold text-black">
-              With us you will experience a wide variety of authentic Vietnamese
-              dishes
+              Experience a wide variety of authentic Vietnamese dishes and chef
+              inspired creations
             </h2>
             <p className="m-auto mb-4 max-w-[600px] p-4 text-justify text-black">
               Vietnamese food is very fresh, light, and full of incredible
