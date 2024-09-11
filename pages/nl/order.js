@@ -14,9 +14,9 @@ export default function Bestellen() {
       </Head>
       ;
       <div className="flex flex-col justify-center bg-white pt-[64px]">
-        <div className="m-auto pt-20 pb-24">
+        <div className="m-auto pb-24 pt-20">
           <a
-            href="https://weborder-eu.spont.cash/widget/?key=fa9610655bd04ad896c4fcb6a5c49bc9&source=direct&autoopen=pickup"
+            href="https://online.spont.nl/?key=fa9610655bd04ad896c4fcb6a5c49bc9&source=direct&autoopen=pickup&lang=en"
             target="_blank"
             rel="noreferrer"
           >
