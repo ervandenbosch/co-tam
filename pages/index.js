@@ -195,14 +195,18 @@ export default function Home() {
               inspired creations
             </h2>
             <p className="m-auto mb-4 max-w-[600px] p-4 text-justify text-black">
-              Vietnamese food is very fresh, light, and full of incredible
-              flavours. Greens and meat are at the heart of the Vietnamese
-              cuisine, but we also offer a great variety of meals that are
-              vegetarian- and vegan friendly. All our meals are prepared with
-              utmost care while avoiding artificial flavour enhancers as much as
-              possible, so you only eat healthy with us. We use high-quality
-              ingredients for our dishes in order to be able to offer our guests
-              the best version of the Vietnamese cuisine.
+              We invite you to indulge in a burst of flavours at Cô Tâm. Our
+              carefully curated selection includes authentic Vietnamese dishes
+              and beyond. Each dish is thoughtfully crafted with high-quality
+              ingredients, focusing on fresh vegetables, greens, and meats at
+              the heart of every meal. We also offer a diverse range of seafood
+              and fish dishes, prepared with the same care and precision that
+              define our kitchen. The majority of our meals are homemade, and we
+              have plenty of delicious options for vegetarians and vegans. At Cô
+              Tâm, you’ll experience the best of Vietnamese cuisine—light,
+              fresh, and rich in flavour. We aim to be the go-to spot for those
+              seeking tasty comfort food, while delivering healthy and wholesome
+              meals.
             </p>
           </div>
           <div className="m-auto max-w-sm sm:w-full sm:px-8">
