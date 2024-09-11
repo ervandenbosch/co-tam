@@ -1,98 +1,38 @@
 export const startersdata = {
-  Cold_starters: [
+  Cold_Starters: [
     {
-      name: "Goi cuon (Summer rolls)",
+      name: "Goi Cuon (Summer rolls) 2pcs",
       description:
-        "Rice noodles, fresh vegetables and herbs wrapped in rice paper rolls, with hoisin sauce. 2pcs",
-      options: ["Chicken", "Crispy duck", "Shrimps (popular)", "Tofu (vegan)"],
-      price: [9, 10, 10, 9],
-      allergens: [
-        ["gluten"],
-        ["gluten"],
-        ["gluten", "crust"],
-        ["gluten", "soy"],
-      ],
+        "Fresh rice paper rolls with rice noodles & vegetables, served with hoisin sauce. Select: chicken, crispy duck, shrimp or tofu (vegan)",
+      price: 10,
+      mainallergens: ["gluten", "crust", "soy"],
     },
     {
-      name: "Goi xoai, ga",
+      name: "Goi Xoai Ga",
       description: "Mango salad with herbs and fried chicken stripes",
-      price: 11,
+      price: 12.5,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
-      name: "Goi xoai, vit",
+      name: "Goi Xoai Vit",
       description: "Mango salad with herbs and crispy duck",
-      price: 11,
+      price: 12.5,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
-      name: "Goi dudu, ga",
-      description: "Papaya salad with herbs and fried chicken strips",
-      price: 12,
-      mainallergens: ["peanut", "fish", "pepper"],
-    },
-    {
-      name: "Goi dudu, tom",
+      name: "Goi Dudu Tom",
       description: "Papaya salad with herbs and shrimps",
       price: 14,
-      mainallergens: ["crust", "peanut", "fish", "pepper"],
-    },
-    {
-      name: "Goi buoi, ga",
-      description: "Fresh pomelo salad with herbs and fried chicken stripes",
-      price: 13,
-      mainallergens: ["peanut", "fish", "sesam", "pepper"],
-    },
-    {
-      name: "Goi buoi, tom",
-      description: "Fresh pomelo salad with prawns and herbs",
-      price: 15,
-      mainallergens: ["fish", "peanut", "fish", "sesam", "pepper"],
+      mainallergens: ["peanut", "fish", "pepper"],
     },
   ],
-  Steamed_starters: [
+  Steamed_Starters: [
     {
-      name: "Banh bao",
+      name: "Banh Bao 2pcs",
       description:
-        "Steamed bao bun sandwich filled with vegetables, spring onion and herbs, with hoisin sauce. 2pcs",
-      options: ["Chicken", "Crispy duck", "Tofu"],
-      price: [11, 12, 11],
-      allergens: [
-        ["gluten", "lactose"],
-        ["gluten", "lactose"],
-        ["gluten", "soy", "lactose"],
-      ],
-    },
-    {
-      name: "Ha cao tom",
-      description: "Shrimp Dim sum dumplings. 4pcs",
-      price: 7,
-      mainallergens: ["crust", "fish", "sesam", "egg", "soy"],
-    },
-    {
-      name: "Xiu mai tom",
-      description: "Flower shape Dim sum dumpling with a shrimp stuffing. 4pcs",
-      price: 7,
-      mainallergens: ["gluten", "crust", "fish", "sesam", "soy"],
-    },
-    {
-      name: "Gyoza ga",
-      description: "Gyoza dumplings with chicken. 3pcs",
-      price: 7,
-      mainallergens: ["gluten", "sesam", "soy"],
-    },
-    {
-      name: "Gyoza rau den (vegan)",
-      description:
-        "Spinach gyoza dumplings with cabbage and soybeans, carrots, onions. 3pcs",
-      price: 7,
-      mainallergens: ["sesam", "soy"],
-    },
-    {
-      name: "Gyoza tom",
-      description: "Gyoza dumplings with shrimps and vegetables. 3pcs",
-      price: 7,
-      mainallergens: ["gluten", "crust", "fish", "sesam", "soy"],
+        "Bao bun sandwiches with vegetables, spring onion, herbs and hoisin sauce. Select: chicken, crispy duck or tofu (vegatarian)",
+      price: 12,
+      mainallergens: ["gluten", "soy", "lactose"],
     },
     {
       name: "Edamame (vegan)",
@@ -101,78 +41,120 @@ export const startersdata = {
       mainallergens: ["soy"],
     },
   ],
-  "Fried/grilled_starters": [
+  "Fried/Grilled_Starters": [
     {
-      name: "Nem (Spring rolls)",
+      name: "Nem (Spring rolls) 2pcs",
       description:
-        "Home made fried spring rolls with glass noodles, vegetables,wood ear mushrooms, and minced pork meat. 2pcs (popular)",
-      price: 8,
+        "Home made fried spring rolls with glass noodles, vegetables, wood ear mushrooms. Select: meat or vegan",
+      price: 9,
       mainallergens: ["gluten", "fish"],
-    },
-    {
-      name: "Nem chay (vegan on request) ",
-      description:
-        "Home made fried vegetarian spring rolls with fish sauce. 2pcs",
-      price: 8,
-      mainallergens: ["gluten", "soy"],
     },
     {
       name: "Nem 3 loai",
       description:
-        "3 types of fried spring rolls (meat, vegetarian, crab) with chili dip. 4pcs",
-      price: 11,
+        "3 types of fried spring rolls (meat, vegetarian, crab) with chili dip. 3pcs",
+      price: 12,
       mainallergens: ["gluten", "crust", "fish"],
     },
     {
-      name: "Tom cun",
+      name: "Tom Cun",
       description: "Crispy fried shrimps with walnuts and mayo dip",
-      price: 10,
+      price: 11,
       mainallergens: ["gluten", "crust", "peanut"],
     },
     {
-      name: "Tom chien",
+      name: "Tom Chien",
       description:
         "Crispy fried king prawns in young rice flakes with chilli dip",
       price: 10,
       mainallergens: ["gluten", "crust"],
     },
     {
-      name: "Cua chien",
-      description: "Crispy fried soft crab pieces, 2pcs",
+      name: "Tom Chien Com",
+      description:
+        "Crispy fried tiger prawns in sticky rice flakes with mango sauce",
+      price: 10,
+      mainallergens: ["gluten", "crust", "egg"],
+    },
+    {
+      name: "Cua Chien",
+      description: "Crispy fried soft crab pieces",
       price: 13,
       mainallergens: ["gluten", "crust"],
     },
     {
-      name: "Ga popcorn",
+      name: "Ga Popcorn",
       description: "Crispy fried chicken pieces with chilli-mayo dip",
       price: 10,
       mainallergens: ["gluten"],
     },
+  ],
+  Dim_Sum_Mix: [
     {
-      name: "Tofu popcorn (vegan)",
-      description: "Crispy fried tofu pieces with peanut sauce",
-      price: 9,
-      mainallergens: ["gluten", "soy"],
+      name: "Ha Cao Tom",
+      description: "Shrimp Dim sum dumplings",
+      mainallergens: ["crust", "fish", "sesam", "egg", "soy"],
     },
     {
-      name: "Wan tan chien",
+      name: "Xiu Mai Tom",
+      description: "Flower shape Dim sum dumpling with a shrimp stuffing",
+      mainallergens: ["gluten", "crust", "fish", "sesam", "soy"],
+    },
+    {
+      name: "Gyoza Ga",
+      description: "Gyoza dumplings with chicken",
+      mainallergens: ["gluten", "sesam", "soy"],
+    },
+    {
+      name: "Gyoza Rau Den",
       description:
-        "Crispy fried Wan Tan dumplings with chicken and shrimps. 3pcs",
-      price: 8,
+        "Spinach gyoza dumplings with cabbage and soybeans, carrots, onions",
+      mainallergens: ["sesam", "soy"],
+    },
+  ],
+  Combo_Starter_Mix: [
+    {
+      name: "Goi Cuon Tom",
+      description:
+        "Fresh rice paper roll with rice noodles, vegetables and shrimp",
+      mainallergens: ["gluten", "crust"],
+    },
+    {
+      name: "Ga Sate",
+      description: "Chicken sate served with peanut sauce",
+      mainallergens: ["peanut"],
+    },
+    {
+      name: "Wan Tan Chien",
+      description: "Crispy fried Wan Tan dumplings with chicken and shrimps",
       mainallergens: ["crust", "gluten"],
     },
     {
-      name: "Bo la lot",
-      description:
-        "Pickled beef meat wrapped in a betel leaf with fish sauce. 5pcs",
-      price: 9,
+      name: "Bo La Lot",
+      description: "Pickled beef meat wrapped in a betel leaf with fish sauce",
       mainallergens: ["sesam", "peanut"],
     },
+  ],
+  Vegan_Starter_Mix: [
     {
-      name: "Ga sate",
-      description: "Chicken sate served with peanut sauce. 2pcs",
-      price: 9,
-      mainallergens: ["peanut"],
+      name: "Nem chay",
+      description: "Home made fried vegetarian spring rolls with fish sauce",
+      mainallergens: ["gluten", "soy"],
+    },
+    {
+      name: "Tofu popcorn",
+      description: "Crispy fried tofu pieces with peanut sauce",
+      mainallergens: ["gluten", "soy"],
+    },
+    {
+      name: "Goi Cuon Tofu",
+      description: "Fresh rice paper roll with noodles, vegetables and tofu",
+      mainallergens: ["gluten", "soy"],
+    },
+    {
+      name: "Goi Spinach",
+      description: "Spinach salad with sesame dressing and crispy tofu sheet",
+      mainallergens: ["sesam", "gluten", "soy"],
     },
   ],
 };

@@ -20,7 +20,7 @@ export function MainDishesNL() {
                   >
                     {key.replace(/_/g, " ")}
                   </button>
-                  {key === "Vis_&_Zeevruchten_specialiteiten" ? "" : " | "}
+                  {key === "Noodle_Salad_Bowl" ? "" : " | "}
                 </a>
               </Link>
             </>
@@ -33,7 +33,7 @@ export function MainDishesNL() {
             <>
               <h2
                 id={key}
-                className="ml-6 pt-6 pb-4 text-lg font-bold underline underline-offset-4"
+                className="ml-6 pb-4 pt-6 text-lg font-bold underline underline-offset-4"
               >
                 {key.replace(/_/g, " ")}
               </h2>
@@ -71,10 +71,10 @@ export function MainDishesNL() {
                           ))}
                       </div>
                       {!Array.isArray(item.price) && (
-                        <div className="inline-block">{item.price}.00</div>
+                        <div className="inline-block">{item.price}</div>
                       )}
                     </div>
-                    <p className="pr-32 pb-1 text-sm font-normal sm:pr-16">
+                    <p className="pb-1 pr-32 text-sm font-normal sm:pr-16">
                       {item.description}
                     </p>
                     {item.options &&
@@ -115,7 +115,7 @@ export function MainDishesNL() {
                             </div>
                             {Array.isArray(item.price) && (
                               <div className="inline-block">
-                                {item.price[i]}.00
+                                {item.price[i]}
                               </div>
                             )}
                           </div>

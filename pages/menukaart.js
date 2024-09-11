@@ -1,5 +1,4 @@
 import { MainDishes } from "/components/maindishes";
-import { Soups } from "/components/soups";
 import { Starters } from "/components/starters";
 import { Desserts } from "/components/desserts";
 import { useState } from "react";
@@ -7,34 +6,23 @@ import Head from "next/head";
 
 export default function Menukaart() {
   const [maindishes, setMaindishes] = useState(true);
-  const [soups, setSoups] = useState(false);
   const [starters, setStarters] = useState(false);
   const [desserts, setDesserts] = useState(false);
 
   function openMaindishes() {
     setMaindishes(true);
-    setSoups(false);
-    setStarters(false);
-    setDesserts(false);
-  }
-
-  function openSoups() {
-    setSoups(true);
-    setMaindishes(false);
     setStarters(false);
     setDesserts(false);
   }
 
   function openStarters() {
     setStarters(true);
-    setSoups(false);
     setMaindishes(false);
     setDesserts(false);
   }
 
   function openDesserts() {
     setDesserts(true);
-    setSoups(false);
     setMaindishes(false);
     setStarters(false);
   }
@@ -60,16 +48,6 @@ export default function Menukaart() {
           </button>
           <b>|</b>
           <button
-            className={
-              "px-2 hover:font-bold " +
-              (soups && "font-bold underline underline-offset-8")
-            }
-            onClick={openSoups}
-          >
-            SOUPS
-          </button>
-          <b>|</b>
-          <button
             className={"px-2 hover:font-bold " + (maindishes && "font-bold")}
             onClick={openMaindishes}
           >
@@ -88,7 +66,6 @@ export default function Menukaart() {
         </div>
         <div className="">
           {starters && <Starters />}
-          {soups && <Soups />}
           {maindishes && <MainDishes />}
           {desserts && <Desserts />}
         </div>
@@ -96,7 +73,7 @@ export default function Menukaart() {
           <h2 className="pb-4 text-center text-sm font-bold">Allergenen</h2>
           <img
             src="/images/allergens.webp"
-            className="max-w-[500px] m-auto sm:w-full sm:pl-3 sm:pr-1"
+            className="m-auto max-w-[500px] sm:w-full sm:pl-3 sm:pr-1"
           />
         </div>
       </div>

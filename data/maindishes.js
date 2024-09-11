@@ -1,225 +1,244 @@
 export const maindishesdata = {
+  Classic_Soups: [
+    {
+      name: "Pho Bo",
+      description:
+        "Traditional soup with strong clear beef and chicken broth with wide rice noodles, beansprouts, spring onion, coriander",
+      price: 18,
+      allergens: "beef",
+    },
+    {
+      name: "Bun Bo Hue",
+      description:
+        "Traditional soup of Hue city. Beef and chicken broth with rice vermicelli noodles with beef, lemongrass, onion, bean sprouts, chilli",
+      price: 19,
+      allergens: ["crust", "fish", "pepper"],
+    },
+  ],
   Wok: [
     {
-      name: "Com rang",
-      description: "Stir fried rice with, onion, vegetables and eggs",
-      options: [
-        "Chicken",
-        "Beef",
-        "Crispy duck",
-        "Shrimp",
-        "Tofu (vegan on request)",
-      ],
-      price: [17, 18, 20, 21, 17],
-      allergens: [
-        ["egg", "fish"],
-        ["egg", "fish"],
-        ["egg", "fish", "gluten"],
-        ["egg", "fish", "crust"],
-        ["egg", "soy"],
-      ],
+      name: "Com Rang Vit",
+      description:
+        "Stir fried rice with duck, carrot, beans, bean sprouts and eggs",
+      price: 20,
+      mainallergens: ["egg", "fish", "gluten"],
     },
     {
-      name: "Pho xao",
+      name: "Pho Xao Vit",
       description:
-        "Stir fried wide rice noodles with vegetables, eggs, fried onion, and herbs",
-      options: [
-        "Chicken",
-        "Beef",
-        "Crispy duck",
-        "Shrimp",
-        "Tofu (vegan on request)",
-      ],
-      price: [17, 18, 20, 21, 17],
-      allergens: [
-        ["egg", "fish"],
-        ["egg", "fish"],
-        ["egg", "fish", "gluten"],
-        ["egg", "fish", "crust"],
-        ["egg", "soy"],
-      ],
+        "Stir fried wide rice noodles with duck, carrot, bean sprouts, eggs",
+      price: 20,
+      mainallergens: ["egg", "fish", "gluten"],
     },
     {
-      name: "Udon xao",
-      description:
-        "Stir fried udon noodles with vegetables, eggs, fried onion, and herbs",
-      options: ["Crispy duck", "Tofu (vegan)"],
-      price: [21, 18],
-      allergens: [["egg", "fish"], ["soy"]],
+      name: "Udon Xao Bo",
+      description: "Stir fried udon noodles with beef, vegetables",
+      price: 20,
+      mainallergens: ["shell", "gluten", "fish"],
+    },
+    {
+      name: "Udon Xao Tofu (vegan)",
+      description: "Stir fried udon noodles with tofu, vegetables",
+      price: 20,
+      mainallergens: ["gluten", "fish", "soy", "shell"],
     },
   ],
-  Main_meals: [
+  Tofu: [
     {
-      name: "Curry do",
+      name: "Tofu Curry (vegatarian)",
       description:
-        "Red curry sauce with cream and coconut milk, green vegetables, eggplant, champignons",
-      options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu"],
-      price: [19, 20, 21, 23, 19],
-      allergens: [
-        ["lactose", "fish"],
-        ["lactose", "fish"],
-        ["lactose", "fish", "gluten"],
-        ["lactose", "fish", "crust"],
-        ["lactose", "fish", "soy"],
-      ],
-      mainallergens: "pepper",
+        "Red curry sauce with tofu, green vegetables and rice on the side",
+      price: 20,
+      mainallergens: ["lactose", "fish", "soy", "pepper"],
     },
     {
-      name: "Sot lac",
-      description: "Peanut sauce with green vegetables, champignons",
-      options: ["Chicken", "Crispy duck", "Tofu (vegan)"],
-      price: [19, 21, 19],
-      allergens: [
-        ["peanut", "fish"],
-        ["peanut", "fish", "gluten"],
-        ["peanut", "soy"],
-      ],
-    },
-    {
-      name: "Sot gung",
+      name: "Tofu Lac (vegan)",
       description:
-        "Ginger sauce with green vegetables, champignons, and bean sprouts",
-      options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu (vegan)"],
-      price: [19, 20, 21, 23, 19],
-      allergens: [
-        "fish",
-        "fish",
-        ["fish", "gluten"],
-        ["fish", "crust"],
-        ["soy"],
-      ],
-      mainallergens: "pepper",
+        "Peanut sauce with tofu, green vegetables and rice on the side",
+      price: 20,
+      mainallergens: ["peanut", "soy"],
     },
     {
-      name: "Sa ot",
+      name: "Tofu Sa Ot",
       description:
-        "Lemongrass sauce with green vegetables, champignons and chilli",
-      options: ["Chicken", "Beef", "Shrimp", "Tofu (vegan)"],
-      price: [20, 21, 24, 20],
-      allergens: ["fish", "fish", ["fish", "crust"], ["soy"]],
-      mainallergens: ["pepper", "pepper"],
-    },
-    {
-      name: "Sot me",
-      description:
-        "Tamarind sauce with grilled asparagus, sugar snaps, dried chilli",
-      options: ["Crispy chicken", "Crispy beef", "Crispy shrimp"],
-      price: [21, 22, 25],
-      allergens: [
-        ["fish", "gluten"],
-        ["fish", "gluten"],
-        ["fish", "gluten", "crust"],
-      ],
-      mainallergens: "pepper",
-    },
-    {
-      name: "Sot basilicum",
-      description: "Basil sauce with green vegetables and champignons",
-      options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu (vegan)"],
-      price: [20, 21, 22, 24, 20],
-      allergens: [
-        "fish",
-        "fish",
-        ["fish", "gluten"],
-        ["fish", "crust"],
-        ["soy"],
-      ],
-      mainallergens: "pepper",
-    },
-    {
-      name: "Sot hoisin",
-      description: "Hoisin sauce with green vegetables, cashew nuts",
-      options: ["Chicken", "Beef", "Crispy duck", "Shrimp", "Tofu (vegan)"],
-      price: [19, 20, 21, 23, 20],
-      allergens: [
-        "fish",
-        "fish",
-        ["fish", "gluten"],
-        ["fish", "crust"],
-        ["soy"],
-      ],
-      mainallergens: ["nuts", "soy", "pepper"],
-    },
-    {
-      name: "Dua Xao Bo",
-      description:
-        "Sliced beef with pineapple, spring onion, cherry tomatoes and ginger",
+        "Stir fried tofu with lemongrass flavour, green vegetables, chilli and rice on the side",
       price: 21,
-      mainallergens: ["crust", "celery", "pepper"],
-    },
-    {
-      name: "Stir fried white fungus (vegan)",
-      description:
-        "Stir fried white fungus with green vegetables, bean sprouts, crispy tofu",
-      price: 19,
-      mainallergens: ["sesam", "soy"],
+      mainallergens: ["soy", "pepper", "pepper"],
     },
   ],
-  Noodle_salad_bowl: [
+  Chicken: [
     {
-      name: "Bun bo nam bo",
-      description: "Rice noodles with beef",
+      name: "Ga Curry",
+      description:
+        "Red curry sauce with chicken, green vegetables and rice on the side",
       price: 20,
-      mainallergens: ["fish", "peanut"],
+      mainallergens: ["lactose", "fish", "pepper"],
     },
     {
-      name: "Bun nem",
-      description: "Rice noodles with meat spring rolls",
+      name: "Ga Lac",
+      description:
+        "Peanut sauce with chicken, green vegetables and rice on the side",
       price: 20,
-      mainallergens: ["fish", "peanut"],
+      mainallergens: ["peanut", "fish"],
     },
     {
-      name: "Bun vit",
-      description: "Rice noodles with crispy duck",
-      price: 22,
-      mainallergens: ["fish", "peanut", "gluten"],
-    },
-    {
-      name: "Bun ga",
-      description: "Rice noodles with stir fried chicken",
-      price: 19,
-      mainallergens: ["fish", "peanut"],
-    },
-    {
-      name: "Bun tom",
-      description: "Rice noodles with prawns",
-      price: 23,
-      mainallergens: ["fish", "peanut", "crust"],
-    },
-    {
-      name: "Bun chay (vegan on request) ",
-      description: "Rice noodles with tofu",
-      price: 19,
-      mainallergens: ["fish", "peanut", "soy"],
-    },
-    {
-      name: "Bun la lot",
-      description: "Rice noodles with beef betel leaf wraps",
+      name: "Ga Hoisin",
+      description:
+        "Stir fried chicken with hoisin flavour, green vegetables, chilli and rice",
       price: 20,
-      mainallergens: ["fish", "peanut", "sesam"],
+      mainallergens: ["fish", "nuts"],
+    },
+    {
+      name: "Ga Sa Ot",
+      description:
+        "Stir fried chicken with lemongrass flavour, green vegetables, chilli and rice on the side",
+      price: 21,
+      mainallergens: ["shell", "fish", "pepper", "pepper"],
     },
   ],
-  "Fish_&_sea_specialties": [
+  Beef: [
     {
-      name: "Ginger salmon",
+      name: "Bo Xao Dua",
       description:
-        "Grilled salmon with grilled asparagus and shiitake mushrooms, and ginger sauce, rice on side",
+        "Sliced beef with pineapple, celery, cherry tomatoes, onions and rice on the side",
+      price: 21,
+      mainallergens: ["shell", "crust", "cellery", "pepper"],
+    },
+    {
+      name: "Bo Tieu",
+      description:
+        "Stir fried beef slices with green and red pepper, vegetables, and rice on the side",
       price: 25,
-      mainallergens: ["fish", "pepper"],
+      mainallergens: ["shell", "fish", "pepper", "pepper"],
     },
     {
-      name: "Dua Xao Seafood",
+      name: "Bo Sa Ot",
       description:
-        "Spring onion, pineapple, cherry tomatoes, Jacob mussels, monk fish, squid, shrimps, ginger",
+        "Stir fried beef with lemongrass flavour, green vegetables, chilli and rice on the side",
+      price: 22,
+      mainallergens: ["shell", "fish", "pepper", "pepper"],
+    },
+    {
+      name: "Bo Xao Me",
+      description:
+        "Stir fried crispy beef with tamarind flavor, green vegetables and rice on the side",
+      price: 23,
+      mainallergens: ["fish", "gluten"],
+    },
+  ],
+  Duck: [
+    {
+      name: "Vit Curry",
+      description:
+        "Red curry sauce with crispy duck, green vegetables and rice on the side",
+      price: 23,
+      mainallergens: ["lactose", "fish", "gluten", "pepper"],
+    },
+    {
+      name: "Vit Lac",
+      description:
+        "Peanut sauce with crispy duck, green vegetables and rice on the side",
+      price: 23,
+      mainallergens: ["peanut", "fish", "gluten"],
+    },
+    {
+      name: "Vit hoisin",
+      description:
+        "Stir fried green vegetables with hoisin sauce flavour, with crispy duck and rice",
+      price: 23,
+      mainallergens: ["fish", "gluten", "nuts"],
+    },
+  ],
+  "Fish_&_Seafood": [
+    {
+      name: "Mien Xao Cua",
+      description:
+        "Stir fried glass noodles with King crab meat, vegetables, eggs, and shiitake",
+      price: 29,
+      mainallergens: ["lactose", "fish", "sesam", "pepper"],
+    },
+    {
+      name: "Tom Curry",
+      description:
+        "Red curry sauce with shrimp, green vegetables and rice on the side",
+      price: 25,
+      mainallergens: ["crust", "lactose", "fish", "pepper"],
+    },
+    {
+      name: "Tom Sa ot",
+      description:
+        "Stir fried shrimp with lemongrass flavour, green vegetables, chilli and rice on the side",
+      price: 26,
+      mainallergens: ["fish", "shell", "pepper", "pepper"],
+    },
+    {
+      name: "Salmon Curry",
+      description:
+        "Red curry sauce with salmon, green vegetables and rice on the side",
+      price: 26,
+      mainallergens: ["lactose", "fish", "pepper"],
+    },
+    {
+      name: "Seafood Xao Dua",
+      description:
+        "Stir fried seafood (Jacob mussels, monk fish, squid, shrimps) with pineapple, celery, cherry tomatoes, and rice on the side",
       price: 29,
       mainallergens: ["fish", "shell", "crust", "celery", "pepper", "pepper"],
     },
     {
-      name: "Red Pepper Jacob mussels",
+      name: "Muc Xao Dua",
       description:
-        "Jacob mussels in red pepper sauce with asparagus, string and green beans, rice on the side",
+        "Stir fried squid with pineapple, celery, cherry tomatoes, and rice on the side",
+      price: 25,
+      mainallergens: ["fish", "shell", "crust", "celery", "pepper", "pepper"],
+    },
+    {
+      name: "Monkfish Xao Dua",
+      description:
+        "Stir fried monkfish, green vegetables, chilli, ,and rice on the side",
       price: 29,
-      mainallergens: ["fish", "pepper"],
+      mainallergens: ["fish", "shell", "crust", "celery", "pepper", "pepper"],
+    },
+    {
+      name: "Fish of the day",
+      description:
+        "Fried fish of the day (whole fish 300-400g), with garlic-ginger-chilli saue, served with rice noodles and salad",
+      price: 35,
+      mainallergens: ["fish", "shell", "crust", "pepper"],
+    },
+    {
+      name: "Bun Ca Ha Noi",
+      description:
+        "Stir fried marinated monkfish, with onion and dill; rice noodles and salad on the side",
+      price: 35,
+      mainallergens: ["fish", "peanut", "sesam", "pepper"],
+    },
+  ],
+  Noodle_Salad_Bowl: [
+    {
+      name: "Bun Nem",
+      description:
+        "Rice noodle salad bowl with 3 spring rolls. Select: meat or vegan",
+      price: 21,
+      mainallergens: ["fish", "peanut", "gluten"],
+    },
+    {
+      name: "Bun Vit",
+      description: "Rice noodle salad bowl with crispy duck",
+      price: 22,
+      mainallergens: ["fish", "peanut", "gluten"],
+    },
+    {
+      name: "Bun Ga",
+      description: "Rice noodle salad bowl with fried chicken breast",
+      price: 21,
+      mainallergens: ["fish", "peanut"],
+    },
+    {
+      name: "Bun La Lot",
+      description: "Rice noodle salad bowl with 4 beef betel leaf rolls",
+      price: 21,
+      mainallergens: ["fish", "peanut", "sesam"],
     },
   ],
 };

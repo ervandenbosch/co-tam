@@ -163,7 +163,7 @@ export default function HomeNL() {
                 alt="order"
                 tabIndex={0}
               >
-                Bestellen voor afhalen
+                Bestellen voor Afhalen
               </button>
             </a>
             <Link href="nl/menu">

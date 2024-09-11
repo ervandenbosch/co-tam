@@ -169,7 +169,7 @@ export default function Home() {
                 alt="order"
                 tabIndex={0}
               >
-                Order to Pickup
+                Order to Takeaway
               </button>
             </a>
             <Link href="menu">

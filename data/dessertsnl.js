@@ -1,38 +1,46 @@
 export const dessertsdataNL = [
   {
-    name: "Mochi green tea",
+    name: "Che Chuoi",
+    description: "Banana Topioca pudding with coconut milk, peanut, sesame",
+    mainprice: 6,
+    mainallergens: ["peanut", "sesam"],
+  },
+  {
+    name: "Chuoi Chien",
+    description: "Fried banana balls garnished with almond strips. 3pcs",
+    mainprice: 6,
+    mainallergens: "gluten",
+  },
+  {
+    name: "Sesame Balls",
+    description:
+      "Glutinous rice flour balls coated with sesame seeds, and sweet mung bean paste filling (traditional vietnamese snack)",
+    mainprice: 4,
+    mainallergens: ["gluten", "sesam", "egg", "soy"],
+  },
+  {
+    name: "Lemongrass Creme Brulee",
+    description:
+      "our chef's take on the classic dessert - infused with lemongrass flavour",
+    mainprice: 7,
+    mainallergens: ["lactose", "egg"],
+  },
+  {
+    name: "Mochi Green Tea",
     description: "Green tea Japanese rice cake with ice cream",
     mainprice: 4,
     mainallergens: ["lactose", "soy"],
   },
   {
-    name: "Mochi chocolate",
+    name: "Mochi Chocolate",
     description: "Chocolate Japanese rice cake with ice cream",
     mainprice: 4,
     mainallergens: ["lactose", "soy"],
   },
   {
-    name: "Ice cream (1 scoop)",
-    description: "Select: ginger, black sesame, green tea, or mango",
+    name: "Ice Cream (1 scoop)",
+    description: "Select: ginger, black sesame or mango",
     mainprice: 4,
-    mainallergens: [],
-  },
-  {
-    name: "Che chuoi",
-    description: "Banana Topioca pudding with coconut milk, peanut, sesame",
-    mainprice: 5,
-    mainallergens: ["peanut", "sesam"],
-  },
-  {
-    name: "Chuoi chien",
-    description: "Fried banana with almond strips, mango ice cream, honey",
-    mainprice: 6,
-    mainallergens: "gluten",
-  },
-  {
-    name: "Sesame balls",
-    description: "2 pieces of sesame rice balls (traditional Vietnamese snack)",
-    mainprice: 4,
-    mainallergens: ["gluten", "egg", "sesam", "soy"],
+    mainallergens: ["lactose"],
   },
 ];

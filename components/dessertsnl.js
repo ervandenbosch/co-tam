@@ -6,7 +6,7 @@ export function DessertsNL() {
 
   return (
     <div className="m-auto max-w-[700px] pt-6">
-      <h2 className="ml-6 pt-6 pb-4 text-lg font-bold underline underline-offset-4">
+      <h2 className="ml-6 pb-4 pt-6 text-lg font-bold underline underline-offset-4">
         Desserts
       </h2>
       <div className="m-auto mx-6">
@@ -47,10 +47,10 @@ export function DessertsNL() {
                     ))}
                 </div>
                 {!Array.isArray(item.mainprice) && (
-                  <div className="inline-block">{item.mainprice}.00</div>
+                  <div className="inline-block">{item.mainprice}</div>
                 )}
               </div>
-              <p className="pr-16 pb-1 text-sm font-normal">
+              <p className="pb-1 pr-16 text-sm font-normal">
                 {item.description}
               </p>
               {Array.isArray(item.options) && item.options
@@ -90,7 +90,7 @@ export function DessertsNL() {
                           </li>
                         </div>
                         {item.mainprice && item.price && (
-                          <div className="inline-block">{item.price[i]}.00</div>
+                          <div className="inline-block">{item.price[i]}</div>
                         )}
                       </div>
                     );
@@ -115,7 +115,7 @@ export function DessertsNL() {
                         </li>
                       </div>
                       {item.mainprice && item.price && (
-                        <div className="inline-block">{item.price}.00</div>
+                        <div className="inline-block">{item.price}</div>
                       )}
                     </div>
                   )}

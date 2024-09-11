@@ -1,48 +1,28 @@
 import { MainDishes } from "../components/maindishes";
-import { Soups } from "../components/soups";
 import { Starters } from "../components/starters";
 import { Desserts } from "../components/desserts";
 import { useState } from "react";
 import Head from "next/head";
 
-export default function Coming_soon() {
-  return (
-    <h1 className="mt-[64px] py-20 text-center text-lg font-bold">
-      {" "}
-      ~Coming soon~
-    </h1>
-  );
-}
-export function Menu() {
+export default function Menu() {
   const [maindishes, setMaindishes] = useState(true);
-  const [soups, setSoups] = useState(false);
   const [starters, setStarters] = useState(false);
   const [desserts, setDesserts] = useState(false);
 
   function openMaindishes() {
     setMaindishes(true);
-    setSoups(false);
-    setStarters(false);
-    setDesserts(false);
-  }
-
-  function openSoups() {
-    setSoups(true);
-    setMaindishes(false);
     setStarters(false);
     setDesserts(false);
   }
 
   function openStarters() {
     setStarters(true);
-    setSoups(false);
     setMaindishes(false);
     setDesserts(false);
   }
 
   function openDesserts() {
     setDesserts(true);
-    setSoups(false);
     setMaindishes(false);
     setStarters(false);
   }
@@ -69,16 +49,6 @@ export function Menu() {
           </button>
           <b>|</b>
           <button
-            className={
-              "px-2 hover:font-bold " +
-              (soups && "font-bold underline underline-offset-8")
-            }
-            onClick={openSoups}
-          >
-            SOUPS
-          </button>
-          <b>|</b>
-          <button
             className={"px-2 hover:font-bold " + (maindishes && "font-bold")}
             onClick={openMaindishes}
           >
@@ -97,7 +67,6 @@ export function Menu() {
         </div>
         <div className="">
           {starters && <Starters />}
-          {soups && <Soups />}
           {maindishes && <MainDishes />}
           {desserts && <Desserts />}
         </div>
