@@ -102,7 +102,7 @@ export const maindishesdata = {
       description:
         "Sliced beef with pineapple, celery, cherry tomatoes, onions and rice on the side",
       price: 21,
-      mainallergens: ["shell", "crust", "cellery", "pepper"],
+      mainallergens: ["shell", "crust", "celery", "pepper"],
     },
     {
       name: "Bo Tieu",

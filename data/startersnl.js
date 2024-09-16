@@ -1,90 +1,90 @@
 export const startersdataNL = {
-  Cold_Starters: [
+  Koude_voorgerechten: [
     {
       name: "Goi Cuon (Summer rolls) 2pcs",
       description:
-        "Fresh rice paper rolls with rice noodles & vegetables, served with hoisin sauce. Select: chicken, crispy duck, shrimp or tofu (vegan)",
+        "Verse rijstpapier rolletjes met rijstnoedels & groenten, geserveerd met hoisinsaus. Kies: kip, krokante eend, garnalen of tofu (vegan)",
       price: 10,
       mainallergens: ["gluten", "crust", "soy"],
     },
     {
       name: "Goi Xoai Ga",
-      description: "Mango salad with herbs and fried chicken stripes",
+      description: "Mangosalade met kruiden en gebakken kipreepjes",
       price: 12.5,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
       name: "Goi Xoai Vit",
-      description: "Mango salad with herbs and crispy duck",
+      description: "Mangosalade met kruiden en krokante eend",
       price: 12.5,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
       name: "Goi Dudu Tom",
-      description: "Papaya salad with herbs and shrimps",
+      description: "Papajasalade met kruiden en garnalen",
       price: 14,
       mainallergens: ["peanut", "fish", "pepper"],
     },
   ],
-  Steamed_Starters: [
+  Gestoomde_voorgerechten: [
     {
       name: "Banh Bao 2pcs",
       description:
-        "Bao bun sandwiches with vegetables, spring onion, herbs and hoisin sauce. Select: chicken, crispy duck or tofu (vegatarian)",
+        "Bao broodjes met groenten, lente-ui, kruiden en hoisinsaus. Kies: kip, krokante eend of tofu (vegetarisch)",
       price: 12,
       mainallergens: ["gluten", "soy", "lactose"],
     },
     {
       name: "Edamame (vegan)",
-      description: "Whole, steamed soybeans",
+      description: "Hele, gestoomde sojabonen",
       price: 7,
       mainallergens: ["soy"],
     },
   ],
-  "Fried/Grilled_Starters": [
+  "Gebakken/gegrilde_voorgerechten": [
     {
       name: "Nem (Spring rolls) 2pcs",
       description:
-        "Home made fried spring rolls with glass noodles, vegetables, wood ear mushrooms. Select: meat or vegan",
+        "Huisgemaakte gebakken loempia's met glasnoedels, groenten, oorzwammen. Kies: vlees of vegan",
       price: 9,
       mainallergens: ["gluten", "fish"],
     },
     {
       name: "Nem 3 loai",
       description:
-        "3 types of fried spring rolls (meat, vegetarian, crab) with chili dip. 3pcs",
+        "3 soorten gebakken loempia's (vlees, vegetarisch, krab) met chilisaus. 3 stuks",
       price: 12,
       mainallergens: ["gluten", "crust", "fish"],
     },
     {
       name: "Tom Cun",
-      description: "Crispy fried shrimps with walnuts and mayo dip",
+      description: "Krokant gebakken garnalen met walnoten en mayonaisedip",
       price: 11,
       mainallergens: ["gluten", "crust", "peanut"],
     },
     {
       name: "Tom Chien",
       description:
-        "Crispy fried king prawns in young rice flakes with chilli dip",
+        "Krokant gebakken grote garnalen in jonge rijstvlokken met chilisaus",
       price: 10,
       mainallergens: ["gluten", "crust"],
     },
     {
       name: "Tom Chien Com",
       description:
-        "Crispy fried tiger prawns in sticky rice flakes with mango sauce",
+        "Krokant gebakken tijgergarnalen in kleefrijstvlokken met mangosaus",
       price: 10,
       mainallergens: ["gluten", "crust", "egg"],
     },
     {
       name: "Cua Chien",
-      description: "Crispy fried soft crab pieces",
+      description: "Krokant gebakken zachte krabstukjes",
       price: 13,
       mainallergens: ["gluten", "crust"],
     },
     {
       name: "Ga Popcorn",
-      description: "Crispy fried chicken pieces with chilli-mayo dip",
+      description: "Krokant gebakken kipstukjes met chili-mayonaisedip",
       price: 10,
       mainallergens: ["gluten"],
     },
@@ -92,23 +92,23 @@ export const startersdataNL = {
   Dim_Sum_Mix: [
     {
       name: "Ha Cao Tom",
-      description: "Shrimp Dim sum dumplings",
+      description: "Garnalen Dim sum dumplings",
       mainallergens: ["crust", "fish", "sesam", "egg", "soy"],
     },
     {
       name: "Xiu Mai Tom",
-      description: "Flower shape Dim sum dumpling with a shrimp stuffing",
+      description: "Bloemvormige Dim sum dumpling met een garnalenvulling",
       mainallergens: ["gluten", "crust", "fish", "sesam", "soy"],
     },
     {
       name: "Gyoza Ga",
-      description: "Gyoza dumplings with chicken",
+      description: "Gyoza dumplings met kip",
       mainallergens: ["gluten", "sesam", "soy"],
     },
     {
       name: "Gyoza Rau Den",
       description:
-        "Spinach gyoza dumplings with cabbage and soybeans, carrots, onions",
+        "Spinazie gyoza dumplings met kool en sojabonen, wortelen, uien",
       mainallergens: ["sesam", "soy"],
     },
   ],
@@ -116,44 +116,45 @@ export const startersdataNL = {
     {
       name: "Goi Cuon Tom",
       description:
-        "Fresh rice paper roll with rice noodles, vegetables and shrimp",
+        "Vers rijstpapier rolletje met rijstnoedels, groenten en garnalen",
       mainallergens: ["gluten", "crust"],
     },
     {
       name: "Ga Sate",
-      description: "Chicken sate served with peanut sauce",
+      description: "Kipsaté geserveerd met pindasaus",
       mainallergens: ["peanut"],
     },
     {
       name: "Wan Tan Chien",
-      description: "Crispy fried Wan Tan dumplings with chicken and shrimps",
+      description: "Krokant gebakken Wan Tan dumplings met kip en garnalen",
       mainallergens: ["crust", "gluten"],
     },
     {
       name: "Bo La Lot",
-      description: "Pickled beef meat wrapped in a betel leaf with fish sauce",
+      description:
+        "Gemarineerd rundvlees gewikkeld in een betelblad met vissaus",
       mainallergens: ["sesam", "peanut"],
     },
   ],
   Vegan_Starter_Mix: [
     {
       name: "Nem chay",
-      description: "Home made fried vegetarian spring rolls with fish sauce",
+      description: "Huisgemaakte gebakken vegetarische loempia's met vissaus",
       mainallergens: ["gluten", "soy"],
     },
     {
       name: "Tofu popcorn",
-      description: "Crispy fried tofu pieces with peanut sauce",
+      description: "Krokant gebakken tofustukjes met pindasaus",
       mainallergens: ["gluten", "soy"],
     },
     {
       name: "Goi Cuon Tofu",
-      description: "Fresh rice paper roll with noodles, vegetables and tofu",
+      description: "Vers rijstpapier rolletje met noedels, groenten en tofu",
       mainallergens: ["gluten", "soy"],
     },
     {
       name: "Goi Spinach",
-      description: "Spinach salad with sesame dressing and crispy tofu sheet",
+      description: "Spinaziesalade met sesamdressing en krokant tofuvel",
       mainallergens: ["sesam", "gluten", "soy"],
     },
   ],
