@@ -144,9 +144,12 @@ function MyApp({ Component, pageProps }) {
           content="Cô Tâm restaurant, vietnamese, vietnamees, restaurant, haarlem, authentiek"
         />
         <meta name="author" content="Cô Tâm" />
-        <meta name="viewport" content="width
-        =device-width, initial-scale=1.0" />
-             <meta name="robots" content="index, follow" />
+        <meta
+          name="viewport"
+          content="width
+        =device-width, initial-scale=1.0"
+        />
+        <meta name="robots" content="index, follow" />
       </Head>
       <nav
         className="
@@ -231,19 +234,6 @@ function MyApp({ Component, pageProps }) {
           >
             {langNL ? (
               <>
-                EN{" "}
-                <img
-                  src="/images/en.svg"
-                  width="22px"
-                  style={{
-                    display: "inline-block",
-                    marginLeft: 4,
-                    marginBottom: 3,
-                  }}
-                />
-              </>
-            ) : (
-              <>
                 NL
                 <img
                   src="/images/nl.svg"
@@ -254,6 +244,19 @@ function MyApp({ Component, pageProps }) {
                     marginBottom: 3,
                   }}
                   alt="nederlandse taal"
+                />
+              </>
+            ) : (
+              <>
+                EN{" "}
+                <img
+                  src="/images/en.svg"
+                  width="22px"
+                  style={{
+                    display: "inline-block",
+                    marginLeft: 4,
+                    marginBottom: 3,
+                  }}
                 />
               </>
             )}
@@ -288,12 +291,12 @@ function MyApp({ Component, pageProps }) {
 
       <div
         className={
-          "fixed right-[48.5%] bottom-6 z-10 xl:right-[48%] lg:right-[47%] md:right-[46.5%] sm:right-[75%]  " +
+          "fixed bottom-6 right-[48.5%] z-10 xl:right-[48%] lg:right-[47%] md:right-[46.5%] sm:right-[75%]  " +
           (visible ? "block" : "hidden")
         }
       >
         <button
-          className="rounded-full bg-black px-4 pt-[8px] pb-[7px] text-xl font-bold text-white opacity-80"
+          className="rounded-full bg-black px-4 pb-[7px] pt-[8px] text-xl font-bold text-white opacity-80"
           onClick={scrollToTop}
         >
           ^
