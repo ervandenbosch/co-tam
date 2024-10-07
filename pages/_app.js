@@ -152,8 +152,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="robots" content="index, follow" />
       </Head>
       <nav
-        className="
-        fixed top-0 flex h-[64px] w-full flex-row  justify-between bg-black p-4"
+        className="fixed top-0 z-50 flex h-[64px] w-full flex-row justify-between bg-black p-4"
         id="navbar"
       >
         <div className="w-[110px]">

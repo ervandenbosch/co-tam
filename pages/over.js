@@ -20,7 +20,7 @@ export default function Over() {
     <div className="m-auto lg2:w-4/5">
       <Head>
         <title>Over Cô Tâm</title>
-              <meta
+        <meta
           name="description"
           content="Welcome to Cô Tâm Vietnamese restaurant. The authentic Vietnamese cuisine in the center of Haarlem. Enjoy delicious Vietnamese food at the Spaarne."
         />
@@ -30,32 +30,32 @@ export default function Over() {
       <h1 className="mt-[64px] pt-8 text-center text-3xl font-bold">
         Ons verhaal
       </h1>
-      <h2 className="mt-4 ml-7 text-left text-xl font-bold">
-        Authentiek Vietnamees
+      <h2 className="ml-7 mt-4 text-left text-xl font-bold">
+        Een familie reunie en een droom in vervulling
       </h2>
       <div className="mt-4 flex flex-row bg-white text-black md:flex-wrap">
         <div className="w-2/3 px-4 text-justify md:w-full">
           <p className="px-3">
-            Ik en mijn man Phien hebben vele jaren gewerkt in restaurants in
-            Duitsland en we droomden ervan om ons eigen restaurant te openen. We
-            hadden geld gespaard en wachtten op de beste gelegenheid. Onze
-            dochter, die naar Nederland is verhuisd en waar we al 10 jaar apart
-            van wonen, miste de aanwezigheid van Vietnamese restaurants in haar
-            stad. Op een dag stuitte ze op een prachtige restaurantlocatie in
-            Haarlem die beschikbaar was. We werden meteen verliefd en we namen
-            een grote sprong in het diepe om tijdens de coronapandemie een
-            restaurant te openen in een land waar we de taal <i>nog</i> niet
-            konden spreken (we spreken alleen Vietnamees en Duits, maar leren
-            Engels en Nederlands!). Hoewel het misschien niet de beste tijd
-            leek, zijn we van mening dat we op de juiste plek zijn gekomen. We
-            willen onze klanten het beste van de Vietnamese keuken bieden,
-            aangezien eten in onze cultuur families en vrienden bij elkaar
-            brengt. We hopen dat onze maaltijden tot uw hart zullen spreken en
-            ze met warmte en vreugde zullen vullen.
+            Een decennium apart leven van onze dochter was genoeg. Het was tijd
+            om te herenigen en een vleugje thuis naar Nederland te brengen. Mijn
+            man Phien en ik hebben vele jaren gewerkt in restaurants in heel
+            Duitsland, altijd dromend van het openen van ons eigen restaurant.
+            Onze dochter, die in Nederland woonde, vertelde ons vaak hoeveel ze
+            het authentieke Vietnamese eten in haar stad miste—en hoezeer ze
+            haar ouders in de buurt wilde hebben. Dus, hier zijn we dan.
             <br />
             <br />
-            Ons verhaal gaat over een familiereünie en de vervulling van een
-            droom van een hardwerkend paar.
+            Ondanks de uitdagingen van de pandemie en het feit dat we de lokale
+            taal nog niet spraken, namen we een sprong in het diepe, verhuisden
+            naar een nieuw land en openden ons restaurant. We zijn ongelooflijk
+            dankbaar voor al onze loyale klanten die ons in die moeilijke tijden
+            hebben gesteund. Dankzij hen waren we een van de gelukkige
+            restaurants die de lockdown hebben overleefd en sterker zijn
+            geworden.
+            <br />
+            <br />
+            Ons verhaal is er een van familiehereniging en een hardwerkend stel
+            dat op 50-jarige leeftijd hun levenslange droom vervulde. ❤️
           </p>
         </div>
         <div className="m-auto w-1/2 pl-4 pr-8 md:mt-12 sm:w-4/5">
@@ -93,12 +93,13 @@ export default function Over() {
           </Carousel>
         </div>
       </div>
-      <div className="m-auto mt-8 mb-12 flex w-2/3 flex-col rounded-lg border-2 bg-gray-800 text-center sm:w-3/4">
+      <div className="m-auto mb-12 mt-8 flex w-2/3 flex-col rounded-lg border-2 bg-gray-800 text-center sm:w-3/4">
         <p className="p-8 text-lg text-gray-100">
-          We willen onze klanten het beste van de Vietnamese keuken als eten
-          brengen in onze cultuur is wat families en vrienden samenbrengt. We
-          hopen dat onze maaltijden tot uw hart zullen spreken en ze zullen
-          vullen met warmte en vreugde.
+          In Vietnam zijn maaltijden heilig—het is een moment om verhalen, lach
+          en liefde te delen. Wij zijn een klein familiebedrijf met als missie
+          om diezelfde warmte en gastvrijheid te brengen aan iedere gast die
+          door onze deuren komt. Kom ons bezoeken en proef de liefde en zorg die
+          in elk gerecht wordt gestopt.
         </p>
         <p className="text-md pb-8 text-gray-200">-Tam Nguyenova-</p>
       </div>
