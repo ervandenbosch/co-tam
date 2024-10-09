@@ -5,7 +5,7 @@ export const maindishesdata = {
       description:
         "Traditional soup with strong clear beef and chicken broth with wide rice noodles, beansprouts, spring onion, coriander",
       price: 18,
-      mainallergens: "beef",
+      mainallergens: ["beef"],
     },
     {
       name: "Bun Bo Hue",
