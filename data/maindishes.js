@@ -5,14 +5,14 @@ export const maindishesdata = {
       description:
         "Traditional soup with strong clear beef and chicken broth with wide rice noodles, beansprouts, spring onion, coriander",
       price: 18,
-      allergens: "beef",
+      mainallergens: "beef",
     },
     {
       name: "Bun Bo Hue",
       description:
         "Traditional soup of Hue city. Beef and chicken broth with rice vermicelli noodles with beef, lemongrass, onion, bean sprouts, chilli",
       price: 19,
-      allergens: ["crust", "fish", "pepper"],
+      mainallergens: ["crust", "fish", "pepper"],
     },
   ],
   Wok: [

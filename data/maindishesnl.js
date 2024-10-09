@@ -5,14 +5,14 @@ export const maindishesdataNL = {
       description:
         "Traditionele soep met sterke heldere runder- en kippenbouillon met brede rijstnoedels, taugé, lente-ui, koriander",
       price: 18,
-      allergens: "beef",
+      mainallergens: "beef",
     },
     {
       name: "Bun Bo Hue",
       description:
         "Traditionele soep uit de stad Hue. Runder- en kippenbouillon met rijstvermicelli noedels met rundvlees, citroengras, ui, taugé, chili",
       price: 19,
-      allergens: ["crust", "fish", "pepper"],
+      mainallergens: ["crust", "fish", "pepper"],
     },
   ],
   Wok: [
