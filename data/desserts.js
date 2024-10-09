@@ -1,7 +1,7 @@
 export const dessertsdata = [
   {
     name: "Che Chuoi",
-    description: "Banana Topioca pudding with coconut milk, peanut, sesame",
+    description: "Banana Tapioca pudding with coconut milk, peanut, sesame",
     mainprice: 6,
     mainallergens: ["peanut", "sesam"],
   },
