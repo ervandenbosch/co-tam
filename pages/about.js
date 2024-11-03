@@ -96,11 +96,11 @@ export default function About() {
       </div>
       <div className="m-auto mb-12 mt-8 flex w-2/3 flex-col rounded-lg border-2 bg-gray-800 text-center sm:w-3/4">
         <p className="p-8 text-lg text-gray-100">
-          In Vietnam zijn maaltijden heilig—het is een moment om verhalen, lach
-          en liefde te delen. Wij zijn een klein familiebedrijf met als missie
-          om diezelfde warmte en gastvrijheid te brengen aan iedere gast die
-          door onze deuren komt. Kom ons bezoeken en proef de liefde en zorg die
-          in elk gerecht wordt gestopt.
+          In Vietnam, mealtimes are sacred—they’re a time to share stories,
+          laughter, and love. We’re a small, family-run restaurant on a mission
+          to bring that same warmth and hospitality to every guest who walks
+          through our doors. Come visit us and taste the love and care that goes
+          into every dish.
         </p>
         <p className="text-md pb-8 text-gray-200">-Tam Nguyenova-</p>
       </div>
