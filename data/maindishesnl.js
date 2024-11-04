@@ -5,7 +5,7 @@ export const maindishesdataNL = {
       description:
         "Traditionele soep met sterke heldere runder- en kippenbouillon met brede rijstnoedels, taugé, lente-ui, koriander",
       price: 18,
-      mainallergens: ["beef"],
+      mainallergens: ["crust", "fish"],
     },
     {
       name: "Bun Bo Hue",
@@ -19,6 +19,12 @@ export const maindishesdataNL = {
     {
       name: "Com Rang Vit",
       description: "Gebakken rijst met eend, wortel, bonen, taugé en eieren",
+      price: 20,
+      mainallergens: ["egg", "fish", "gluten"],
+    },
+    {
+      name: "Com Rang Ga",
+      description: "Gebakken rijst met kip, wortel, bonen, taugé en eieren",
       price: 20,
       mainallergens: ["egg", "fish", "gluten"],
     },
@@ -39,7 +45,7 @@ export const maindishesdataNL = {
       name: "Udon Xao Tofu (vegan)",
       description: "Gebakken udon noedels met tofu, groenten",
       price: 20,
-      mainallergens: ["gluten", "fish", "soy", "shell"],
+      mainallergens: ["gluten", "fish", "shell"],
     },
   ],
   Tofu: [
@@ -62,7 +68,7 @@ export const maindishesdataNL = {
       description:
         "Gebakken tofu met citroengrassmaak, groene groenten, chili en rijst als bijgerecht",
       price: 21,
-      mainallergens: ["soy", "pepper", "pepper"],
+      mainallergens: ["gluten", "soy", "pepper", "pepper"],
     },
   ],
   Kip: [
@@ -84,14 +90,14 @@ export const maindishesdataNL = {
       description:
         "Gebakken kip met hoisinsmaak, groene groenten, chili en rijst",
       price: 20,
-      mainallergens: ["fish", "nuts"],
+      mainallergens: ["gluten", "fish", "nuts", "sesam", "soy"],
     },
     {
       name: "Ga Sa Ot",
       description:
         "Gebakken kip met citroengrassmaak, groene groenten, chili en rijst als bijgerecht",
       price: 21,
-      mainallergens: ["shell", "fish", "pepper", "pepper"],
+      mainallergens: ["gluten", "shell", "fish", "pepper", "pepper"],
     },
   ],
   Rundvlees: [
@@ -100,21 +106,21 @@ export const maindishesdataNL = {
       description:
         "Gesneden rundvlees met ananas, selderij, kerstomaatjes, uien en rijst als bijgerecht",
       price: 21,
-      mainallergens: ["shell", "crust", "celery", "pepper"],
+      mainallergens: ["gluten", "shell", "crust", "celery", "pepper"],
     },
     {
       name: "Bo Tieu",
       description:
         "Gebakken rundvleesreepjes met groene en rode paprika, groenten, en rijst als bijgerecht",
       price: 25,
-      mainallergens: ["shell", "fish", "pepper", "pepper"],
+      mainallergens: ["gluten", "shell", "fish", "pepper", "pepper"],
     },
     {
       name: "Bo Sa Ot",
       description:
         "Gebakken rundvlees met citroengrassmaak, groene groenten, chili en rijst als bijgerecht",
       price: 22,
-      mainallergens: ["shell", "fish", "pepper", "pepper"],
+      mainallergens: ["gluten", "shell", "fish", "pepper", "pepper"],
     },
     {
       name: "Bo Xao Me",
@@ -144,7 +150,7 @@ export const maindishesdataNL = {
       description:
         "Gebakken groene groenten met hoisinsaussmaak, met krokante eend en rijst",
       price: 23,
-      mainallergens: ["fish", "gluten", "nuts"],
+      mainallergens: ["fish", "gluten", "nuts", "sesam", "soy"],
     },
   ],
   "Vis_&_Zeegerechten": [
@@ -153,7 +159,7 @@ export const maindishesdataNL = {
       description:
         "Gebakken glasnoedels met koningskrabvlees, groenten, eieren en shiitake",
       price: 29,
-      mainallergens: ["lactose", "fish", "sesam", "pepper"],
+      mainallergens: ["egg", "fish", "sesam", "crust"],
     },
     {
       name: "Tom Curry",
@@ -167,7 +173,7 @@ export const maindishesdataNL = {
       description:
         "Gebakken garnalen met citroengrassmaak, groene groenten, chili en rijst als bijgerecht",
       price: 26,
-      mainallergens: ["fish", "shell", "pepper", "pepper"],
+      mainallergens: ["fish", "gluten", "crust", "shell", "pepper", "pepper"],
     },
     {
       name: "Salmon Curry",
@@ -181,21 +187,45 @@ export const maindishesdataNL = {
       description:
         "Gebakken zeevruchten (jacobsmosselen, zeeduivel, inktvis, garnalen) met ananas, selderij, kerstomaatjes en rijst als bijgerecht",
       price: 29,
-      mainallergens: ["fish", "shell", "crust", "celery", "pepper", "pepper"],
+      mainallergens: [
+        "gluten",
+        "fish",
+        "shell",
+        "crust",
+        "celery",
+        "pepper",
+        "pepper",
+      ],
     },
     {
       name: "Muc Xao Dua",
       description:
         "Gebakken inktvis met ananas, selderij, kerstomaatjes en rijst als bijgerecht",
       price: 25,
-      mainallergens: ["fish", "shell", "crust", "celery", "pepper", "pepper"],
+      mainallergens: [
+        "gluten",
+        "fish",
+        "shell",
+        "crust",
+        "celery",
+        "pepper",
+        "pepper",
+      ],
     },
     {
       name: "Monkfish Xao Dua",
       description:
         "Gebakken zeeduivel, groene groenten, chili en rijst als bijgerecht",
       price: 29,
-      mainallergens: ["fish", "shell", "crust", "celery", "pepper", "pepper"],
+      mainallergens: [
+        "gluten",
+        "fish",
+        "shell",
+        "crust",
+        "celery",
+        "pepper",
+        "pepper",
+      ],
     },
     {
       name: "Fish of the day",
@@ -209,7 +239,7 @@ export const maindishesdataNL = {
       description:
         "Gebakken gemarineerde zeeduivel, met ui en dille; rijstnoedels en salade als bijgerecht",
       price: 35,
-      mainallergens: ["fish", "peanut", "sesam", "pepper"],
+      mainallergens: ["fish", "sesam", "pepper"],
     },
   ],
   Noodle_Salade_Bowl: [

@@ -5,7 +5,7 @@ export const startersdata = {
       description:
         "Fresh rice paper rolls with rice noodles & vegetables, served with hoisin sauce. Select: chicken, crispy duck, shrimp or tofu (vegan)",
       price: 10,
-      mainallergens: ["gluten", "crust", "soy"],
+      mainallergens: ["gluten", "crust", "soy", "peanut", "sesam"],
     },
     {
       name: "Goi Xoai Ga",
@@ -23,7 +23,7 @@ export const startersdata = {
       name: "Goi Dudu Tom",
       description: "Papaya salad with herbs and shrimps",
       price: 14,
-      mainallergens: ["peanut", "fish", "pepper"],
+      mainallergens: ["peanut", "fish", "pepper", "crust"],
     },
   ],
   Steamed_Starters: [
@@ -32,7 +32,7 @@ export const startersdata = {
       description:
         "Bao bun sandwiches with vegetables, spring onion, herbs and hoisin sauce. Select: chicken, crispy duck or tofu (vegatarian)",
       price: 12,
-      mainallergens: ["gluten", "soy", "lactose"],
+      mainallergens: ["gluten", "soy", "lactose", "peanut"],
     },
     {
       name: "Edamame (vegan)",
@@ -60,7 +60,7 @@ export const startersdata = {
       name: "Tom Cun",
       description: "Crispy fried shrimps with walnuts and mayo dip",
       price: 11,
-      mainallergens: ["gluten", "crust", "peanut"],
+      mainallergens: ["gluten", "crust", "peanut", "nuts"],
     },
     {
       name: "Tom Chien",
@@ -117,12 +117,12 @@ export const startersdata = {
       name: "Goi Cuon Tom",
       description:
         "Fresh rice paper roll with rice noodles, vegetables and shrimp",
-      mainallergens: ["gluten", "crust"],
+      mainallergens: ["gluten", "crust", "peaunt", "sesam"],
     },
     {
       name: "Ga Sate",
       description: "Chicken sate served with peanut sauce",
-      mainallergens: ["peanut"],
+      mainallergens: ["peanut", "gluten"],
     },
     {
       name: "Wan Tan Chien",
@@ -132,7 +132,12 @@ export const startersdata = {
     {
       name: "Bo La Lot",
       description: "Pickled beef meat wrapped in a betel leaf with fish sauce",
-      mainallergens: ["sesam", "peanut"],
+      mainallergens: ["sesam"],
+    },
+    {
+      name: "Goi Xoai Vit",
+      description: "Mango salad with herbs and crispy duck",
+      mainallergens: ["peanut", "fish", "pepper"],
     },
   ],
   Vegan_Starter_Mix: [
@@ -154,7 +159,7 @@ export const startersdata = {
     {
       name: "Goi Spinach",
       description: "Spinach salad with sesame dressing and crispy tofu sheet",
-      mainallergens: ["sesam", "gluten", "soy"],
+      mainallergens: ["sesam", "gluten", "soy", "peanut"],
     },
   ],
 };

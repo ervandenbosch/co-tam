@@ -5,13 +5,13 @@ export const startersdataNL = {
       description:
         "Verse rijstpapier rolletjes met rijstnoedels & groenten, geserveerd met hoisinsaus. Kies: kip, krokante eend, garnalen of tofu (vegan)",
       price: 10,
-      mainallergens: ["gluten", "crust", "soy"],
+      mainallergens: ["gluten", "crust", "soy", "peanut", "sesam"],
     },
     {
       name: "Goi Xoai Ga",
       description: "Mangosalade met kruiden en gebakken kipreepjes",
       price: 12.5,
-      mainallergens: ["peanut", "fish", "pepper"],
+      mainallergens: ["peanut", "fish", "pepper", "crust"],
     },
     {
       name: "Goi Xoai Vit",
@@ -23,7 +23,7 @@ export const startersdataNL = {
       name: "Goi Dudu Tom",
       description: "Papajasalade met kruiden en garnalen",
       price: 14,
-      mainallergens: ["peanut", "fish", "pepper"],
+      mainallergens: ["peanut", "fish", "pepper", "crust"],
     },
   ],
   Gestoomde_voorgerechten: [
@@ -32,7 +32,7 @@ export const startersdataNL = {
       description:
         "Bao broodjes met groenten, lente-ui, kruiden en hoisinsaus. Kies: kip, krokante eend of tofu (vegetarisch)",
       price: 12,
-      mainallergens: ["gluten", "soy", "lactose"],
+      mainallergens: ["gluten", "soy", "lactose", "peanut"],
     },
     {
       name: "Edamame (vegan)",
@@ -60,7 +60,7 @@ export const startersdataNL = {
       name: "Tom Cun",
       description: "Krokant gebakken garnalen met walnoten en mayonaisedip",
       price: 11,
-      mainallergens: ["gluten", "crust", "peanut"],
+      mainallergens: ["gluten", "crust", "peanut", "nuts"],
     },
     {
       name: "Tom Chien",
@@ -117,12 +117,12 @@ export const startersdataNL = {
       name: "Goi Cuon Tom",
       description:
         "Vers rijstpapier rolletje met rijstnoedels, groenten en garnalen",
-      mainallergens: ["gluten", "crust"],
+      mainallergens: ["peanut", "gluten", "crust", "sesam"],
     },
     {
       name: "Ga Sate",
       description: "Kipsaté geserveerd met pindasaus",
-      mainallergens: ["peanut"],
+      mainallergens: ["gluten", "peanut"],
     },
     {
       name: "Wan Tan Chien",
@@ -133,7 +133,12 @@ export const startersdataNL = {
       name: "Bo La Lot",
       description:
         "Gemarineerd rundvlees gewikkeld in een betelblad met vissaus",
-      mainallergens: ["sesam", "peanut"],
+      mainallergens: ["sesam"],
+    },
+    {
+      name: "Goi Xoai Vit",
+      description: "Mango salade met kruiden en krokante eend",
+      mainallergens: ["peanut", "fish", "pepper"],
     },
   ],
   Vegan_Starter_Mix: [
@@ -155,7 +160,7 @@ export const startersdataNL = {
     {
       name: "Goi Spinach",
       description: "Spinaziesalade met sesamdressing en krokant tofuvel",
-      mainallergens: ["sesam", "gluten", "soy"],
+      mainallergens: ["sesam", "gluten", "soy", "peanut"],
     },
   ],
 };
