@@ -58,38 +58,41 @@ export default function Over() {
             dat op 50-jarige leeftijd hun levenslange droom vervulde. ❤️
           </p>
         </div>
-        <div
-          className="m-auto w-1/2 pl-4 pr-8 md:mt-12 sm:w-4/5"
-          style={{ paddingTop: "80px" }}
-        >
-          <Carousel dynamicHeight labels autoPlay centerMode swipeable>
+        <div className="m-auto w-1/2 pl-4 pr-8 md:mt-12 sm:w-4/5">
+          <Carousel
+            infiniteLoop
+            autoPlay
+            centerMode
+            swipeable
+            showArrows
+            showThumbs={false}
+            showStatus={false}
+            dynamicHeight={true}
+          >
             <div>
               <img
-                src={cdnImage("about-1.webp")}
+                src={cdnImage("6.webp")}
                 alt="vietnamese keuken"
                 style={{
-                  maxHeight: 500,
-                  zIndex: -1, // Lower than the navbar's z-index
+                  zIndex: -2, // Lower than the navbar's z-index
                 }}
               />
             </div>
             <div>
               <img
-                src={cdnImage("carousel2.webp")}
+                src={cdnImage("7.webp")}
                 alt="vietnamese keuken"
                 style={{
-                  maxHeight: 500,
-                  zIndex: -1,
+                  zIndex: -2,
                 }}
               />
             </div>
             <div>
               <img
-                src={cdnImage("carousel4.webp")}
+                src={cdnImage("8.webp")}
                 alt="vietnamese keuken"
                 style={{
-                  maxHeight: 500,
-                  zIndex: -1,
+                  zIndex: -2,
                 }}
               />
             </div>

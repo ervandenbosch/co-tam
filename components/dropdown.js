@@ -10,7 +10,7 @@ export function Dropdown({ closeDropdown, langNL }) {
 
   return (
     <div
-      className="z-5 fixed top-[64px] flex w-screen flex-col justify-between overflow-hidden bg-black text-left font-bold text-white opacity-90"
+      className="fixed top-[64px] z-50 flex w-screen flex-col justify-between overflow-hidden bg-black text-left font-bold text-white opacity-90"
       id="Dropdown"
     >
       <div className="mt-6">

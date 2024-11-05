@@ -6,8 +6,8 @@ import { Carousel } from "react-responsive-carousel";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Testimonials from "../components/testimonials";
 import { cdnImage } from "../components/utils";
-import { MenuModal } from "../components/menuModal";
-import useScript from "/components/useScript";
+import useScript from "../components/useScript";
+import { images } from "../components/images";
 
 export default function Home() {
   const [menuButtons, setMenuButtons] = useState(false);
@@ -176,12 +176,6 @@ export default function Home() {
                 See menu
               </button>
             </Link>
-            {/*{menuButtons && (
-              <MenuModal
-                langNL={langNL}
-                handleMenuButtons={handleMenuButtons}
-              />
-            )}*/}
           </div>
         </div>
         <div className="flex flex-row bg-white pb-8 pt-12 md:flex-wrap">
@@ -235,44 +229,30 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="relative m-auto pl-4 pr-8 md:mt-8">
-          <Carousel labels autoPlay centerMode swipeable>
-            <div
-              id="slide1"
-              style={{
-                maxHeight: 500,
-                zIndex: -2,
-              }}
-            >
-              <img src={cdnImage("about-1.webp")} alt="vietnamese cuisine" />
-            </div>
-            <div
-              id="slide2"
-              style={{
-                maxHeight: 500,
-                zIndex: -2,
-              }}
-            >
-              <img src={cdnImage("carousel2.webp")} alt="vietnamese cuisine" />
-            </div>
-            <div
-              id="slide3"
-              style={{
-                maxHeight: 500,
-                zIndex: -2,
-              }}
-            >
-              <img src={cdnImage("carousel4.webp")} alt="vietnamese cuisine" />
-            </div>
-            <div
-              id="slide4"
-              style={{
-                maxHeight: 500,
-                zIndex: -2,
-              }}
-            >
-              <img src={cdnImage("carousel5.webp")} alt="vietnamese cuisine" />
-            </div>
+        <div className="relative m-auto border-t-2 pl-4 pr-8 pt-12 md:mt-8">
+          <Carousel
+            infiniteLoop
+            autoPlay
+            centerMode
+            swipeable
+            showArrows
+            showThumbs={false}
+            showStatus={false}
+            dynamicHeight={true}
+          >
+            {images.map((image) => (
+              <div
+                key={image.id}
+                style={{
+                  zIndex: -2,
+                }}
+              >
+                <img src={image.url} alt={image.alt} />
+                <div className="legend">
+                  <p className="font-bold">{image.title}</p>
+                </div>
+              </div>
+            ))}
           </Carousel>
         </div>
 
