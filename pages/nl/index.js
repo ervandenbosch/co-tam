@@ -204,7 +204,7 @@ export default function HomeNL() {
             />
           </div>
         </div>
-        <div className="flex flex-col border-t-2  bg-white pb-10 md:w-full">
+        <div className="flex flex-col border-t-2 border-black bg-white pb-14 md:w-full sm:pb-6">
           <h2 className="p-12 text-center text-2xl font-bold text-black">
             Ervaringen van onze klanten op Google
           </h2>
@@ -226,7 +226,7 @@ export default function HomeNL() {
           </a>
         </div>
 
-        <div className="relative m-auto border-t-2  pl-4 pr-8 pt-12 md:mt-8">
+        <div className=" w-screen border-t-2 md:mt-8">
           <Carousel
             infiniteLoop
             autoPlay
