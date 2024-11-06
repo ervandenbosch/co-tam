@@ -146,8 +146,7 @@ export default function HomeNL() {
             Wij zijn open voor tafelreserveringen tijdens lunch en diner. Tevens
             zijn wij open voor afhalen. Gebruik onze reseringsmodule rechts
             onderaan uw scherm om een tafel te reserveren! <br /> <br />
-            LET OP: Wij zijn op vakantie van 18 november t/m 9 december. 10
-            december weer geopend.
+            LET OP: Wij zijn op vakantie van 18 november t/m 9 december.
           </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
