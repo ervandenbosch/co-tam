@@ -152,8 +152,6 @@ export default function Home() {
             Haarlem. From traditional Vietnamese dishes to innovative Asian
             fusion creations by our chef. Make a reservation to join us for
             dinner or order takeaway.
-            <br /> <br />
-            ATTENTION: We are on holiday from 18 November until 10 December.
           </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
