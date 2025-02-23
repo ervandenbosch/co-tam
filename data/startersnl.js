@@ -10,13 +10,13 @@ export const startersdataNL = {
     {
       name: "Goi Xoai Ga",
       description: "Mangosalade met kruiden en gebakken kipreepjes",
-      price: 12.5,
+      price: 13,
       mainallergens: ["peanut", "fish", "pepper", "crust"],
     },
     {
       name: "Goi Xoai Vit",
       description: "Mangosalade met kruiden en krokante eend",
-      price: 12.5,
+      price: 13,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
@@ -110,6 +110,11 @@ export const startersdataNL = {
       description:
         "Spinazie gyoza dumplings met kool en sojabonen, wortelen, uien",
       mainallergens: ["sesam", "soy"],
+    },
+    {
+      name: "Edamame",
+      description: "Hele gestoomde sojabonen",
+      mainallergens: ["soy"],
     },
   ],
   Combo_Starter_Mix: [

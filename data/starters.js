@@ -10,13 +10,13 @@ export const startersdata = {
     {
       name: "Goi Xoai Ga",
       description: "Mango salad with herbs and fried chicken stripes",
-      price: 12.5,
+      price: 13,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
       name: "Goi Xoai Vit",
       description: "Mango salad with herbs and crispy duck",
-      price: 12.5,
+      price: 13,
       mainallergens: ["peanut", "fish", "pepper"],
     },
     {
@@ -110,6 +110,11 @@ export const startersdata = {
       description:
         "Spinach gyoza dumplings with cabbage and soybeans, carrots, onions",
       mainallergens: ["sesam", "soy"],
+    },
+    {
+      name: "Edamame",
+      description: "Whole steamed soybeans",
+      mainallergens: ["soy"],
     },
   ],
   Combo_Starter_Mix: [

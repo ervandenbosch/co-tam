@@ -2,14 +2,14 @@ export const dessertsdataNL = [
   {
     name: "Che Chuoi",
     description: "Banaan tapiocapudding met kokosmelk, pinda's en sesam",
-    mainprice: 6,
+    mainprice: 7,
     mainallergens: ["peanut", "sesam"],
   },
   {
     name: "Chuoi Chien",
     description:
       "Gefrituurde bananenballen gegarneerd met amandelreepjes. 3 stuks",
-    mainprice: 6,
+    mainprice: 7,
     mainallergens: "gluten",
   },
   {

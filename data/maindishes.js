@@ -17,10 +17,10 @@ export const maindishesdata = {
   ],
   Wok: [
     {
-      name: "Com Rang Vit",
+      name: "Com Rang Tom",
       description:
-        "Stir fried rice with duck, carrot, beans, bean sprouts and eggs",
-      price: 20,
+        "Stir fried rice with shrimp, carrot, beans, bean sprouts and eggs",
+      price: 24,
       mainallergens: ["egg", "fish", "gluten"],
     },
     {
@@ -34,13 +34,13 @@ export const maindishesdata = {
       name: "Pho Xao Vit",
       description:
         "Stir fried wide rice noodles with duck, carrot, bean sprouts, eggs",
-      price: 20,
+      price: 21,
       mainallergens: ["egg", "fish", "gluten"],
     },
     {
       name: "Udon Xao Bo",
       description: "Stir fried udon noodles with beef, vegetables",
-      price: 20,
+      price: 21,
       mainallergens: ["gluten", "fish", "shell"],
     },
     {
@@ -55,7 +55,7 @@ export const maindishesdata = {
       name: "Tofu Curry (vegatarian)",
       description:
         "Red curry sauce with tofu, green vegetables and rice on the side",
-      price: 20,
+      price: 21,
       mainallergens: ["lactose", "fish", "soy", "pepper"],
     },
     {
@@ -78,7 +78,7 @@ export const maindishesdata = {
       name: "Ga Curry",
       description:
         "Red curry sauce with chicken, green vegetables and rice on the side",
-      price: 20,
+      price: 21,
       mainallergens: ["lactose", "fish", "pepper"],
     },
     {
@@ -92,7 +92,7 @@ export const maindishesdata = {
       name: "Ga Hoisin",
       description:
         "Stir fried chicken with hoisin flavour, green vegetables, chilli and rice",
-      price: 20,
+      price: 21,
       mainallergens: ["gluten", "fish", "nuts", "sesam", "soy"],
     },
     {
@@ -105,31 +105,24 @@ export const maindishesdata = {
   ],
   Beef: [
     {
-      name: "Bo Xao Dua",
-      description:
-        "Sliced beef with pineapple, celery, cherry tomatoes, onions and rice on the side",
-      price: 21,
-      mainallergens: ["gluten", "shell", "crust", "celery", "pepper"],
-    },
-    {
       name: "Bo Tieu",
       description:
         "Stir fried beef slices with green and red pepper, vegetables, and rice on the side",
-      price: 25,
+      price: 27,
       mainallergens: ["gluten", "shell", "fish", "pepper", "pepper"],
     },
     {
       name: "Bo Sa Ot",
       description:
         "Stir fried beef with lemongrass flavour, green vegetables, chilli and rice on the side",
-      price: 22,
+      price: 24,
       mainallergens: ["gluten", "shell", "fish", "pepper", "pepper"],
     },
     {
       name: "Bo Xao Me",
       description:
         "Stir fried crispy beef with tamarind flavor, green vegetables and rice on the side",
-      price: 23,
+      price: 25,
       mainallergens: ["fish", "gluten"],
     },
   ],
@@ -138,7 +131,7 @@ export const maindishesdata = {
       name: "Vit Curry",
       description:
         "Red curry sauce with crispy duck, green vegetables and rice on the side",
-      price: 23,
+      price: 24,
       mainallergens: ["lactose", "fish", "gluten", "pepper"],
     },
     {
@@ -152,7 +145,7 @@ export const maindishesdata = {
       name: "Vit hoisin",
       description:
         "Stir fried green vegetables with hoisin sauce flavour, with crispy duck and rice",
-      price: 23,
+      price: 24,
       mainallergens: ["fish", "gluten", "nuts", "sesam", "soy"],
     },
   ],
@@ -168,28 +161,28 @@ export const maindishesdata = {
       name: "Tom Curry",
       description:
         "Red curry sauce with shrimp, green vegetables and rice on the side",
-      price: 25,
+      price: 27,
       mainallergens: ["crust", "lactose", "fish", "pepper"],
     },
     {
       name: "Tom Sa ot",
       description:
         "Stir fried shrimp with lemongrass flavour, green vegetables, chilli and rice on the side",
-      price: 26,
+      price: 27,
       mainallergens: ["fish", "gluten", "crust", "shell", "pepper", "pepper"],
     },
     {
       name: "Salmon Curry",
       description:
         "Red curry sauce with salmon, green vegetables and rice on the side",
-      price: 26,
+      price: 27,
       mainallergens: ["lactose", "fish", "pepper"],
     },
     {
-      name: "Seafood Xao Dua",
+      name: "Seafood Xao Dau",
       description:
-        "Stir fried seafood (Jacob mussels, monk fish, squid, shrimps) with pineapple, celery, cherry tomatoes, and rice on the side",
-      price: 29,
+        "Stir fried seafood (Jacob mussels, monk fish, squid, shrimps) green vegetables, chilli and rice on the side",
+      price: 32,
       mainallergens: [
         "gluten",
         "fish",
@@ -201,9 +194,9 @@ export const maindishesdata = {
       ],
     },
     {
-      name: "Muc Xao Dua",
+      name: "Muc Sa Ot",
       description:
-        "Stir fried squid with pineapple, celery, cherry tomatoes, and rice on the side",
+        "Stir fried squid with lemongrass, green vegetables, chilli and rice on the side",
       price: 25,
       mainallergens: [
         "gluten",
@@ -216,10 +209,10 @@ export const maindishesdata = {
       ],
     },
     {
-      name: "Monkfish Xao Dua",
+      name: "Monkfish Xao Rau",
       description:
         "Stir fried monkfish, green vegetables, chilli, ,and rice on the side",
-      price: 29,
+      price: 32,
       mainallergens: [
         "gluten",
         "fish",
@@ -256,7 +249,7 @@ export const maindishesdata = {
     {
       name: "Bun Vit",
       description: "Rice noodle salad bowl with crispy duck",
-      price: 22,
+      price: 23,
       mainallergens: ["fish", "peanut", "gluten"],
     },
     {
@@ -268,7 +261,7 @@ export const maindishesdata = {
     {
       name: "Bun La Lot",
       description: "Rice noodle salad bowl with 4 beef betel leaf rolls",
-      price: 21,
+      price: 22,
       mainallergens: ["fish", "peanut", "sesam"],
     },
   ],

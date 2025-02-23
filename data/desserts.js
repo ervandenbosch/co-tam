@@ -2,13 +2,13 @@ export const dessertsdata = [
   {
     name: "Che Chuoi",
     description: "Banana Tapioca pudding with coconut milk, peanut, sesame",
-    mainprice: 6,
+    mainprice: 7,
     mainallergens: ["peanut", "sesam"],
   },
   {
     name: "Chuoi Chien",
     description: "Fried banana balls garnished with almond strips. 3pcs",
-    mainprice: 6,
+    mainprice: 7,
     mainallergens: "gluten",
   },
   {
