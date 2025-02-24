@@ -211,7 +211,7 @@ export const maindishesdata = {
     {
       name: "Monkfish Xao Rau",
       description:
-        "Stir fried monkfish, green vegetables, chilli, ,and rice on the side",
+        "Stir fried monkfish, green vegetables, chilli and rice on the side",
       price: 32,
       mainallergens: [
         "gluten",
