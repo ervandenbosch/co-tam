@@ -226,14 +226,14 @@ export const maindishesdata = {
     {
       name: "Fish of the day",
       description:
-        "Fried fish of the day (whole fish 300-400g), with garlic-ginger-chilli saue, served with rice noodles and salad",
+        "Fried fish of the day (whole fish 300-400g), with garlic-ginger-chilli sauce, served with rice noodles and salad",
       price: 35,
       mainallergens: ["fish", "shell", "crust", "pepper"],
     },
     {
       name: "Bun Ca Ha Noi",
       description:
-        "Stir fried marinated monkfish, with onion and dill; rice noodles and salad on the side",
+        "Stir fried marinated monkfish, with onion and dille; rice noodles and salad on the side",
       price: 35,
       mainallergens: ["fish", "sesam", "pepper"],
     },
