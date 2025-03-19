@@ -148,6 +148,9 @@ export default function Home() {
             />
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
+            NOTE: We are <b>closed</b> on the 26th of March.
+          </div>
+          <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             We bring the vibrant, fresh, and bold flavours of Vietnam to
             Haarlem. From traditional Vietnamese dishes to innovative Asian
             fusion creations by our chef. Make a reservation to join us for
