@@ -66,7 +66,7 @@ export default function HomeNL() {
             dangerouslySetInnerHTML={{ __html: message }}
           />
         )}
-        <h2 className="py-4 text-xl font-bold">BLIJF OP DE HOOGTE</h2>
+        <h2 className="py-8 text-xl font-bold">BLIJF OP DE HOOGTE</h2>
         <p className="m-auto w-[60vw] pb-4 text-center">
           Wees één van de eerste om te horen van nieuwe acties en/of deals.
         </p>
@@ -227,30 +227,42 @@ export default function HomeNL() {
         </div>
 
         <div className="w-screen border-t-2 md:mt-8">
-          <Carousel
-            infiniteLoop
-            autoPlay
-            centerMode
-            swipeable
-            showArrows
-            showThumbs={false}
-            showStatus={false}
-            dynamicHeight={true}
-          >
-            {images.map((image) => (
-              <div
-                key={image.id}
-                style={{
-                  zIndex: -2,
-                }}
-              >
-                <img src={image.url} alt={image.alt} />
-                <div className="legend">
-                  <p className="font-bold">{image.title}</p>
+          <div style={{ maxHeight: "400px", overflow: "hidden" }}>
+            <Carousel
+              infiniteLoop
+              autoPlay
+              centerMode
+              swipeable
+              showArrows
+              showThumbs={false}
+              showStatus={false}
+              dynamicHeight={false} // Make sure this is false so it doesn't override maxHeight
+            >
+              {images.map((image) => (
+                <div
+                  key={image.id}
+                  style={{
+                    zIndex: -2,
+                    maxHeight: "400px", // Ensures images also respect the max height
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={image.url}
+                    alt={image.alt}
+                    style={{
+                      maxHeight: "400px",
+                      objectFit: "cover",
+                      width: "100%",
+                    }}
+                  />
+                  <div className="legend">
+                    <p className="font-bold">{image.title}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Carousel>
+              ))}
+            </Carousel>
+          </div>
         </div>
 
         <MailchimpSubscribe
