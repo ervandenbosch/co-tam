@@ -74,6 +74,11 @@ export function Dropdown({ closeDropdown, langNL }) {
             <a onClick={closeDropdown}>CONTACT</a>
           </Link>
         </div>
+          <div className="pb-10 pl-10 lg:pl-6">
+          <Link href={langNL ? "/nl/vacatures" : "/vacancies"}>
+            <a onClick={closeDropdown}>{langNL ? <>VACATURES</> : <>VACANCIES</>}</a>
+          </Link>
+        </div>
         <div className="border-t py-6 text-center text-white">
           <a
             href="https://www.facebook.com/Cotamrestaurant/"

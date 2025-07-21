@@ -225,6 +225,10 @@ function MyApp({ Component, pageProps }) {
             <Link href={langNL ? "/nl/contact" : "/contact"}>
               <a onClick={closeDropdown}>CONTACT</a>
             </Link>
+              <span className="px-2">|</span>
+            <Link href={langNL ? "/nl/vacancies" : "/vacancies"}>
+              <a onClick={closeDropdown}>{langNL ? <>VACATURES</> : <>VACANCIES</>}</a>
+            </Link>
           </div>
           <span className="pl-2 pr-4 text-white md:hidden">|</span>
           <button
