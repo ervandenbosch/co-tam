@@ -75,7 +75,7 @@ export function Dropdown({ closeDropdown, langNL }) {
           </Link>
         </div>
           <div className="pb-10 pl-10 lg:pl-6">
-          <Link href={langNL ? "/nl/vacatures" : "/vacancies"}>
+          <Link href={langNL ? "/nl/vacancies" : "/vacancies"}>
             <a onClick={closeDropdown}>{langNL ? <>VACATURES</> : <>VACANCIES</>}</a>
           </Link>
         </div>
