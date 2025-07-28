@@ -147,6 +147,9 @@ export default function HomeNL() {
             zijn wij open voor afhalen. Gebruik onze reseringsmodule rechts
             onderaan uw scherm om een tafel te reserveren!
           </div>
+                <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
+            <b>⚠️ LET OP: We zijn gesloten van 30 Juli tot en met 5 Augustus. Dank voor uw begrip. ⚠️</b>
+          </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
               href="https://online.spont.nl/?key=fa9610655bd04ad896c4fcb6a5c49bc9&source=direct&autoopen=pickup&lang=en"
