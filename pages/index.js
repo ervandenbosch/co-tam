@@ -153,6 +153,10 @@ export default function Home() {
             fusion creations by our chef. Make a reservation to join us for
             dinner or order takeaway.
           </div>
+          <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
+            NOTE: We will be closed from the 3th of November until the 28th of
+            November.
+          </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
               href="https://online.spont.nl/?key=fa9610655bd04ad896c4fcb6a5c49bc9&source=direct&autoopen=pickup&lang=en"
