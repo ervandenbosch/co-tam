@@ -153,9 +153,13 @@ export default function Home() {
             fusion creations by our chef. Make a reservation to join us for
             dinner or order takeaway.
           </div>
-          <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
-            NOTE: We will be closed from the 3th of November until the 28th of
-            November.
+          <div className="sm:text-md m-auto mx-48 rounded-lg border bg-white py-5 text-center text-2xl text-amber-400 md:mx-16 md:text-lg sm:mx-10">
+            ⚠⚠{" "}
+            <div className="inline text-black">
+              NOTE: We will be closed from the 3th of November until the 28th of
+              November{" "}
+            </div>
+            ⚠⚠
           </div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
