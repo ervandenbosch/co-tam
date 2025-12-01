@@ -147,13 +147,6 @@ export default function HomeNL() {
             zijn wij open voor afhalen. Gebruik onze reseringsmodule rechts
             onderaan uw scherm om een tafel te reserveren!
           </div>
-          <div className="sm:text-md m-auto mx-48 rounded-lg border bg-white py-5 text-center text-2xl text-amber-400 md:mx-16 md:text-lg sm:mx-10">
-            ⚠⚠{" "}
-            <div className="inline text-black">
-              LET OP: We zijn gesloten van 3 november tot en met 28 november{" "}
-            </div>
-            ⚠⚠
-          </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10"></div>
           <div className="mx-auto flex flex-row flex-wrap justify-center pb-10 pt-6 text-center sm:w-full sm:flex-col">
             <a
