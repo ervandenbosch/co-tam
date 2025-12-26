@@ -11,7 +11,7 @@ export function Footer() {
             width="15px"
             alt="copyright co tam"
           />
-          2024 Cô Tâm.
+          2026 Cô Tâm.
         </div>
         <div className="ml-2"> All Rights Reserved.</div>
       </div>
