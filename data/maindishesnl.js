@@ -43,7 +43,7 @@ export const maindishesdataNL = {
       mainallergens: ["shell", "gluten", "fish"],
     },
     {
-      name: "Udon Xao Tofu (vegan)",
+      name: "Udon Xao Tofu (vegan op aanvraag)",
       description: "Gebakken udon noedels met tofu, groenten",
       price: 20,
       mainallergens: ["gluten", "fish", "shell"],
@@ -51,7 +51,7 @@ export const maindishesdataNL = {
   ],
   Tofu: [
     {
-      name: "Tofu Curry (vegatarian)",
+      name: "Tofu Curry",
       description:
         "Rode currysaus met tofu, groene groenten en rijst als bijgerecht",
       price: 21,

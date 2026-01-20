@@ -44,7 +44,7 @@ export const maindishesdata = {
       mainallergens: ["gluten", "fish", "shell"],
     },
     {
-      name: "Udon Xao Tofu (vegan)",
+      name: "Udon Xao Tofu (vegan on request)",
       description: "Stir fried udon noodles with tofu, vegetables",
       price: 20,
       mainallergens: ["gluten", "fish", "shell"],
@@ -52,7 +52,7 @@ export const maindishesdata = {
   ],
   Tofu: [
     {
-      name: "Tofu Curry (vegatarian)",
+      name: "Tofu Curry",
       description:
         "Red curry sauce with tofu, green vegetables and rice on the side",
       price: 21,
