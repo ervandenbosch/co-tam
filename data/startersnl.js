@@ -1,7 +1,7 @@
 export const startersdataNL = {
   Koude_voorgerechten: [
     {
-      name: "Goi Cuon (Summer rolls) 2pcs",
+      name: "Goi Cuon (Summer rolls) 2 stuks",
       description:
         "Verse rijstpapier rolletjes met rijstnoedels & groenten, geserveerd met hoisinsaus. Kies: kip, krokante eend, garnalen of tofu (vegan)",
       price: 10,
@@ -28,7 +28,7 @@ export const startersdataNL = {
   ],
   Gestoomde_voorgerechten: [
     {
-      name: "Banh Bao 2pcs",
+      name: "Banh Bao 2 stuks",
       description:
         "Bao broodjes met groenten, lente-ui, kruiden en hoisinsaus. Kies: kip, krokante eend of tofu (vegetarisch)",
       price: 12,
@@ -43,7 +43,7 @@ export const startersdataNL = {
   ],
   "Gebakken/gegrilde_voorgerechten": [
     {
-      name: "Nem (Spring rolls) 2pcs",
+      name: "Nem (Spring rolls) 2 stuks",
       description:
         "Huisgemaakte gebakken loempia's met glasnoedels, groenten, oorzwammen. Kies: vlees of vegan",
       price: 9,
@@ -70,23 +70,28 @@ export const startersdataNL = {
       mainallergens: ["gluten", "crust"],
     },
     {
-      name: "Tom Chien Com",
-      description:
-        "Krokant gebakken tijgergarnalen in kleefrijstvlokken met mangosaus",
-      price: 10,
-      mainallergens: ["gluten", "crust", "egg"],
-    },
-    {
-      name: "Cua Chien",
-      description: "Krokant gebakken zachte krabstukjes",
-      price: 13,
-      mainallergens: ["gluten", "crust"],
-    },
-    {
       name: "Ga Popcorn",
       description: "Krokant gebakken kipstukjes met chili-mayonaisedip",
       price: 10,
       mainallergens: ["gluten"],
+    },
+    {
+      name: "Tofu Popcorn",
+      description: "Krokant gebakken tofustukjes",
+      price: 10,
+      mainallergens: ["gluten"],
+    },
+    {
+      name: "Ga Sate 3 stuks",
+      description: "Kipsaté geserveerd met pindasaus",
+      price: 10,
+      mainallergens: ["peanut", "gluten"],
+    },
+    {
+      name: "Wan Tan Chien",
+      description: "Krokant gebakken vleesdumplings (kip, garnalen vulling)",
+      price: 10,
+      mainallergens: ["gluten", "crust"],
     },
   ],
   Dim_Sum_Mix: [
@@ -110,11 +115,6 @@ export const startersdataNL = {
       description:
         "Spinazie gyoza dumplings met kool en sojabonen, wortelen, uien",
       mainallergens: ["sesam", "soy"],
-    },
-    {
-      name: "Edamame",
-      description: "Hele gestoomde sojabonen",
-      mainallergens: ["soy"],
     },
   ],
   Combo_Starter_Mix: [
@@ -144,28 +144,6 @@ export const startersdataNL = {
       name: "Goi Xoai Vit",
       description: "Mango salade met kruiden en krokante eend",
       mainallergens: ["peanut", "fish", "pepper"],
-    },
-  ],
-  Vegan_Starter_Mix: [
-    {
-      name: "Nem chay",
-      description: "Huisgemaakte gebakken vegetarische loempia's met vissaus",
-      mainallergens: ["gluten", "soy"],
-    },
-    {
-      name: "Tofu popcorn",
-      description: "Krokant gebakken tofustukjes met pindasaus",
-      mainallergens: ["gluten", "soy"],
-    },
-    {
-      name: "Goi Cuon Tofu",
-      description: "Vers rijstpapier rolletje met noedels, groenten en tofu",
-      mainallergens: ["gluten", "soy"],
-    },
-    {
-      name: "Goi Spinach",
-      description: "Spinaziesalade met sesamdressing en krokant tofuvel",
-      mainallergens: ["sesam", "gluten", "soy", "peanut"],
     },
   ],
 };

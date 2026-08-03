@@ -6,7 +6,10 @@ export function Desserts() {
 
   return (
     <div className="m-auto max-w-[700px] pt-6">
-      <h2 className="ml-6 pb-4 pt-6 text-lg font-bold underline underline-offset-4">
+      <h2
+        id="desserts"
+        className="ml-6 pb-4 pt-6 text-lg font-bold underline underline-offset-4"
+      >
         Desserts
       </h2>
       <div className="m-auto mx-6">

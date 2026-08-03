@@ -6,12 +6,6 @@ export const dessertsdata = [
     mainallergens: ["peanut", "sesam"],
   },
   {
-    name: "Chuoi Chien",
-    description: "Fried banana balls garnished with almond strips. 3pcs",
-    mainprice: 7,
-    mainallergens: "gluten",
-  },
-  {
     name: "Sesame Balls",
     description:
       "Glutinous rice flour balls coated with sesame seeds, and sweet mung bean paste filling (traditional vietnamese snack)",
@@ -38,8 +32,7 @@ export const dessertsdata = [
     mainallergens: ["lactose", "soy"],
   },
   {
-    name: "Ice Cream (1 scoop)",
-    description: "Select: ginger, black sesame or mango",
+    name: "Mango Ice Cream (1 scoop)",
     mainprice: 4,
     mainallergens: ["lactose"],
   },

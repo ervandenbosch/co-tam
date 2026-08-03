@@ -6,13 +6,6 @@ export const dessertsdataNL = [
     mainallergens: ["peanut", "sesam"],
   },
   {
-    name: "Chuoi Chien",
-    description:
-      "Gefrituurde bananenballen gegarneerd met amandelreepjes. 3 stuks",
-    mainprice: 7,
-    mainallergens: "gluten",
-  },
-  {
     name: "Sesame Balls",
     description:
       "Balletjes van kleefrijstmeel bedekt met sesamzaadjes en gevuld met zoete mungbonenpasta (traditionele Vietnamese snack)",
@@ -39,8 +32,7 @@ export const dessertsdataNL = [
     mainallergens: ["lactose", "soy"],
   },
   {
-    name: "Ice Cream (1 scoop)",
-    description: "Kies uit: gember, zwarte sesam of mango",
+    name: "Mango Ice Cream (1 bol)",
     mainprice: 4,
     mainallergens: ["lactose"],
   },

@@ -70,23 +70,28 @@ export const startersdata = {
       mainallergens: ["gluten", "crust"],
     },
     {
-      name: "Tom Chien Com",
-      description:
-        "Crispy fried tiger prawns in sticky rice flakes with mango sauce",
-      price: 10,
-      mainallergens: ["gluten", "crust", "egg"],
-    },
-    {
-      name: "Cua Chien",
-      description: "Crispy fried soft crab pieces",
-      price: 13,
-      mainallergens: ["gluten", "crust"],
-    },
-    {
       name: "Ga Popcorn",
       description: "Crispy fried chicken pieces with chilli-mayo dip",
       price: 10,
       mainallergens: ["gluten"],
+    },
+    {
+      name: "Tofu Popcorn",
+      description: "Crispy fried tofu pieces",
+      price: 10,
+      mainallergens: ["gluten"],
+    },
+    {
+      name: "Ga Sate 3pcs",
+      description: "Chicken skewer with peanut sauce",
+      price: 10,
+      mainallergens: ["peanut", "gluten"],
+    },
+    {
+      name: "Wan Tan Chien",
+      description: "Fried meat dumplings (chicken, shrimp filling",
+      price: 10,
+      mainallergens: ["gluten", "crust"],
     },
   ],
   Dim_Sum_Mix: [
@@ -110,11 +115,6 @@ export const startersdata = {
       description:
         "Spinach gyoza dumplings with cabbage and soybeans, carrots, onions",
       mainallergens: ["sesam", "soy"],
-    },
-    {
-      name: "Edamame",
-      description: "Whole steamed soybeans",
-      mainallergens: ["soy"],
     },
   ],
   Combo_Starter_Mix: [
@@ -143,28 +143,6 @@ export const startersdata = {
       name: "Goi Xoai Vit",
       description: "Mango salad with herbs and crispy duck",
       mainallergens: ["peanut", "fish", "pepper"],
-    },
-  ],
-  Vegan_Starter_Mix: [
-    {
-      name: "Nem chay",
-      description: "Home made fried vegetarian spring rolls with fish sauce",
-      mainallergens: ["gluten", "soy"],
-    },
-    {
-      name: "Tofu popcorn",
-      description: "Crispy fried tofu pieces with peanut sauce",
-      mainallergens: ["gluten", "soy"],
-    },
-    {
-      name: "Goi Cuon Tofu",
-      description: "Fresh rice paper roll with noodles, vegetables and tofu",
-      mainallergens: ["gluten", "soy"],
-    },
-    {
-      name: "Goi Spinach",
-      description: "Spinach salad with sesame dressing and crispy tofu sheet",
-      mainallergens: ["sesam", "gluten", "soy", "peanut"],
     },
   ],
 };
