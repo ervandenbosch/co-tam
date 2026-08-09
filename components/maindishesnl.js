@@ -8,60 +8,67 @@ export function MainDishesNL() {
   return (
     <>
       <div className="mt-4 text-center">
-        {Object.keys(maindishesdataNL).map((key) => {
-          return (
-            <>
-              <Link id={key} href={`#${key.toString()}`}>
-                <a className="lg2:text-md text-sm font-normal sm:text-xs">
-                  <button
-                    className={
-                      "lg2:text-md text-center text-sm hover:underline hover:underline-offset-4 sm:text-xs"
-                    }
-                  >
-                    {key.replace(/_/g, " ")}
-                  </button>
-                  {key === "Noodle_Salad_Bowl" ? "" : " | "}
-                </a>
-              </Link>
-            </>
-          );
-        })}
+        {Object.keys(maindishesdataNL).map((key) => (
+          <Link key={key} id={key} href={`#${key}`}>
+            <a className="lg2:text-md text-sm font-normal sm:text-xs">
+              <button className="lg2:text-md text-center text-sm hover:underline hover:underline-offset-4 sm:text-xs">
+                {key.replace(/_/g, " ")}
+              </button>
+              {key === "Noodle_Salad_Bowl" ? "" : " | "}
+            </a>
+          </Link>
+        ))}
       </div>
+
       <div className="m-auto max-w-[700px] pt-2">
         {Object.keys(maindishesdataNL).map((key) => {
+          const hasSmallBigPricing = maindishesdataNL[key].some(
+            (item) => "smallprice" in item && "bigprice" in item,
+          );
+
           return (
-            <>
+            <div key={key}>
               <h2
                 id={key}
                 className="ml-6 pb-4 pt-6 text-lg font-bold underline underline-offset-4"
               >
                 {key.replace(/_/g, " ")}
               </h2>
+
               <div className="m-auto mx-6 border-b border-black">
+                {hasSmallBigPricing && (
+                  <div className="flex justify-end pb-1">
+                    <div className="text-[11px] font-semibold uppercase tracking-wider text-gray-500">
+                      Klein | Groot
+                    </div>
+                  </div>
+                )}
+
                 {maindishesdataNL[key].map((item, i) => (
-                  <div className="flex flex-col">
-                    <div className="flex flex-row justify-between text-sm font-bold">
-                      <div>
+                  <div key={i} className="flex flex-col">
+                    <div className="flex flex-row items-start justify-between">
+                      <div className="text-sm font-bold">
                         {item.name}
+
                         {item.mainallergens &&
                           (Array.isArray(item.mainallergens) ? (
-                            item.mainallergens.map((x) => {
-                              return (
-                                <img
-                                  src={prefix + x + postfix}
-                                  width="14px"
-                                  style={{
-                                    display: "inline-block",
-                                    marginLeft: 5,
-                                    marginBottom: 1,
-                                  }}
-                                />
-                              );
-                            })
+                            item.mainallergens.map((x) => (
+                              <img
+                                key={x}
+                                src={prefix + x + postfix}
+                                width="14"
+                                style={{
+                                  display: "inline-block",
+                                  marginLeft: 5,
+                                  marginBottom: 1,
+                                }}
+                              />
+                            ))
                           ) : (
                             <img
+                              key={item.mainallergens}
                               src={prefix + item.mainallergens + postfix}
-                              width="14px"
+                              width="14"
                               style={{
                                 display: "inline-block",
                                 marginLeft: 5,
@@ -70,39 +77,37 @@ export function MainDishesNL() {
                             />
                           ))}
                       </div>
-                      {!Array.isArray(item.price) && (
-                        <div className="inline-block">{item.price}</div>
+
+                      {"smallprice" in item && "bigprice" in item ? (
+                        <div className="text-sm font-bold">
+                          {item.smallprice} | {item.bigprice}
+                        </div>
+                      ) : (
+                        !Array.isArray(item.price) && (
+                          <div className="text-sm font-bold">{item.price}</div>
+                        )
                       )}
                     </div>
+
                     <p className="pb-1 pr-32 text-sm font-normal sm:pr-16">
                       {item.description}
                     </p>
+
                     {item.options &&
-                      item.options.map((x, i) => {
-                        return (
-                          <div className="flex flex-row justify-between text-sm">
-                            <div>
-                              <li className="list-disc font-normal">
-                                {x}{" "}
-                                {Array.isArray(item.allergens[i]) ? (
-                                  item.allergens[i].map((y) => {
-                                    return (
-                                      <img
-                                        src={prefix + y + postfix}
-                                        width="14px"
-                                        style={{
-                                          display: "inline-block",
-                                          marginLeft: 5,
-                                          marginBottom: 1,
-                                          zIndex: 0,
-                                        }}
-                                      />
-                                    );
-                                  })
-                                ) : (
+                      item.options.map((x, i) => (
+                        <div
+                          key={i}
+                          className="flex flex-row justify-between text-sm"
+                        >
+                          <div>
+                            <li className="list-disc font-normal">
+                              {x}{" "}
+                              {Array.isArray(item.allergens[i]) ? (
+                                item.allergens[i].map((y) => (
                                   <img
-                                    src={prefix + item.allergens[i] + postfix}
-                                    width="14px"
+                                    key={y}
+                                    src={prefix + y + postfix}
+                                    width="14"
                                     style={{
                                       display: "inline-block",
                                       marginLeft: 5,
@@ -110,22 +115,36 @@ export function MainDishesNL() {
                                       zIndex: 0,
                                     }}
                                   />
-                                )}
-                              </li>
-                            </div>
-                            {Array.isArray(item.price) && (
-                              <div className="inline-block">
-                                {item.price[i]}
-                              </div>
-                            )}
+                                ))
+                              ) : (
+                                <img
+                                  key={item.allergens[i]}
+                                  src={prefix + item.allergens[i] + postfix}
+                                  width="14"
+                                  style={{
+                                    display: "inline-block",
+                                    marginLeft: 5,
+                                    marginBottom: 1,
+                                    zIndex: 0,
+                                  }}
+                                />
+                              )}
+                            </li>
                           </div>
-                        );
-                      })}
+
+                          {Array.isArray(item.price) && (
+                            <div className="text-sm font-bold">
+                              {item.price[i]}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+
                     <br />
                   </div>
                 ))}
               </div>
-            </>
+            </div>
           );
         })}
       </div>
