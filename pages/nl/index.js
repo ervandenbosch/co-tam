@@ -141,19 +141,21 @@ export default function HomeNL() {
               alt="co tam vietnamees restaurant logo"
             />
           </div>
-          <div className="mx-4 mt-6 rounded-lg bg-[#F7C12F] px-4 py-5 text-center text-black shadow-md sm:mx-6 sm:px-6">
-            <h2 className="text-lg font-bold sm:text-xl">
-              We zijn tijdelijk gesloten
-            </h2>
-            <p className="mt-2 text-base sm:text-lg">
-              {" "}
-              Cô Tâm is gesloten van{" "}
-              <strong>14 september tot eind oktober</strong>.
-            </p>
-            <p className="mt-2 text-sm sm:text-base">
-              {" "}
-              We kijken ernaar uit u binnenkort weer te verwelkomen!
-            </p>
+          <div className="mx-4 mt-6 flex justify-center">
+            <div className="w-fit max-w-full rounded-lg bg-[#F7C12F] px-4 py-5 text-center text-black shadow-md sm:px-6">
+              <h2 className="text-lg font-bold sm:text-xl">
+                We zijn tijdelijk gesloten
+              </h2>
+              <p className="mt-2 text-base sm:text-lg">
+                {" "}
+                Cô Tâm is gesloten van{" "}
+                <strong>14 september tot eind oktober</strong>.
+              </p>
+              <p className="mt-2 text-sm sm:text-base">
+                {" "}
+                We kijken ernaar uit u binnenkort weer te verwelkomen!
+              </p>
+            </div>
           </div>
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             Welkom bij het authentieke Vietnamees restaurant Cô Tâm van Haarlem.
