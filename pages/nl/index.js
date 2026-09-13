@@ -149,7 +149,7 @@ export default function HomeNL() {
               <p className="mt-2 text-base sm:text-lg">
                 {" "}
                 Cô Tâm is gesloten van{" "}
-                <strong>14 september tot eind oktober</strong>.
+                <strong>13 september tot eind oktober</strong>.
               </p>
               <p className="mt-2 text-sm sm:text-base">
                 {" "}
