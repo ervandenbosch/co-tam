@@ -141,13 +141,17 @@ export default function HomeNL() {
               alt="co tam vietnamees restaurant logo"
             />
           </div>
-          <div className="mx-auto mt-6 max-w-3xl rounded-lg bg-[#F7C12F] px-6 py-5 text-center text-black shadow-md">
-            <h2 className="text-xl font-bold">We zijn tijdelijk gesloten</h2>
-            <p className="mt-2 text-lg">
+          <div className="mx-4 mt-6 rounded-lg bg-[#F7C12F] px-4 py-5 text-center text-black shadow-md sm:mx-6 sm:px-6">
+            <h2 className="text-lg font-bold sm:text-xl">
+              We zijn tijdelijk gesloten
+            </h2>
+            <p className="mt-2 text-base sm:text-lg">
+              {" "}
               Cô Tâm is gesloten van{" "}
               <strong>14 september tot eind oktober</strong>.
             </p>
-            <p className="mt-1">
+            <p className="mt-2 text-sm sm:text-base">
+              {" "}
               We kijken ernaar uit u binnenkort weer te verwelkomen!
             </p>
           </div>

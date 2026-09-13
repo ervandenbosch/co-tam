@@ -148,13 +148,18 @@ export default function Home() {
             />
           </div>
 
-          <div className="mx-auto mt-6 max-w-3xl rounded-lg bg-[#F7C12F] px-6 py-5 text-center text-black shadow-md">
-            <h2 className="text-xl font-bold">We are temporarily closed</h2>
-            <p className="mt-2 text-lg">
+          <div className="mx-4 mt-6 rounded-lg bg-[#F7C12F] px-4 py-5 text-center text-black shadow-md sm:mx-6 sm:px-6">
+            <h2 className="text-lg font-bold sm:text-xl">
+              We are temporarily closed
+            </h2>
+            <p className="mt-2 text-base sm:text-lg">
+              {" "}
               Cô Tâm will be closed from{" "}
               <strong>14 September until the end of October</strong>.
             </p>
-            <p className="mt-1">We look forward to welcoming you back soon!</p>
+            <p className="mt-2 text-sm sm:text-base">
+              We look forward to welcoming you back soon!
+            </p>
           </div>
 
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
