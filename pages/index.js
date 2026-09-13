@@ -155,7 +155,7 @@ export default function Home() {
               <p className="mt-2 text-base sm:text-lg">
                 {" "}
                 Cô Tâm will be closed from{" "}
-                <strong>14 September until the end of October</strong>.
+                <strong>13 September until the end of October</strong>.
               </p>
               <p className="mt-2 text-sm sm:text-base">
                 We look forward to welcoming you back soon!
