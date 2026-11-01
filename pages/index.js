@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Testimonials from "../components/testimonials";
 import { cdnImage } from "../components/utils";
 import useScript from "../components/useScript";
@@ -283,17 +282,6 @@ export default function Home() {
             </Carousel>
           </div>
         </div>
-
-        <MailchimpSubscribe
-          url={url}
-          render={({ subscribe, status, message }) => (
-            <CustomForm
-              status={status}
-              message={message}
-              onValidated={(formData) => subscribe(formData)}
-            />
-          )}
-        />
       </body>
     </div>
   );
