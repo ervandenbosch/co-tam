@@ -66,6 +66,13 @@ export const maindishesdataNL = {
       price: 23,
       mainallergens: ["gluten", "soy", "pepper", "pepper"],
     },
+    {
+      name: "Tofu Lac (vegetarisch)",
+      description:
+        "Pindasaus met tofu, groene groenten, chili en rijst als bijgerecht",
+      price: 23,
+      mainallergens: ["lactose", "peanut", "soy"],
+    },
   ],
   Kip: [
     {
@@ -76,11 +83,11 @@ export const maindishesdataNL = {
       mainallergens: ["lactose", "fish", "pepper"],
     },
     {
-      name: "Ga Hoisin",
+      name: "Ga Lac",
       description:
         "Gebakken kip met hoisinsmaak, groene groenten, chili en rijst",
       price: 23,
-      mainallergens: ["gluten", "fish", "nuts", "sesam", "soy"],
+      mainallergens: ["lactose", "peanut", "fish"],
     },
     {
       name: "Ga Sa Ot",
@@ -115,11 +122,11 @@ export const maindishesdataNL = {
       mainallergens: ["lactose", "fish", "gluten", "pepper"],
     },
     {
-      name: "Vit Hoisin",
+      name: "Vit Lac",
       description:
-        "Gebakken groene groenten met hoisinsaussmaak, met krokante eend en rijst",
+        "Gebakken groene groenten met pindasaussmaak, met krokante eend en rijst als bijgerecht",
       price: 25,
-      mainallergens: ["fish", "gluten", "nuts", "sesam", "soy"],
+      mainallergens: ["lactose", "fish", "gluten", "peanut"],
     },
   ],
   "Vis_&_Zeegerechten": [
@@ -166,19 +173,11 @@ export const maindishesdataNL = {
       ],
     },
     {
-      name: "Monkfish Xao Rau",
+      name: "Ca Kho Salmon",
       description:
-        "Gebakken zeeduivel, groene groenten, chili en rijst als bijgerecht",
+        "Zalm gestoofd in gekarameliseerde vissaus met chili, geserveerd met rijst",
       price: 32,
-      mainallergens: [
-        "gluten",
-        "fish",
-        "shell",
-        "crust",
-        "celery",
-        "pepper",
-        "pepper",
-      ],
+      mainallergens: ["gluten", "fish", "pepper"],
     },
     {
       name: "Bun Ca Ha Noi",

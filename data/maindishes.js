@@ -21,33 +21,33 @@ export const maindishesdata = {
     {
       name: "Com Rang Tom",
       description:
-        "Stir fried rice with shrimp, carrot, beans, bean sprouts and eggs",
+        "Stir-fried rice with shrimp, carrot, beans, bean sprouts and eggs",
       price: 26,
       mainallergens: ["egg", "fish", "gluten"],
     },
     {
       name: "Com Rang Ga",
       description:
-        "Stir fried rice with chicken, carrot, beans, bean sprouts and eggs",
+        "Stir-fried rice with chicken, carrot, beans, bean sprouts and eggs",
       price: 22,
       mainallergens: ["egg", "fish", "gluten"],
     },
     {
       name: "Pho Xao Vit",
       description:
-        "Stir fried wide rice noodles with duck, carrot, bean sprouts, eggs",
+        "Stir-fried wide rice noodles with duck, carrot, bean sprouts, eggs",
       price: 24,
       mainallergens: ["egg", "fish", "gluten"],
     },
     {
       name: "Udon Xao Bo",
-      description: "Stir fried udon noodles with beef, vegetables",
+      description: "Stir-fried udon noodles with beef, vegetables",
       price: 24,
       mainallergens: ["gluten", "fish", "shell"],
     },
     {
       name: "Udon Xao Tofu (vegan)",
-      description: "Stir fried udon noodles with tofu, vegetables",
+      description: "Stir-fried udon noodles with tofu, vegetables",
       price: 22,
       mainallergens: ["gluten", "fish", "shell"],
     },
@@ -63,9 +63,16 @@ export const maindishesdata = {
     {
       name: "Tofu Sa Ot (vegan)",
       description:
-        "Stir fried tofu with lemongrass flavour, green vegetables, chilli and rice on the side",
+        "Stir-fried tofu with lemongrass flavour, green vegetables, chilli and rice on the side",
       price: 23,
       mainallergens: ["gluten", "soy", "pepper", "pepper"],
+    },
+    {
+      name: "Tofu Lac (vegetarian)",
+      description:
+        "Peanut sauce with tofu, green vegetables, chilli and rice on the side",
+      price: 23,
+      mainallergens: ["lactose", "peanut", "soy"],
     },
   ],
   Chicken: [
@@ -77,16 +84,16 @@ export const maindishesdata = {
       mainallergens: ["lactose", "fish", "pepper"],
     },
     {
-      name: "Ga Hoisin",
+      name: "Ga Lac",
       description:
-        "Stir fried chicken with hoisin flavour, green vegetables, chilli and rice",
+        "Stir-fried chicken with peanut sauce flavour, green vegetables and rice on the side",
       price: 23,
-      mainallergens: ["gluten", "fish", "nuts", "sesam", "soy"],
+      mainallergens: ["lactose", "peanut", "fish"],
     },
     {
       name: "Ga Sa Ot",
       description:
-        "Stir fried chicken with lemongrass flavour, green vegetables, chilli and rice on the side",
+        "Stir-fried chicken with lemongrass flavour, green vegetables, chilli and rice on the side",
       price: 23,
       mainallergens: ["gluten", "shell", "fish", "pepper", "pepper"],
     },
@@ -95,14 +102,14 @@ export const maindishesdata = {
     {
       name: "Bo Tieu",
       description:
-        "Stir fried beef slices with green and red pepper, vegetables, and rice on the side",
+        "Stir-fried beef slices with green and red pepper, vegetables, and rice on the side",
       price: 28,
       mainallergens: ["gluten", "shell", "fish", "pepper", "pepper"],
     },
     {
       name: "Bo Sa Ot",
       description:
-        "Stir fried beef with lemongrass flavour, green vegetables, chilli and rice on the side",
+        "Stir-fried beef with lemongrass flavour, green vegetables, chilli and rice on the side",
       price: 26,
       mainallergens: ["gluten", "shell", "fish", "pepper", "pepper"],
     },
@@ -116,18 +123,18 @@ export const maindishesdata = {
       mainallergens: ["lactose", "fish", "gluten", "pepper"],
     },
     {
-      name: "Vit hoisin",
+      name: "Vit Lac",
       description:
-        "Stir fried green vegetables with hoisin sauce flavour, with crispy duck and rice",
+        "Stir-fried green vegetables with peanut sauce flavour, with crispy duck and rice on the side",
       price: 25,
-      mainallergens: ["fish", "gluten", "nuts", "sesam", "soy"],
+      mainallergens: ["lactose", "fish", "gluten", "peanut"],
     },
   ],
   "Fish_&_Seafood": [
     {
       name: "Mien Xao Cua",
       description:
-        "Stir fried glass noodles with King crab meat, vegetables, eggs, and shiitake",
+        "Stir-fried glass noodles with King crab meat, vegetables, eggs, and shiitake",
       price: 30,
       mainallergens: ["egg", "fish", "sesam", "crust"],
     },
@@ -141,7 +148,7 @@ export const maindishesdata = {
     {
       name: "Tom Sa ot",
       description:
-        "Stir fried shrimp with lemongrass flavour, green vegetables, chilli and rice on the side",
+        "Stir-fried shrimp with lemongrass flavour, green vegetables, chilli and rice on the side",
       price: 27,
       mainallergens: ["fish", "gluten", "crust", "shell", "pepper", "pepper"],
     },
@@ -154,7 +161,7 @@ export const maindishesdata = {
     {
       name: "Seafood Xao Dau",
       description:
-        "Stir fried seafood (Jacob mussels, monk fish, squid, shrimps) green vegetables, chilli and rice on the side",
+        "Stir-fried seafood (Jacob mussels, monk fish, squid, shrimps) green vegetables, chilli and rice on the side",
       price: 32,
       mainallergens: [
         "gluten",
@@ -167,24 +174,16 @@ export const maindishesdata = {
       ],
     },
     {
-      name: "Monkfish Xao Rau",
+      name: "Cao Kho Salmon",
       description:
-        "Stir fried monkfish, green vegetables, chilli and rice on the side",
+        "Salmon braised in caramelised fish sauce with chilli, served with rice",
       price: 32,
-      mainallergens: [
-        "gluten",
-        "fish",
-        "shell",
-        "crust",
-        "celery",
-        "pepper",
-        "pepper",
-      ],
+      mainallergens: ["gluten", "fish", "pepper"],
     },
     {
       name: "Bun Ca Ha Noi",
       description:
-        "Stir fried marinated monkfish, with onion and dille; rice noodles and salad on the side",
+        "Stir-fried marinated monkfish, with onion and dille; rice noodles and salad on the side",
       price: 35,
       mainallergens: ["fish", "sesam", "pepper"],
     },

@@ -10,7 +10,7 @@ export const dessertsdata = [
     description:
       "Glutinous rice flour balls coated with sesame seeds, and sweet mung bean paste filling (traditional vietnamese snack)",
     mainprice: 4,
-    mainallergens: ["gluten", "sesam", "egg", "soy"],
+    mainallergens: ["gluten", "sesam", "soy"],
   },
   {
     name: "Lemongrass Creme Brulee",
@@ -29,7 +29,7 @@ export const dessertsdata = [
     name: "Mochi Chocolate",
     description: "Chocolate Japanese rice cake with ice cream",
     mainprice: 4,
-    mainallergens: ["lactose", "soy"],
+    mainallergens: ["soy"],
   },
   {
     name: "Mango Ice Cream (1 scoop)",

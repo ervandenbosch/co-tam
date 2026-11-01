@@ -10,7 +10,7 @@ export const dessertsdataNL = [
     description:
       "Balletjes van kleefrijstmeel bedekt met sesamzaadjes en gevuld met zoete mungbonenpasta (traditionele Vietnamese snack)",
     mainprice: 4,
-    mainallergens: ["gluten", "sesam", "egg", "soy"],
+    mainallergens: ["gluten", "sesam", "soy"],
   },
   {
     name: "Lemongrass Creme Brulee",
@@ -29,7 +29,7 @@ export const dessertsdataNL = [
     name: "Mochi Chocolate",
     description: "Japanse rijstcake met chocolade en roomijs",
     mainprice: 4,
-    mainallergens: ["lactose", "soy"],
+    mainallergens: ["soy"],
   },
   {
     name: "Mango Ice Cream (1 bol)",
