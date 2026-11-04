@@ -146,21 +146,6 @@ export default function Home() {
               alt="co tam vietnamese restaurant logo"
             />
           </div>
-          <div className="mx-4 mt-6 flex justify-center">
-            <div className="w-fit max-w-full rounded-lg bg-[#F7C12F] px-4 py-5 text-center text-black shadow-md sm:px-6">
-              <h2 className="text-lg font-bold sm:text-xl">
-                We are temporarily closed
-              </h2>
-              <p className="mt-2 text-base sm:text-lg">
-                {" "}
-                Cô Tâm will be closed from{" "}
-                <strong>14 September until 3 November</strong>.
-              </p>
-              <p className="mt-2 text-sm sm:text-base">
-                We look forward to welcoming you back at 4 November!
-              </p>
-            </div>
-          </div>
 
           <div className="sm:text-md m-auto px-48 py-5 text-center text-xl text-white md:px-16 md:text-lg sm:px-10">
             We bring the vibrant, fresh, and bold flavours of Vietnam to
